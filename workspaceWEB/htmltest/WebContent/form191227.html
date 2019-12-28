@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form191227.html</title>
+</head>
+<body>
+<h1> [폼 만들기 ] </h1>
+<BR> 12월 27일 폼태그 학습입니다.(책은 50페이지 참고하세요.)
+
+<form method="get" action="index.html">
+
+	
+	<p>id <input type = "text" name="id"></p>
+	<p>이름 <input type = "text" name="name"></p>
+	<p>비밀번호 <input type = "password" name="pw"></p>
+	<p>나이 <input type = "number" name="age"></p>
+	<p>날짜<input type="date" name="date"></p>
+	<br>날짜의 경우 모바일기기를 활용시 키보드가 날짜입력하기 좋은 별도의 키보드로 바뀝니다.)
+		
+
+	<p>text미리 기입해두기 예제 <input type = "text" name="id2" value="value2" ></p>
+	<p>도움말(일일이 지울필요없음)<input type="text" name="name2" placeholder="value2처럼 지우는 수고를 할 필요가 없습니다"></p>
+	<p>생년월일 <input type="date" name="birth"></p>
+	<br>날짜의 경우 자바스크립트 직접 만들어서 사용하는 경우도 있습니다. html로는 여전히 지원하는 기기/ 지원않는 기기, 디자인이 왠지모르게 다른 기기등 별별 상황이 다나옵니다.
+
+	<p>안내메일 수신<input type="checkbox" name="mail"></p>
+	<p>관심분야        <input type ="checkbox" name="favo" value="1" checked>Java
+		        <input type ="checkbox" name="favo" value="2">HTML
+	 	        <input type ="checkbox" name="favo" value="3">DB</p>
+	<BR>체크박스의 경우 이름을 똑같이 주었는데 값을 여러개 체크한 경우=> 체크된 애들은 전송되어 배열로 처리된다.
+	<BR>GET 방식을 통해 확인하면 아래와 같다.
+	<br>http://172.30.1.53:8888/htmltest/index.html?id=&name=&pw=&age=&date=&id2=value2&name2=&birth=&favo=1&favo=2&favo=3
+	<BR>&favo=1&favo=2&favo=3 이렇게 선택들이 모두 전송된다. [1,2,3] 이런식으로 보내지는 셈이다.
+	
+	
+	<p>통신사           <input type ="radio" name="tel" value="sk">SK
+		        <input type ="radio" name="tel" value="kt">KT
+	 	        <input type ="radio" name="tel" value="lg">LG</p>
+	<BR>라디오 버튼의 경우 1개의 값만 선택할 수 있습니다.
+
+
+	<P> 사진첨부 <input type="file" name="photo"></P>
+	
+	<p> 직업 	<select name="job" size=3 multiple="multiple"> 
+				<option value="1">학생</option>
+				<option value="2">회사원</option>
+				<option value="3">기타</option>
+			</select>
+	<br> select 태그도 라디오태그처럼 1개만 선택할 수 있습니다.
+	<br> (multiple="multiple" 옵션설정시 shift키등을 통해 여럿선택 가능합니다. 여러개 선택시 배열로 넘어갑니다.)
+	<br> size를 통해 최초시 몇개의 칸을 보여줄지 결정합니다. size=3이므로 3개의 옵션들이 모두 보이게 됩니다.
+	
+	<p>자기소개 <textarea rows="5" cols="50" name='ta'></textarea></p>
+
+	<p>	<input type = "reset" value="다시쓰기">
+		<input type= "submit" value="전송"></p>
+
+
+
+
+</form>
+
+
+<br>폼 1개를 구성하려면 메서드와 액션이 꼭 필요합니다
+<br>action=값을 어디로 보낼 것인가?()
+<br>method=값을 보내는 방식 get이나 post 방식을 많이 사용.
+<br>name(form을 구별&서버로 보낼시 반드시 필요!!!) id(자바스크립트에서 사용), 클래스명(CSS에서 주로 사용)를 통하여 구분합니다.
+
+	<br><br>핵심요약1 action=값을 보낼 주소
+	<br>핵심요약2 method=값을 보내는 방법
+
+	<br><br>사실 action에는 "index.html"이 아니라 자바서버로 보낼 예정입니다.
+	<br>method="get"은 내가 한 내역이 보이거니와 긴 내용은 보낼수 없습니다. 사이트주소 창에보면 그대로 나와버립니다.
+	<br>method="post"는 내가 한 내역이 보이지 않고 긴 내용도 보낼수 있습니다.
+	
+	<br><br>선생님의 컴퓨터의 경우 get 방식으로 하면 주소창이 아래와 같이 뜹니다. 
+	<br>http://172.30.1.40:8888/htmltest/idndex.html?id=asdf&name=asdf 			
+	
+	<br>http://172.30.1.53:8888/htmltest/index.html?id=dfdf&name=tttt&pw=&age=&date=&id2=value2&name2=&birth=
+	<br>나의 경우 나이,생일등 값을 입력하는 란들이 증가해서 더욱 길어졌습니다.
+	
+	<br>name을 제대로 설정하지 않으면 폼에서 받은 값이 서버에게 제대로 전달되지 않습니다.
+
+
+<br>값을 주고 받는 것 관련은 자바로 할 예정입니다.
+<br>만약 input의 name이 같을 경우 자바는 배열로 처리하게 됩니다.
+
+<br>기획 및 협의, 디자이너가 꼴랑 그림만 갖고 오는 경우 일일이 만드는 
+<br> 디자이너 - 퍼블리셔 - 개발자 이렇게 구성됩니다.
+<br> 퍼블리셔가 디자이너와 개발자 사이에서 조절을 해주면서 웹코드를 정리해주는 역할을 합니다.
+
+
+
+
+
+</body>
+</html>

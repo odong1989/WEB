@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>form 따라 만들어보기 19.12.27</h1>
+<h3>오리지널 - https://www.byslim.com/member/join.html</h3>
+
+<form id="remake" action="#" method="post">
+	<table border="1" width="1300">
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="id">
+				<input type="button" name="idcheck" value="아이디 중복확인">	
+			
+			</td>		
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="password" name="passwordIn">
+			 	(영문 대소문자/숫자 4~16자)
+			</td>		
+		</tr>
+		<tr>
+			<td>비밀번호 확인</td>
+			<td><input type="password" name="passwordCheck">
+			</td>		
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text"></td>		
+		</tr>
+		<tr>
+			<td>휴대전화</td>
+			<td><select name="tel">
+					<option value="1">010</option>
+					<option value="2">011</option>
+					<option value="3">016</option>
+					<option value="4">017</option>
+					<option value="5">018</option>	
+					<option value="6">019</option>
+				</select>
+				-
+				<input type="text" size="2" max="4"><!-- 최대값 4글자 -->
+				-
+				<input type="text" size="2">	
+			</td>		
+		</tr>
+		<tr>
+			<td>SMS 수신여부</td>
+			<td><input type="checkbox" name="snsAgree" value="agree">동의함 
+			<p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SNS로 받으실 수 있습니다.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type="text" name="eMail"></td>		
+		</tr>
+		<tr>
+			<td>이메일 수신여부</td>
+			<td><input type="checkbox" name="eMailAgree" value="agree">동의함
+			<p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다</p>
+			</td>
+		</tr>
+		<tr>
+			<td>평생회원</td>
+			<td><input type="radio" name="foreverMember" value="foreverYes">동의함
+				<input type="radio" name="foreverMember" value="foreverNo">동의안함
+				<br>지금 평생회원으로 동의하시면 즉시 사용 가능한 2,000원 할인쿠폰 혜택을 발급해드립니다.
+				(쿠폰혜택을 받으신 경우, 3개월간 평생회원을 유지하셔야 합니다.)
+				<br>평생회원으로 가입하시면 바이슬림 회원 탈퇴시까지는 휴면계정으로 전환되지 않으며,
+				고객님의 개인정보가 탈퇴시까지 안전하게 보관됩니다. 
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+
+</body>
+</html>

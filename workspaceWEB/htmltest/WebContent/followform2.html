@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form 따라 만들기2- 네이버 회원가입 따라만들어보기 19.12.27</title>
+</head>
+<body>
+	<h1>form 따라 만들기2- 네이버 회원가입 따라만들어보기 19.12.27</h1>
+	<h3>오리지널 : https://nid.naver.com/user2/V2Join.nhn?token_sjoin=rvCobwt5ci508WX1&chk_all=on&termsService=on&termsPrivacy=on&termsLocation=Y&termsEmail=Y</h3>
+
+	<img src="./image/logoNaver.jpg">
+
+	<form action="" method="post">
+	
+		<h3>아이디</h3>
+		<br><input type="text" name="id">
+		@naver.com
+				
+		<h3>비밀번호</h3>
+		<br><input type="password" name="passwordIn">
+			<input type="button" name="checkedPassword">
+			<img src="./image/locked16x16.png">				
+
+		<h3>비밀번호 재확인</h3>
+		<br><input type="password" name="passwordCheck">
+			<input type="button" name="checkedPassword">
+
+		<h3>생년월일</h3>
+		<input type="text" name="year" size="2" placeholder="년(4자)">
+		<select name="month">
+			<option value="0">월</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<optuon value="3">3</optuon>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		<input type="text" name="day" size="2" placeholder="일">
+		
+	<h3>성별</h3>
+	<select name="gender">
+			<option value="0">성별</option>
+			<option value="1">남자</option>
+			<option value="2">여자</option>
+	</select>
+
+	<h3>본인 확인 이메일 (선택)</h3>
+	<input type="text" placeholder="선택입력">
+
+	<h3>휴대전화</h3>
+	<select name=phoneContry>
+		<option value="082">대한민국 +82</option>
+
+	</select>
+
+	<input type="text" placeholder="전화번호 입력">
+	<input type="button" value="인증번호받기"> 
+	<br><input type="text" placeholder="인증번호 입력하세요">	
+
+	</form>
+
+</body>
+</html>
