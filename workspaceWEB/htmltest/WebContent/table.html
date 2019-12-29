@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table 연습 html</title>
+</head>
+<body>
+	<h1> [ 표 만들기 ] </h1>
+
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+	<br>보통은 뼈대만 잡고, 스타일링은 CSS로 합니다.
+	<br>우리는 결과를 빨리 보고자 테이블로 해봅니다.
+	
+	
+	<br>테이블에 두께를 1줍니다(border=1)
+	<table border=1>
+		<tr>
+			<td width="100" height="50">1</td>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+			
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<!-- 1행1열의 영향으로 가로 100픽셀로 같이 증가합니다. 
+				 하지만 세로 50픽셀은 적용되지 않습니다. -->
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+
+
+
+	<br> td, th를 통하여 디자인을 따로 적용해봅시다
+	<table border=1>
+		<tr>
+			<th width="100" height="50">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+
+			<td>2</td>
+			<td>3</td>			
+		</tr>
+		<tr>
+			<td>4</td>
+			<!-- 1행1열의 영향으로 가로 100픽셀로 같이 증가합니다. 
+				 하지만 세로 50픽셀은 적용되지 않습니다. -->
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+
+
+	<br> 2번의 칸을 2칸으로 확장시켜 봅시다.
+	<table border=1>
+		<tr>
+			<th width="100" height="50">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+
+			<td colspan="2">2</td>
+			<td>3을 지우지 않으면 3이 튀어나갑니다.</td>			
+		</tr>
+		<tr>
+			<td>4</td>
+			<!-- 1행1열의 영향으로 가로 100픽셀로 같이 증가합니다. 
+				 하지만 세로 50픽셀은 적용되지 않습니다. -->
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+
+	<table border=1>
+		<tr>
+			<th width="100" height="50">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+
+			<td colspan="2">2</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<!-- 1행1열의 영향으로 가로 100픽셀로 같이 증가합니다. 
+				 하지만 세로 50픽셀은 적용되지 않습니다. -->
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+
+
+	<br> 1번의 행을 2행으로 확장시켜 봅시다.
+	<table border=1>
+		<tr>
+			<th width="100" height="50" rowspan="2">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+
+			<td colspan="2">2</td>
+		</tr>
+		<tr>
+			<td>4를 안지우면 4가 오른쪽으로 밀려 갑니다.</td>
+			<!-- 1행1열의 영향으로 가로 100픽셀로 같이 증가합니다. 
+				 하지만 세로 50픽셀은 적용되지 않습니다. -->
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+	
+	<table border=1>
+		<tr>
+			<th width="100" height="50" rowspan="2">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+
+			<td colspan="2">2</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+		</tr>		
+	</table>
+	
+<br>	--테이블 속의 테이블
+	<table border=1>
+		<tr>
+			<th rowspan="3">1</th>
+			<!-- 가로 100픽셀, 세로 50픽셀로 1행1열의 크기를 설정합니다. -->
+			<td colspan="2">2</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="2">5</td>
+		</tr>
+
+		<tr>
+		<td>
+		<table border=1>
+			<tr>
+				<td>6</td>			
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>8</td>			
+				<td>9</td>
+			</tr>
+		</table>
+		</td>
+		</tr>	
+	</table>	
+	
+	
+	<p>2행 2열의 테이블을 만들고 1행은 사진, 2행은 글을 넣어 봅시다.</p>
+	<table border=1>
+		<tr>
+			<td bgcolor="blue"><img src="image/stevejobs.jpg" width="300" height="200"></td>
+			<td bgcolor="#ce7ec2"><img src="image/ElonMusk.jpg" width="200" height="200"></td>
+		</tr>
+	
+		<tr>
+			<td bgcolor="#0000ff">스티브잡스
+				<br>애플의 전 CEO입니다.
+				<br>자신이 세운것을 갈아엎음을 감수하는 혁명가이지만	
+				<br>마이크로 매니저라는 안 좋은 오해를 주는 사람이기도 합니다.		
+			</td>
+			<td bgcolor="#e3b5dc">앨론 머스크
+				<br>테슬라의 CEO입니다.
+				<br>테슬라는 인류의 미래를 위해 에너지를 아끼자,
+				<br>최악의 경우 화성으로 튀자 등의 비전을 갖고 행하는 회사입니다.
+			</td>		
+		</tr>
+	
+	
+	<br>
+	<br>연습예제 -내부에 중첩테이블을 작성하여 구조를 짜세요.---------------------------------------------------
+
+	<table border=1>
+		<tr>
+			<td colspan="5">1</td>
+		</tr>
+		<tr>
+			<td rowspan="4">2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td colspan="3">4</td>
+		</tr>
+		
+		<tr>
+			<td>5</td>
+			<td rowspan="2">
+				<table border=1 bgcolor=#ce7ec2>
+				<tr>
+					<td>7</td>
+					<td>8</td>			
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>11</td>			
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>14</td>			
+					<td>15</td>
+				</tr>			
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>6</td>
+		</tr>				
+
+	</table>
+	
+   ---여담으로 별도의 테이블을 활용않고 구성하려하면 머리 꽤나 아파집니다.---------------------------------------------------
+   
+	<table border=1>
+		<tr>
+			<td colspan="5">1</td>
+		</tr>
+		<tr>
+			<td rowspan="5">2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td colspan="3">4</td>
+		</tr>
+		<tr>
+			<td rowspan="1.5">5</td>
+			<td>7</td>
+			<td>8</td>			
+			<td>9</td>
+		</tr>
+		<tr>
+			<td rowspan="1.5">6</td>
+			<td>10</td>
+			<td>11</td>			
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>14</td>			
+			<td>15</td>
+		</tr>						
+	</table>
+
+
+
+	
+	
+</body>
+</html>
