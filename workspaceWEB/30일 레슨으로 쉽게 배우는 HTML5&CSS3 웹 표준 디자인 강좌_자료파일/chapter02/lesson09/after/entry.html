@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>우리 집 야옹이</title>
+<meta name="keywords" content="야옹이, 고양이 소개 고양이 자랑">
+<meta name="description" content="우리 집 아이돌, 고양이들을 소개하겠습니다! 귀여운 고양이 사진이 많이 게재되어 있습니다.">
+<link href="style.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+<div id="wrap">
+<h1>고양이 사진 투고 양식</h1>
+<p>필요한 사항을 기입한 후 투고 버튼을 눌러 주세요. </p>
+
+<form id="entryForm" action="#" method="post">
+<table class="entryForm">
+<tr>
+<th>고양이 이름：</th>
+<td><input type="text" name="cat-name"></td>
+</tr>
+<tr>
+<th>주소：</th>
+<td>
+<select name="pref">
+<option value="" selected>선택해 주세요.</option>
+<option value="홋카이도">홋카이도</option>
+<option value="도호쿠">도호쿠</option>
+<option value="간토고신에츠">간토고신에츠</option>
+<option value="도카이·호쿠리쿠">도카이·호쿠리쿠</option>
+<option value="긴키">긴키</option>
+<option value="주코쿠·시코쿠">주코쿠·시코쿠</option>
+<option value="규슈·오키나와">규슈·오키나와</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>성별：</th>
+<td>
+<input type="radio" name="sex" id="sex1" value="남자" checked>
+<label for="sex1">남자</label>
+<input type="radio" name="sex" id="sex2" value="여자">
+<label for="sex2">여자</label>
+</td>
+</tr>
+<tr>
+<th>좋아하는 것：</th>
+<td>
+<input type="checkbox" name="like1" id="like1" value="생선">
+<label for="like1">생선</label>
+<input type="checkbox" name="like2" id="like2" value="고기">
+<label for="like2">고기</label>
+<input type="checkbox" name="like3" id="like3" value="우유">
+<label for="like3">우유</label>
+<input type="checkbox" name="like4" id="like4" value="바삭바삭한 것">
+<label for="like4">바삭바삭한 것</label>
+<input type="checkbox" name="like5" id="like5" value="고양이 통조림">
+<label for="like5">고양이 통조림</label>
+<input type="checkbox" name="like6" id="like6" value="단것">
+<label for="like6">단것</label>
+</td>
+</tr>
+<tr>
+<th>사진：</th>
+<td><input type="file" name="photo"></td>
+</tr>
+<tr>
+<th>기르는 주인 이름：</th>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<th>메일 주소：</th>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<th>코멘트：</th>
+<td><textarea name="comment" rows="4" cols="40"></textarea></td>
+</tr>
+</table>
+
+<div class="btns">
+<input type="reset" value="취소" class="btn btn-clear">
+<input type="submit" value="투고" class="btn btn-send">
+</div>
+
+</form>
+
+<p>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</p>
+</div>
+</body>
+</html>

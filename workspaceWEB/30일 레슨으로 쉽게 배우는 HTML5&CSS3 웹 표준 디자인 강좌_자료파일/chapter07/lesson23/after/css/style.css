@@ -1,0 +1,131 @@
+/* 속성 선택자
+---------------------------*/
+
+/*〜로 시작된다*/
+li[class^="START"]{
+	border-color:#f00;
+}
+
+/*〜로 끝난다*/
+li[class$="END"]{
+	border-color:#f00;
+}
+
+/*〜를 포함한다*/
+li[class*="CNT"]{
+	border-color:#f00;
+}
+
+/* 연습 =========== */
+
+/*외부 사이트에 링크*/
+a[href^="http"]{
+	padding-right:20px;
+	background:url(../img/icon_blank.gif) right center no-repeat;	
+}
+
+/*PDF 파일에 링크*/
+a[href$=".pdf"]{
+	padding-left:20px;
+	background:url(../img/icon_pdf.gif)  no-repeat;	
+}
+
+/* 유사 클래스
+---------------------------*/
+
+/* 〜child계 =========== */
+/*마지막 자식 요소*/
+.child :last-child{
+	border-color:#f00;
+}
+
+/*세 번째 자식 요소*/
+.child :nth-child(3){
+	color:#f00;
+}
+
+/*뒤에서 세 번째 자식 요소*/
+.child :nth-last-child(3){
+	color:#00f;
+}
+
+/*짝수 번째 자식 요소*/
+.child :nth-child(even){
+	background-color:#ccc;
+}
+
+/*두 번째를 선두로 3개 건너뛴 자식 요소*/
+.child :nth-child(3n+2){
+	border:#000 3px solid;
+}
+
+/* 〜of-type계 =========== */
+/*맨 첫 요소*/
+.ofType :first-of-type{
+	border-color:#f00;
+}
+
+/*짝수 개째 자식 요소*/
+.ofType :nth-of-type(even){
+	border-color:#00f;
+}
+
+/*유일 요소*/
+.ofType :only-of-type{
+	color:#f00;
+}
+
+/* 연습 =========== */
+/*줄무늬 테이블*/
+.stripe tr:nth-child(even){
+	background-color:#eee;
+}
+
+/*마지막 1행만 빨간색 글자로*/
+.lastRed :last-of-type{
+	color:#f00;
+}
+
+/* 기타 유사 클래스
+---------------------------*/
+/*마지막 1행 이외의 모두를 선택*/
+.nots li:not(:last-child){
+	border-color:#f00;
+}
+
+/*링크처를 연다*/
+.target dd:target{
+	display:block;
+}
+
+/*유효한 선택지의 레이블 스타일*/
+.ui input:enabled+label{
+	cursor:pointer;
+}
+
+.ui input:enabled+label:hover{
+	color:#00c4ab;
+}
+
+/*무효한 선택지의 레이블 스타일*/
+.ui input:disabled+label{
+	color:#ccc;
+}
+
+/*체크된 선택지의 레이블 스타일*/
+.ui input:checked+label{
+	background:#cceebb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책 108페이지 직접 따라 만들가(191231 실시)</title>
+
+<style>
+  @import url(./css/book108page.css);
+</style>
+
+</head>
+
+<body>
+<form>
+<table>
+  <tr>
+    <td id="content">고양이 이름 : </td>
+    <td><input type="text"></td>
+  </tr>
+  
+  <tr>
+    <td id="content">주소</td>
+    <td><select name="address">
+    	  <option value="1">서울</option>
+    	  <option value="2">경기도</option>
+    	  <option value="3">강원도</option>
+    	  <option value="4">충청북도</option>
+    	  <option value="5">충청남도</option>
+    	</select>
+    </td>    
+  </tr>	
+  
+  <tr>
+    <td id="content">성별</td>
+    <td><input type="radio" name="gender" vlaue="man">남자
+        <input type="radio" name="gender" vlaue="woman">여자
+    </td>    
+  </tr>	  
+  <tr>
+    <td id="content">좋아하는 것 : </td>
+    <td><input type="checkbox" name="like" value="1">생선     
+        <input type="checkbox" name="like" value="2">고기     
+        <input type="checkbox" name="like" value="3">우유     
+        <input type="checkbox" name="like" value="4">바삭바삭한 것     
+        <input type="checkbox" name="like" value="4">고양이 통조림   
+        <input type="checkbox" name="like" value="4">단 것 
+    </td>    
+  </tr>	  
+  
+  <tr>
+    <td id="content">사진  : </td>
+    <td><input type="file" name="photo"></td>
+  </tr>
+  
+  <tr>
+    <td id="content">기르는 주인 이름 :</td>
+    <td><input type="text" name="master"></td>
+  </tr>
+ 
+   <tr>
+     <td id="content">메일 주소 : </td>
+    <td><input type="text" name="email"></td>
+   </tr>	 
+  
+   <tr>
+     <td id="content">코멘트 : </td>
+     <td><input type="text" name="comment"></td>
+   </tr>	 
+</table>
+
+<input type="reset" value="취소">
+<input type="submit" value="투고">
+
+</form>
+</body>
+</html>

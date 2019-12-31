@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*base*/
+*{
+		margin:0;
+		padding:0;
+}
+
+#wrap{
+		width:500px;
+		padding:10px;
+		margin:30px auto;
+		border:#000 2px solid;
+		background-color:#ccc;
+}
+
+p{
+	margin-bottom:10px;
+	background-color:#fff;
+}
+
+/*절대배치 콘텐츠*/
+#pos{
+	background:#f00;
+	padding:10px;
+	width:15px;
+		
+}
