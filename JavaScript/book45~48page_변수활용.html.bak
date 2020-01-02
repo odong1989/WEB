@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <script>
+ 	//변수 선언및 활용
+ 	//책 45페이지 ----------------------------
+   //변수 선언 : var 식별자명; 
+   var pi;
+	
+	//변수에 값을 할당.
+	pi = 3.14159265;
+
+
+	//(책 46페이지)--------------------------------
+	//변수의 선언과 초기화
+	var pi2 = 3.14159265;
+
+	//변수의 사용1 - 출력하기
+	alert("pi2 : "+pi);
+
+	//변수의 사용2 - 선언 및 초기화, 출력까지 
+	var radius = 10;
+	var pi3=3.14159265;
+	alert("2*pi3*radius :" +2*pi3*radius);
+
+
+	//책 47페이지-여러 변수를 한번에 선언하기  ----------------------------
+	var radius2, pi4;
+
+	radius2=10;
+	pi4 = 3.14159265;
+
+	alert("2*pi4*radius : " + 2*pi4*radius);
+
+
+	//여러 변수의 선언과 초기화
+	//변수 선언 및 초기화 
+	var radius3=10, pi5=3.14159265;
+	
+	//출력
+	alert("2*pi5*radius3 : "+2*pi5*radius3);
+
+
+ </script>
+ </head>
+ 
+ <body>
+ </body>
+</html>
