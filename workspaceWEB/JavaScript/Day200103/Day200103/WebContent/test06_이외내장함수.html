@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var code = "var a = 10;" ;	//코드를 문자열로 작성하여 넣음.
+	code += "alert(a);";		//문자열안의 코드를 실행하겠다는 목적.
+	
+	eval(code);					//eval, 문자열안의 코드를 실행하는 내장함수이지.
+	alert(a);
+	
+	//[?]eval를 왜 쓰나요?
+	//코딩테스트를 제공하는 사이트들이 사용자들이 입력하는 
+	//코딩(문자열)의 실행결과등을 확인 및 구현을 위해,
+	//또는 자체 테스트 목적으로 씁니다. 
+	//물론... 자주 쓰는 애는 아니지만..
+	
+	//isFinite는 무한대인지를 확인하는? 함수라고 한다. 확인점 해야할듯.
+	var i = 10 / 0 ;
+	console.log(i);
+	console.log(isFinite(10 / 0));
+	
+	console.log(NaN == NaN); 
+	//NaN(나도넘버)는 원래 비교할 수 없는 애예요. 
+	//여기선 억지로 비교 진행시키는 중.(#그러니 결국 false 뜸)
+	//NaN인지를 비교하고 싶다면 전용 함수인 isNaN()을 활용해야 합니다
+	
+	console.log(isNaN(NaN)); //java의 Str객체를 equals()를 통해 비교해야 정상비교되는 느낌이랄까요?
+	//비동기통신으로 정상작동을 자바스크립트로 확인시 활용하게 됩니다.
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//자바스크립트의 배열은 자바의arrayList와 더 유사한 모습을 보인다.
+// 자료형들이 달라도 배열의 구성이 가능하다는 점,
+// 배열의 칸 갯수를 선언하지 않는다는 점이 arrayList와 유사하기 때문.
+	var menu = ["떡볶이", "순대", "튀김"];
+	console.log(menu[0]);
+	
+	menu[menu.length -1] = "모듬 튀김";
+	console.log(menu[menu.length -1]);
+	
+	//특정요소 검색
+	console.log(menu.indexOf("순대"));		//있는 요소는 각자 있는 칸의 번호를 리턴.
+	console.log(menu.indexOf("떡볶이"));
+	console.log(menu.indexOf("안심스테이크"));//없는 요소는 -1 리턴.
+	
+	console.log("순대의 메뉴 번호 :" +menu.indexOf("순대") );
+	console.log("스테이크의 메뉴 번호 :" +menu.indexOf("스테이크") );
+
+	//김밥을 추가하고, 메뉴목록을 출력확인.
+	menu.push("김밥");//맨마지막에 김밥으로 추가.
+	console.log("메뉴 목록 추가 : "+menu)
+	//pop : 맨마지막의 요소를 제거할 시 사용.
+	menu.pop(); // 마지막 인덱스의 요소 제거. 김밥은 오자마자 제거됨;
+	console.log("메뉴 목록 제거: "+menu)
+	
+	menu.splice(2, 0, "라면"); // 특정 인덱스의 요소 추가
+		 	 //(인덱스 위치, 제거할 요소개수, 추가시 추가명)
+	console.log("메뉴 중간에 추가 : "+menu)
+		 	 
+	menu.splice(2, 1); // 특정 인덱스의 요소 제거
+			 //(인덱스위치, 제거할 요소개수)
+	console.log("메뉴 중간추가 제거 : "+menu)
+
+	
+	//배열을 만드는 제2의 방식
+	var arr = new Array(1, 2, 3);
+	arr.push(3.14);
+	arr.push(true);
+	arr.push(undefined);
+	arr.push(null);
+	console.log(arr);
+	
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

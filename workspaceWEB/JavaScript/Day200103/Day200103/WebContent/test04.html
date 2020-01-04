@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function say(){
+		alert("hello");
+		//반환할 값이 없다면 return; 이라고만 적거나 걍 안적으면 됩니다.
+	}
+	say();
+	
+	var say2 = function(){
+		alert("Hello, again")
+	}//이와같은 구조를 '익명함수'라고 부른다.
+	say2();
+	alert(say2); //say2에 대입된(=의 오른쪽) 내용들이 출력된다.
+				 //'ㅁ'는 깨져서 나오는 것이다.
+	
+	alert(say2());
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
