@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function func(){
+		console.log("3000밀리 초 이후에 실행될 함수입니다.");
+	}
+	
+	//1)setTimeout
+	setTimeout(func, 3000);
+	//콘솔에 3초가 지난 후에 "3000밀리 초 이후에 실행될 함수입니다." 문구가 출력됨을 확인할 수 있다.
+	//함수를 값처럼 전달한다는 점,
+	//1회성으로 1번만 실행되고 끝 이라는 점도 특징이다.
+	
+	//2)setInterval
+	var cnt = 5;
+	function func2(){
+		console.log("func2 :"+ cnt--);
+	}
+	
+	setInterval(func2,1000);
+	//1초마다 출력이 반복된다.
+	//중지하라는 명령(clearInterval)을 안주었을 경우 
+	//마이너스로 계속 카운트가 진행된다.
+	
+	
+	//3)setInterval - 종료기능(clearInterval 추가)
+	var cnt = 5;
+	function func3(){
+		console.log("func3 : "+cnt--);
+		if(cnt<0)
+		{ clearInterval(interval);
+		  console.log("func3 카운트 종료.");}
+	}
+	
+	var interval = setInterval(func3,1000);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

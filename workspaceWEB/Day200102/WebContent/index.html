@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 방법1. HTML문서에 <script>태그를 활용하여 문서내에 포함시킴&작성한다. -->
+<script type="text/javascript"> //<script> 라고만 써도 효과 동일합니다. 하지만 <script type="text/javascript">라는게 자바스크립트구나! 하고 보기좋죠
+//출력관련 함수
+//[1] arert() : 알림창 띄우고 값을 출력합니다.
+//[2] console.log() : 콘솔 창에 값을 출력합니다.
+
+
+//alert("Hello, World!");
+
+console.log("Hello, World console!");
+
+
+//변수선언
+var a=1;//1로 초기화 되는 시점에서 a는 int형 변수가 됩니다(이를 "동적 타이핑"이라고 부릅니다.) 파이썬 또한 동적타이핑에 해당합니다.
+console.log(a);
+console.log(typeof a);
+console.log(Infinity);//Infinity 뜻 : 무한대
+console.log(NaN);
+console.log(10 /0); //수학적으로는 무한대가 맞고 자바스크립트는 이를 지원한다(대부분의 언어는 에러처리로 퉁친다.)
+console.log(10 /-0);
+console.log(10 / 3);//자바의경우 3으로 끝내지만 자바스크립트는 알아서 갱신이 된다.
+console.log("\n");
+	
+var str1 = "Hello";
+var str2 = "월드";
+var str3 = str1+str2;
+console.log(str3);
+console.log(typeof str3);
+console.log('he says, "javascript is fun!"');//", '를 적절한 용도로 사용하여야 한다. 핵심은 문장의 영역을 제대로 읽고 포함하느냐 여부인 것.
+//console.log("he says, "javascript is fun!""); //맨뒤의 ""이 바로 겹쳐서 문장을 끝나는 부분이 오작동되었다.
+console.log("'javaScript' is important for us.");
+//혹은 이스케이프 문자를 활용하여 문자영역 읽기 오류를 피하기도 한다.
+console.log("She says, \" I'm so \'angry.\'\" ");
+
+console.log(1>0);
+if(1){//boolean자료형이 아닌데도 boolean처럼 작동합니다.(0은 FALSE, 이외의 값들은 true으로 취굽합니다.)
+	console.log("1 is bigger than 0 ");
+}
+if("ㅋㅋㅋ"){//문자열도 boolean처럼 작동합니다.(빈문자열은 FALSE, 이외의 문자열값들은 true으로 취굽합니다.)
+	console.log("2 is bigger than 0 ");
+}
+
+if("hello"){
+	console.log("this is true");
+}
+else{
+	console.log("this is false");
+}
+
+//undefined 자료형
+//변수에 값이 아직 할당되지 않았음을 나타내는 자료형
+//변수를 정의만 하고 초기화를 실시 않았을 때 보여지는 자료형이다.
+
+var b;
+console.log(typeof b);
+console.log(typeof x); //선언되지 않은 변수도 undefined로 나온다.
+
+//입력관련 함수
+var c = prompt("write anything");
+console.log("you write : " + c);
+console.log(typeof c);//prompt으로 입력받으면 무조건 숫자도 string형입니다.(나중에 형변환 해줘야 해요.)
+
+var d = confirm("choice one");//2개의 버튼(확인/취소) 둘 중한개를 클릭해야 합니다.
+console.log("you choice : " + d);//true, false로 리턴됩니다.
+console.log(typeof d);//
+
+//어떤 브라우저든 개발자모드면 콘솔에서 위의 출력문을 볼 수 있습니다(크롬이 제일 편하니 크롬으로 하는것일 뿐)
+//웹브라우저-개발자모드의 콘솔은 에러사항이 출력되니 디버깅에 좋습니다.
+//개발자모드의 ELEMENT - 웹의 CSS구성확인 및 임시임의로 변경 가능
+//event liseners에서도 자바스크립트의 에러사항등을 알 수 있습니다
+//NETWORK - 데이터의 전송사항등을 알 수 있습니다.
+//우선은 콘솔창부터 알아가도록 하죠
+
+//crtl+ F11을 누르면 서버관련 설정을 할 수 있습니다.
+//1개의 프로젝트만 넣는 이유는 서버가 여러개를 하면 충돌하는 경우가 발생하기에 자바스크립트만 실시하는 프로젝트만 서버에 넣은 것이죠.
+//지금 서버가 에러가 났는데 에러가 수정이 안되어서 서버의 실행이 안되는 상태입니다.
+
+/* 자바스크립트는 자바와는 직접적인 관련은 없습니다.
+   하지만 자바와 문법, 키워드(예약어)들이 비슷하다는 점을 갖고 있습니다.
+ [특히 문법의 기초부분(변수명 정의등)은 자바의 복붙급일 정도죠]
+   
+ HTML5처럼 사용하지 않는 것을 권고하는 키워드 목록이 있는데
+ 이것들은 자바에서 사용하는 키워드들이나, 등재될 예정인 언어들이니
+ 함수/변수명으로 쓰지 말라는 것이죠.
+ 
+ */
+ 
+
+</script>
+
+<!-- css -->
+<style type="text/css"></style>
+
+</head>
+<body>
+
+</body>
+</html>

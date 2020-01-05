@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/*-----------------------------
+
+　리셋 CSS + 사이트 공통 설정
+
+------------------------------*/
+
+/* 모든 요소에 대한 여백 초깃값 설정 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, main, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin:0;
+	padding:0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* 기본 문자 설정 */
+body{
+	color:#666666;
+	font-family:sans-serif;
+	font-size:87.5%;
+	line-height:1.5;
+}
+
+/* 목록 마커 비표시 */
+ul,ol{
+	list-style-type:none;
+}
+
+/* 테이블 셀의 테두리 설정 */ 
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+/* 이미지 및 양식 부분의 상하 위치를 텍스트 중간에 */
+img, input, select, textarea { 
+	vertical-align: middle;
+}
+
+
+/* 기본 링크 색 설정 */
+a{
+	color:#00C4AB;
+}
+
+a:hover{
+	color:#CCE739;
+}
+
+/* 이미지 링크 설정 */
+a img{
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
+a:hover img{
+	opacity:0.7;
+	filter: alpha(opacity=75);
+}
+
+
+/*	clearfix
+------------------------------*/
+.clearfix:after {/*for modern browser*/
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.clearfix { *zoom:1; } /*for IE6,IE7*/
+
+
+/*--------------------------
+
+　레이아웃
+
+---------------------------*/
+.inner{
+	width: 940px;
+	margin: 0 auto;
+	
+	
+}
+
+/* 헤더
+---------------------------*/
+body{
+	border-top: #cce739 5px solid;
+	
+}
+
+#header{
+	padding: 10px 0;
+	border-top: #00c4ab 5px solid;
+	background: url(../img/bg_header.png) #e6e6e6;
+}
+
+#logo{
+	
+	
+}
+#catch{
+	
+}
+
+#info {
+	
+}
+
+#info dt{
+	clear: left;
+	float: left;
+	width: 6em;
+}
+
+/* 푸터
+---------------------------*/
+#footer{
+	padding: 10px 0;
+	background: #e6e6e6;
+}
+
+#flink{
+
+}
+#copyright{
+	
+}
+	
+/* 글로벌 네비게이션
+---------------------------*/
+#gnav{
+	background: #00c4ab;
+}
+
+#gnav a{
+color: #fff;
+}
+
+
+/* 콘텐츠 영역
+---------------------------*/
+
+#contents{
+}
+
+/* 빵 부스러기
+---------------------------*/
+#breadcrumbs{
+	
+}
+
+/* 메인 콘텐츠
+---------------------------*/
+
+#main{
+}
+#flink{
+	
+}
+
+#copyright{
+	
+}
+
+/* 사이드 바 
+---------------------------*/
+
+#side{
+
+}
+
+/* 페이지 상단
+---------------------------*/
+#pagetop{
+	
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>[ CSS 사용하기]</title>
+<!-- css외부링크 선언방법1 -->
+<!-- 
+<link href="css/excss191231.css" rel="stylesheet">
+-->
+
+<style>
+/* css외부링크 선언방법2 */
+/*excss191231.css 파일로 css내용 이전.[191231에 실시함.]*/
+@import url(./css/excss191231.css);
+</style>
+
+</head>
+<body>
+	<h1>[CSS 사용하기]</h1>
+	<h2>내부정의 </h2>
+
+	<p>p태그를 사용한 문자열</p>
+	<p>p태그를 사용한 문자열</p>	
+	<p id="text1">p태그를 사용한 문자열 id="text1"</p>
+	<p class="bluetext">p태그를 사용한 문자열</p>
+	<p class="bluetext">p태그를 사용한 문자열</p>
+	
+	
+	<p> <a href="form191227.html"> p 태그를 사용한 문자열</a> </p>
+	<p><img src="image/iconfinder_List_1031512.png"></p>
+
+	<table>
+		<tr id="hover">
+			<td>표 안의 문자열</td>
+			<td>표 안의 문자열</td>
+		</tr>	
+		<tr id="mytable">
+			<td>표 안의 문자열</td>
+			<td>표 안의 문자열</td>
+		</tr>		
+	</table>
+	
+	
+	<!-- 191231 추가(html쪽)-->
+	
+	<div id="div1">
+		<p>div태그 내의 p태그입니다 (자식)<span>여기는 div내의 스판(손자)</span>div태그 내의 p태그입니다 (자식)</p>
+	</div>
+	
+	<form>
+		이름		<input type="text"><Br>
+		id		<input type="text"><Br>
+		비밀번호	<input type="password"><br>
+		<input type="submit" value="전송"><br>	
+	</form>
+	<p> <a href="./form191227.html"> p 태그를 사용한 문자열</a> </p>
+	
+	<!-- 191231 추가(html쪽) END-->
+		
+	<br>아직은 어떠한 서식도 설정을 않은 상태입니다.
+	<br>그래서 css를 사용합니다(책의 64페이지 참고)
+
+	<br>css의 사용방법은 아래와 같이 나눕니다.(책65참고)
+	<br>(1)인라인 style : 어디까지나 테스트 용일뿐.
+	<br>	- 가장 순위가 높기 때문에 디자인요소들이 먹혀들지 않습니다.
+	<br>	- 의도한 대로 디자인이 못 나오니까 안쓰는 것이죠.
+		
+	<br>(2)내부참조 : 각 html문서의 head안에 적기. 관리가 힘든게 단점.
+	
+	<br>(3)외부참조 : *.css파일에 정의를 해두어 디자인을 정의해두어 
+	<br>			여러개의 페이지에 적용하는 것.(책66페이지 참고)
+	<br>			자바의 상속,오버라이딩처럼 속성들이 덮어씌워진다.
+	<br>			css파일에서 기본속성으로 글씨색을 보라색으로 설정해도
+	<br>			일정 페이지마다 필요에따라 보라색->노랑으로 변경등이 가능하다.
+			
+			
+	<br>책68페이지 - 현재는 스마트폰등 모바일기기까지 하여 필요에 따라 확대를 해줘야 할 수 도 있습니다.
+			
+				
+	<br>191230 - 1교시는 책 64~68페이지 진행.			
+	<br>https://www.w3schools.com/cssref/default.asp
+</body>
+</html>

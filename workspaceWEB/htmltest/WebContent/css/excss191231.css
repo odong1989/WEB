@@ -1,0 +1,110 @@
+/*@charset "EUC-KRd";*/
+
+	h1 {
+		color : red; 		/*h1태그를 쓰는 모든 폰트들은 빨강색으로 바꾸고[ {}괄호 내를 속성이라고 합니다.]*/
+		background:yellow;	/*배경색 설정*/
+		border-width:1px;	/*테두리 굻기*/ 
+		border-color:blue;	/*테두리 색상*/
+		border-style:solid; /*테두리 모양*/
+		width : 500px;		/*가로 크기*/
+		height : 20px;		/*세로 크기*/
+		font-size:25px;		/*글자 크기 - 다양한 해상도의 디스플레이 생각하면*/
+		font-family:궁서체;	/*글꼴 - 사용자의 컴퓨터가 글꼴없으면 못씀.그래서 웹폰트를 준비해두고 다운로드 시켜서 보도록 하기도 함. */
+		font-weight:bold;	/*글자굵기*/
+		text-align:center;	/*글자정렬*/
+		margin:10px;		/*외부여백*/
+		padding:10px;		/*내부여백*/
+	} 	
+	
+	/*<center>는 5버전에서 더이상 지원않는 것으로 정해짐.*/
+	
+	/*애니메이션 효과(시계방향으로 회전)*/
+	h2{
+	 width: 100px;
+	  height: 100px;
+	  background-color: red;
+	  position: relative;
+	  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	  animation-name: example;
+	  animation-duration: 4s;
+	}
+	@keyframes example {
+	  0%   {background-color:red; left:0px; top:0px;}
+	  25%  {background-color:yellow; left:200px; top:0px;}
+	  50%  {background-color:blue; left:200px; top:200px;}
+	  75%  {background-color:green; left:0px; top:200px;}
+	  100% {background-color:red; left:0px; top:0px;}
+	}
+	/*https://www.w3schools.com/css/css3_animations.asp*/
+	
+	
+	
+	
+	p  {
+		color : green;		 /* p태그들의 폰트들은 녹색으로 바꾼다. */
+		text-align : center;
+		color : #ff6699;	 /*녹색에서 연한 보랑으로 속성이 덮임.*/
+	}
+	#text1{color : #206020;}     /*<p id="text1">*/
+	.bluetext{color : #33ffff;}	 /*<p class="bluetext">*/
+	/*p.bluetext{color : #33ffff;} 라고 써도 동일한 효과입니다.*/
+	
+	/*h1, p를 선택자라고 부릅니다.(지금은 엄청 간단하게 쓴것입니다.)*/
+	/*id는 주민번호처럼 유일한 존재여야 합니다.*/
+	
+	/*name : 서버로 넘길때 사용. 개발자들이 많이 씀.*/
+	/*class : 웹사이트의 디자인시 사용. 디자이너들이 많이 씀*/
+	/* id : 자바스크립트 활용시 많이 씀. 웹퍼블리셔가 많이 씀*/
+	
+	/*그래서 개발자-디자이너-퍼블리셔간에 이름이 출동하여 실행이 안되는 에러아닌 에러가 많다고*/	
+
+	table {
+		border:1px solid green;
+	    width: 100%;
+	}
+	tr#hover {background-color: #f5f5f5;}
+	
+	
+	td {
+	  height: 50px;
+	}
+
+	#mytable td{
+	  background:yellow;		
+	}
+
+	/*----------------191231추가(css부분)--------------------------*/
+	/*
+	<div id="div1">
+		<p>div태그 내의 p태그입니다 (자식)<span>여기는 div내의 스판(손자)</span>div태그 내의 p태그입니다 (자식)</p>
+	</div>
+	*/
+	div > p {color : black;} /*자식 선택*/
+	div span {color : red;}	 /*자손 선택*/
+	
+	
+	/*속성선택자 활용한 입력  책83페이지 참고*/
+	input[type="text"]{		/*Form의 input을 속성선택자를 활용하여 텍스트 유형을 갖는 얘들에게 배경색을 부여하였다.*/
+		background :#468284;
+	}
+	
+	input[type="password"]{		/*form의 input을 속성선택자를 활용2*/
+		border : 1px solid black; /*테두리 두꼐1,배경 빨강*/
+		background : red;
+		color : white;
+	}
+
+	/*191231 - 2교시 가상클래스를 활용한 a태그 수정 */
+	a:link  {color:green; text-decoration: black;}
+	a:visitd{color:black; text-decoration: none;}
+	a:hover {color:red;   text-decoration: none; cursor:crosshair; }
+	/*cursor는 ctrl+space하면 자동완성으로 추천을 볼 수있다*/
+	a:active{color:blue;   background:yellow; text-decoration: underline;}
+	/*사용자가 클릭하는 순간의 모션이다. 좌클릭을 떼면 바로 사라져서 잘 못봄.*/
+	
+	a:focus{color:white;}
+	/*클릭한 후의 행보이다. 위의 경우 클릭된 후 글씨가 하얀색으로 바뀌어 있게 된다.*/
+	
+	/*191231 - 1교시 책 82~83페이지의 <선택자 목록>, <속성선택자> 수업진행.*/
+	/*----------------191231추가(css부분) END--------------------------*/	

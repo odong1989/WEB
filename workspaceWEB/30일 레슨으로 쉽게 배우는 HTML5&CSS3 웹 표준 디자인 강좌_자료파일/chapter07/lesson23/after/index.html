@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>샘플：CSS3 선택자</title>
+<link href="css/base.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+</head>
+<body>
+<h1>CSS3 Selector</h1>
+
+<section  class="category attr">
+<h2>Attribute Selector［속성 선택자］</h2>
+
+<section>
+<h3>class 속성이 <em>「〜로 시작된다」</em>요소를 선택</h3>
+<ul class="sample">
+<li class="STARTxx">class="STARTxx"</li>
+<li class="xxSTART">class="xxSTART"</li>
+<li class="xxSTARTxx">class="xxSTARTxx"</li>
+</ul>
+</section>
+
+<section>
+<h3>class 속성이 <em>「〜로 끝난다」</em>요소를 선택</h3>
+<ul class="sample">
+<li class="ENDxx">class="ENDxx"</li>
+<li class="xxEND">class="xxEND"</li>
+<li class="xxENDxx">class="xxENDxx"</li>
+</ul>
+</section>
+
+<section>
+<h3>class 속성이 <em>「〜를 포함한다」</em>요소를 선택</h3>
+<ul class="sample">
+<li class="CNTxx">class="CNTxx"</li>
+<li class="xxCNT">class="xxCNT"</li>
+<li class="xxCNTxx">class="xxCNTxx"</li>
+</ul>
+</section>
+
+<section>
+<h3 class="practice">링크 종류별로 아이콘을 표시</h3>
+<ul class="sample">
+<li><a href="index.html">일반 링크</a></li>
+<li><a href="http://www.google.com/">외부 사이트로의 링크</a></li>
+<li><a href="img/file01.pdf">PDF 파일 링크</a></li>
+</ul>
+</section>
+</section>
+
+<section class="category pseudo">
+<h2>Pseudo Class Selector［유사 클래스］</h2>
+
+<section>
+<h3>모든 자식 요소를 카운트하는<em>「〜child」</em>계 유사 클래스</h3>
+<ul class="sample child">
+<li>child1 (first)</li>
+<li>child2</li>
+<li>child3</li>
+<li>child4</li>
+<li>child5</li>
+<li>child6</li>
+<li>child7 (last)</li>
+</ul>
+</section>
+
+<section>
+<h3>같은 요소만 카운트하는<em>「〜of-type」</em>계 유사 클래스</h3>
+<div class="sample ofType">
+<h4>heading1 (h4)</h4>
+<p>paragraph1</p>
+<h4>heading2 (h4)</h4>
+<p>paragraph2</p>
+<h5>heading3 (h5)</h5>
+<p>paragraph3</p>
+</div>
+</section>
+
+<section>
+<h3 class="practice no1">줄무늬 테이블을 만든다</h3>
+<table class="stripe">
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+</table>
+<h3 class="practice no2">마지막 1행만 빨간색 글자로 해서 강조한다</h3>
+<dl class="lastRed">
+<dt>Item1</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item2</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item3</dt>
+<dd>XXXXXXXXXX</dd>
+</dl>
+</section>
+</section>
+
+<section  class="category other">
+<h2>Other Pseudo Class Selector［기타 유사 클래스］</h2>
+
+<section>
+<h3>마지막 1행 이외의 모두를 선택</h3>
+<ul class="sample nots">
+<li>list1</li>
+<li>list2</li>
+<li>list3</li>
+<li>list4</li>
+<li>list5</li>
+</ul>
+</section>
+
+<section>
+<h3>링크처를 연다</h3>
+<dl class="sample target">
+<dt><a href="#panel1">MENU1</a></dt>
+<dd id="panel1">panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1</dd>
+<dt><a href="#panel2">MENU2</a></dt>
+<dd id="panel2">panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2</dd>
+<dt><a href="#panel3">MENU3</a></dt>
+<dd id="panel3">panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3</dd>
+</dl>
+</section>
+
+<section>
+<h3>폼의 상태에 맞춰 레이블의 스타일을 바꾼다</h3>
+<form class="ui">
+<input type="radio" name="radio" id="radio1" value="1">
+<label for="radio1">선택지１</label>
+<input type="radio" name="radio" id="radio2" value="2">
+<label for="radio2">선택지２</label>
+<input type="radio" name="radio" id="radio3" value="3" disabled>
+<label for="radio3">선택지３</label>
+</form>
+</section>
+</section>
+
+</body>
+</html>

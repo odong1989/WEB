@@ -1,0 +1,4 @@
+@charset "UTF-8";
+table,tr,td {border:1px solid red;}
+td.content{color:red;}
+input [type="reset"] {height:200px;}
