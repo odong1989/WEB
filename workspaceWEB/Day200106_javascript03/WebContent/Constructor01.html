@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+//생성자 예제
+function Person(name, age){
+	this.name = name;
+	this.age = age;
+	this.introduce = function(){
+		console.log("hello"+this.name+".");
+	}
+}
+
+var hong = new Person("홍길동", 30);
+var jeon = new Person("전우치", 25);
+
+hong.introduce();
+jeon.introduce();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//String 객체 예제
+	var str = "JavaScript is Fun"
+
+	console.log(str.indexOf("i"));//맨 처음을 0으로 카운트 시작한다.
+	console.log(str.lastIndexOf("is"));//is의 i좌표를 출력한다.
+	
+	console.log(str.replace("Fun", "interesting"));
+	console.log(str);//replace는 원본의 변경을 실시하지 않는다.
+	
+	//substring 부분문자열 반환
+	console.log(str.substring(0,4));//0부터 3번까지의 글자들을 출력한다.(마지막 4번은 출력않는다. 참 이상한 문법이다..)
+
+	//split
+	var str2 = "JavaScript/is/Fun"
+	console.log(str2.split("/"));
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

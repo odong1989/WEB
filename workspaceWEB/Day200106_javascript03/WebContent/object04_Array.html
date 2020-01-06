@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var arr  = [1, 36, 95, 120];
+	var arr2 = [191, 87, 361];
+	
+	console.log(arr.concat(arr2));
+	console.log(arr);//원본들은 영향을 받지 않습니다.
+	console.log(arr2);//원본배열은 영향 안 받음.
+	
+	//reverse(배열의 순서 뒤집기)
+	arr.reverse();
+	console.log(arr);//reverse는 원본의 순서를 바꿔버립니다.(=원본영향받음.)
+	
+	arr.sort();
+	console.log(arr);//sort는 원본의 순서를 바꿔버립니다.(=원본영향받음.)
+	//[주의]문자열 오름차순이기에 숫자값의 크기에 따른 오름차순이 아닙니다.
+	
+	arr.sort(function(left,right) {
+		return left - right;
+	});//숫자에 대한 오름차순 정렬방식 메소드입니다.
+	console.log(arr);//sort는 원본의 순서를 바꿔버립니다.(=원본영향받음.)
+	
+	arr.sort(function(left,right) {
+		return right - left;
+	});//숫자에 대한 오름차순 정렬방식 메소드입니다.
+	console.log(arr);//sort는 원본의 순서를 바꿔버립니다.(=원본영향받음.)
+	
+	//생성자 예제
+	function Person(name, age){
+		this.name = name;
+		this.age = age;
+		this.introduce = function(){
+			console.log("hello"+this.name+".");
+		}
+	}
+
+	var hong = new Person("홍길동", 30);
+	var jeon = new Person("전우치", 25);
+	var chea = new Person("채유리", 42);
+	
+	hong.introduce();
+	jeon.introduce();
+	
+	var arrStr =[jeon,chea,hong];
+	console.log(arrStr);
+	
+	
+	arrStr.sort(function(left, right){
+		return right.age - left.age 
+	});//나이를 기준으로 하여 정렬.
+	console.log(arrStr);
+	
+</script>
+<body>
+
+</body>
+</html>

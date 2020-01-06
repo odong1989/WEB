@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//객체 PERSON을 만든다.
+	var person ={
+		//(1)속성 설정.
+		name : "홍길동",
+		age  : 30,
+		
+		//(2)메소드function() 설정
+		//메서드 : 
+		introduce: function(){
+			console.log("안녕하세요"+this.name+"입니다.");			
+		}		
+	};
+	
+
+	console.log(person); //객체 자체를 출력(객체명.속성명)
+	person.introduce();	 // 객체명.메소드
+	
+	person.age +=1;
+	console.log(person["age"])	//객체정["속성명"]
+	// 객체명.속성명 과 같은 결과를 나오지만 객체명.속성명이 더 많이 쓰인다.
+
+	
+	//중간에 신규속성 추가
+	person.marriage= true; //marriage속성이 처음부터 있었던 것처럼 객체명.속성명 식으로 한다.
+	
+	
+	//속성제거
+	delete person.age;
+	
+	
+	//for문 활용하여 모든 속성들을 접근한다.
+	console.log("for문 통해 모든 속성에 접근하는 장면 출력");
+	for (var key in person){	//person객체의 속성들을 1개씩 읽는데 이를 key라는 이름으로 읽는다.
+		console.log(key+" " +person[key]);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
