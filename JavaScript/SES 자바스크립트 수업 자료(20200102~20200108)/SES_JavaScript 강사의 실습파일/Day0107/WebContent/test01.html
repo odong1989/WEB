@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert("Hello, World!");
+	window.alert("Hi, SWDO!");
+	
+	console.log("innerWidth: " + innerWidth + ", innerHeight: " + innerHeight);
+	console.log("outerWidth: " + outerWidth + ", outerHeight: " + outerHeight);
+	
+	var newWindow = open("", "", "width=300, height=200, fullscreen=yes");
+	var newWidth = (screen.width - newWindow.outerWidth) / 2;
+	var newHeight = (screen.height - newWindow.outerHeight) / 2;
+	newWindow.moveTo(newWidth, newHeight);
+	
+	setTimeout(function() {
+		console.log("newWindow-innerWidth: " + newWindow.window.innerWidth
+				+ ", newWindow-innerHight: " + newWindow.window.innerHeight);
+		/* newWindow.close(); */
+		newWindow.resizeBy(400, 300);
+		newWidth = (screen.width - newWindow.outerWidth) / 2;
+		newHeight = (screen.height - newWindow.outerHeight) / 2;
+		newWindow.moveTo(newWidth, newHeight);
+	}, 3000);
+	
+	var str = "";
+	var cnt = 0;
+	for (var key in window) {
+		str += cnt++ + ": " + key + "\n";
+	}
+	/* console.log(str); */
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	//이벤트를 걸어주는 방식 :
+	   window.onload    = function(){ 	
+			//|<-----이벤트를 걸어줄 대상----------->|<---------------------------실시할 이벤트---------------------------->|	
+			document.getElementById("btn").onclick = function() { alert("id가 btn인 버튼의 액션 설정이 실행되었습니다."); };
+		};
+									
+									
+
+</script>
+</head>
+<body>
+	<input id="btn" type="button" value="클릭하세요!">
+</body>
+</html>

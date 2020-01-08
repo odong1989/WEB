@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* window.onload = function() {
+		document.getElementById("login").onsubmit = function() {
+			var userid = document.getElementById("userid").value;
+			
+			if (userid.length < 3 || userid.length > 10) {
+				alert("ID는 3글자 이상, 10글자 이하로 작성해주세요.");
+				return false;
+			}
+			
+			var userpw = document.getElementById("userpw").value;
+			
+			if (userpw.length < 3 || userpw.length > 10) {
+				alert("PW는 3글자 이상, 10글자 이하로 작성해주세요.");
+				return false;
+			}
+			
+			alert("입력 완료!");
+			return true;
+		}
+	} */
+	function infoCheck() {
+		var userid = document.getElementById("userid").value;
+		
+		if (userid.length < 3 || userid.length > 10) {
+			alert("ID는 3글자 이상, 10글자 이하로 작성해주세요.");
+			return false;
+		}
+		
+		var userpw = document.getElementById("userpw").value;
+		
+		if (userpw.length < 3 || userpw.length > 10) {
+			alert("PW는 3글자 이상, 10글자 이하로 작성해주세요.");
+			return false;
+		}
+		
+		alert("입력 완료!");
+		return true;
+	}
+</script>
+</head>
+<body>
+	<form id="login" action="test03.html" onsubmit="return infoCheck();">
+		<ul>
+			<li>
+				ID :
+				<input id="userid" type="text" name="userid">
+			</li>
+			<li>
+				PW :
+				<input id="userpw" type="password" name="userpw">
+			</li>
+		</ul>
+		<input type="submit" value="전송하기">
+	</form>
+</body>
+</html>
+
+
+

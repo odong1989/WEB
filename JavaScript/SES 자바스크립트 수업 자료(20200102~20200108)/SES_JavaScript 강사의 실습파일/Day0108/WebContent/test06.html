@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var txt2 = document.getElementById("txt2");
+		var txt = window.opener.document.getElementById("txt");
+		
+		txt2.value = txt.value;
+		
+		document.getElementById("btn2").onclick = function() {
+			txt2 = document.getElementById("txt2");
+			
+			txt.value = txt2.value;
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>test06.html</h1>
+	<textarea id="txt2"></textarea>
+	<input id="btn2" type="button" value="재전송하기">
+</body>
+</html>

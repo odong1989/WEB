@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var arr = [1, 36, 94, 128];
+	var arr2 = [92, 87, 361];
+	
+	console.log(arr.concat(arr2));
+	console.log(arr);
+	
+	arr.reverse();
+	console.log(arr);
+	
+	arr.sort();
+	console.log(arr);
+	
+	arr.sort(function(left, right) {
+		return left - right;
+	});
+	console.log(arr);
+	
+	arr.sort(function(left, right) {
+		return right - left;
+	});
+	console.log(arr);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

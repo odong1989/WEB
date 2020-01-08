@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		setTimeout(function() {
+			var img = document.getElementsByTagName("img")[0]
+			img.setAttribute("src", "https://media-cdn.tripadvisor.com/media/photo-s/14/7d/2a/cf/img-20180906-181850-01.jpg");
+			
+			var header = document.getElementById("header");
+			header.innerHTML = "<b>피자의 종류</b>";
+			
+			var ul = document.querySelector("ul[data-source='menu']")
+			/* console.log(ul); */
+			var tag = "";
+			tag += "<li>고르곤졸라 피자</li>";
+			tag += "<li>콤비네이션 피자</li>";
+			tag += "<li>불고기 피자</li>";
+			ul.innerHTML = tag;
+		}, 5000);
+	}
+</script>
+</head>
+<body>
+	<img src="https://149366112.v2.pressablecdn.com/wp-content/uploads/2019/09/double-chocolate-chip-cookie.jpg">
+	
+	<h1 id="header">쿠키의 종류</h1>
+	<ul data-source="menu">
+		<li>치즈 쿠키</li>
+		<li>초코칩 쿠키</li>
+		<li>마카다미아 쿠키</li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

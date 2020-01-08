@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var today = new Date();
+	console.log(today);
+	
+	var someday = new Date(1999, 3, 20, 16, 42, 19);
+	console.log(someday);
+	
+	var dateArr = ["일", "월", "화", "수", "목", "금", "토"];
+	var dateStr = "";
+	dateStr += today.getFullYear() + "년 ";
+	dateStr += (today.getMonth() + 1) + "월 ";
+	dateStr += today.getDate() + "일은 ";
+	dateStr += dateArr[today.getDay()] + "요일입니다."
+	console.log(dateStr);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+

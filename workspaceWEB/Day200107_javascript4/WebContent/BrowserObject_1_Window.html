@@ -57,8 +57,25 @@
 	var newWidth   = (screen.width - newWindow.outerWidth) / 2;
 	var newHeight  = (screen.height - newWindow.outerHeight) / 2;
 	newWindow.moveTo(newWidth, newHeight); 
+	
+	
+	setTimeout(function){
+		 console.log("newWindow-innerWidth: " + newWindow.window.innerWidth
+					+ ", newWindow-innerHight: " + newWindow.window.innerHeight); 
+		//newWindow.close();
+		newWindow.resizeBy(300,300);
+		newWidth=(screen.width - newWidth.outerWidth) / 2;		 //가로 정중앙에 배치하도록 설정.
+		newHeight  = (screen.height - newWindow.outerHeight) / 2;//세로 정중앙에 배치되도록 설정.	
+	}
 //새창을 바로 엽니다. 오른쪽의 가로,세로 값에 따라 엽니다.
 //""는 새창으로 연다는 줄임명령어와 같습니다.
+
+//거의 window 객체와 스크린객체로 설명을 대부분 다한셈.
+//Location객체 속성 4가지(ppt참고)는 잘알아두도록합시다.
+
+
+
+
 </script>
 </head>
 <body>

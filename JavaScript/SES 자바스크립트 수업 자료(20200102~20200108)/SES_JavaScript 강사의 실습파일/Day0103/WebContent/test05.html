@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* function func() {
+		console.log("3000 밀리 초 이후에 실행될 함수입니다.");
+	}
+	
+	setTimeout(func, 3000); */
+	
+	var cnt = 5;
+	
+	function func() {
+		console.log(cnt--);
+		if (cnt < 0) {
+			clearInterval(interval);
+		}
+	}
+	
+	// var interval = setInterval(func, 1000);
+	var interval = setInterval(function() {
+		console.log(cnt--);
+		if (cnt < 0) {
+			clearInterval(interval);
+		}
+	}, 1000);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

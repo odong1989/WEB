@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var menu = ["떡볶이", "순대", "튀김"];
+	console.log("메뉴 목록: " + menu);
+	
+	console.log("0번 메뉴: " + menu[0]);
+	menu[menu.length - 1] = "모둠 튀김";
+	console.log("마지막 메뉴: " + menu[menu.length - 1]);
+	
+	console.log("순대의 메뉴 번호: " + menu.indexOf("순대"));
+	console.log("스테이크의 메뉴 번호: " + menu.indexOf("스테이크"));
+	
+	menu.push("김밥");
+	console.log("마지막 메뉴 추가: " + menu);
+	
+	menu.pop();
+	console.log("마지막 메뉴 제거: " + menu);
+	
+	menu.splice(2, 0, "라면");
+	console.log("중간 메뉴 추가: " + menu);
+	
+	menu.splice(2, 1);
+	console.log("중간 메뉴 제거: " + menu);
+	console.log("\n");
+	
+	var arr = new Array(1, 2, 3);
+	arr.push(3.14);
+	arr.push("hello");
+	arr.push(true);
+	arr.push(undefined);
+	arr.push(null);
+	console.log(arr);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

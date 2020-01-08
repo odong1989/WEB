@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var person = {
+		  name: "홍길동"
+		, age: 30
+		, introduce: function() {
+			console.log("안녕하세요, " + this.name + "입니다.");
+		}
+	};
+	
+	console.log(person);
+	person.introduce();
+	
+	person.age += 1;
+	console.log(person["age"]);
+	
+	person.marriage = true;
+	
+	delete person.age;
+	
+	for (var key in person) {
+		console.log(key + ": " + person[key]);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

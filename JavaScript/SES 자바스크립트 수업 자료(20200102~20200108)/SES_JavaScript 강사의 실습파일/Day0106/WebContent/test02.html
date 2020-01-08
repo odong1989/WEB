@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Person(name, age) {
+		this.name = name;
+		this.age = age;
+		this.introduce = function() {
+			console.log("안녕하세요, " + this.name + "입니다.");
+		}
+	}
+	
+	var hong = new Person("홍길동", 30);
+	var jeon = new Person("전우치", 25);
+	
+	hong.introduce();
+	jeon.introduce();
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		setTimeout(function() {
+			var  img= document.getElementsByTagName("img")[0]
+			img.setAttribute("src","http://postfiles7.naver.net/20140427_86/storydesign7_1398600192171IDQUK_JPEG/2014-04-27_16%3B32%3B40.JPEG?type=w1");
+	
+			var header = document.getElementById("header");
+			header.innerHTML = "<b>3초후 h1태그의 id가 header인 h1태크의 내용이 바뀝니다.</b>";
+
+			var ul = document.querySelector("ul[data-source='menu']")	
+			
+			var tag="";
+			tag+="<li>111</li>";
+			tag+="<li>222</li>";
+			ul.innerHTML=tag;
+		}, 3000); //5초(5000)
+	}
+</script>
+</head>
+<body>
+<p>3초후 사진이 변경됩니다.</p>
+	<img src="https://img1.daumcdn.net/thumb/C155x225/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fdaa40fff56bc316771ccc43198150ed94122e1b6">
+
+	<h1 id="header">영화 :잡스</h1>
+	<ul data-source="menu">
+		<li>2번째로 나온 잡스 영화.</li>
+		<li>첫 영화가 뽕인데 그나마 덜 뽕.</li>
+	</ul>
+</body>
+</html>

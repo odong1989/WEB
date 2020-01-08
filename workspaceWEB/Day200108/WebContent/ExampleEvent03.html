@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById("login").onsubmit = function() {
+			var userid = document.getElementById("userid").value;
+			if(userid.length < 3 || userid.length > 10) {
+				alert("ID는 3글자 이상~ 10글자 미만으로 작성해주세요.");
+				return false;//리턴을 flase해야 전송되지 않는다.
+			}
+			//id가 정상적으로 작성되었다면 이제 비밀번호 체크로 나아간다.
+			var userpw = document.getElementById("userpw").value;
+			if(userpw.length < 3 || userpw.length > 10) {
+				alert("PW는 3글자 이상~ 10글자 미만으로 작성해주세요.");
+				return false;
+			}
+	
+			alert("입력 완료");
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+  <form id="login" action="ExampleEvent03.html">
+    <ul>
+			<li>
+				ID :	
+				<input id="userid" type="text">
+			</li>
+			<li>
+				PW :
+				<input id="userpw" type="password">
+			</li>
+		</ul>
+		<input type="submit" value="전송하기">
+	</from>
+</body>
+</html>
