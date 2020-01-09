@@ -3,7 +3,28 @@
  <head>
   <meta charset="UTF-8">
   <title>ddd</title>
- 
+  <script>
+	window.onload = function(){
+	// 1. window 객체(책296페이지~
+	// : 자바스크립트 브라우저 기반 최상위 객체이다.
+	// 2. window객체 - onload 이벤트 속성(책307페이지)
+	// window객체의 로드가 완료(on)되는 시점에 자바스크립트가 작동하도록 합니다.
+	// * HTML페이지의 모든 태그가 로그되는 시점 = window객체의 로드가 완료(on)되는 시점
+
+	//문서 객체를 가져옵니다.
+
+	var header1 = document.getElementById('header-1');
+	var header2 = document.getElementById('header-2');
+	/* header1,header2 변수를 생성합니다.
+	   이들은 h1태그들의 id를 통하여 (getElementById 속성 활용)
+	   header-1,header-2 본HTML문서의 
+	*/
+
+	 header1.innerHTML = 'with getElementById()';
+	 header2.innerHTML = 'with getElementById()';
+
+	 };
+  </script>
  </head>
  <body>
   <h1 id="header-1">Header</h1>

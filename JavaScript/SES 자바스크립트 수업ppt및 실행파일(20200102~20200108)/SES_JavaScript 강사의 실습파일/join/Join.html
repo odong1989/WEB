@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>[ 회원가입 ]</title>
+<script type="text/javascript">
+function formCheck(){
+	var id = document.getElementById("id").value;
+	var password = document.getElementById("password").value;
+	var pwcheck = document.getElementById("pwcheck").value;
+	var age = document.getElementById("age").value;
+	var hobbys = document.getElementsByName("hobby");
+	var hobbyCount = 0;
+	var skill = document.getElementById("skill").value;
+	
+	if(id.length > 8 || id.length < 3){
+		alert("아이디는 3~8글자로 입력해 주세요.");
+		return false;
+	}
+	
+	if(password.length > 10 || password.length < 4){
+		alert("비밀번호는 4~10글자로 입력해 주세요.");
+		return false;
+	}
+	
+	if(password != pwcheck){
+		alert("동일한 비밀번호를 입력해 주세요.");
+		return false;
+	}
+	if(age.length == 0 || isNaN(age)){
+		alert("나이는 숫자만 입력해 주세요");
+		return false;
+	}
+	
+	for(var i=0; i < hobbys.length; i++){
+		if(hobbys[i].checked == true){
+			hobbyCount++;
+		}
+	}
+	
+	if(hobbyCount > 3 || hobbyCount < 1){
+		alert("취미는 1~3개를 선택해 주세요.");
+		return false;
+	}
+	
+	if(skill == 0){
+		alert("특기를 선택해 주세요.");
+		return false;
+	}
+	
+	return true;
+}
+
+</script>
+</head>
+<body>
+	<h1>[ 회원가입 ]</h1>
+	<form action="" method="post" onsubmit="return formCheck();">
+		아이디 : <input type="text" id="id" placeholder="아이디는 3~8글자로 작성해주세요."> <br />
+		비밀번호 : <input type="password" id="password" placeholder="비밀번호는 4~10글자로 작성해주세요."> <br />
+		비밀번호 체크 : <input type="password" id="pwcheck" placeholder="동일한 비밀번호를 입력해주세요."> <br />
+		나이 : <input type="text" id="age" placeholder="나이는 숫자만 입력해주세요."> <br />
+		취미(최대 3개 선택)<br />
+		<input type="checkbox" name="hobby" value="축구">축구
+		<input type="checkbox" name="hobby" value="농구">농구
+		<input type="checkbox" name="hobby" value="야구">야구
+		<input type="checkbox" name="hobby" value="배구">배구
+		<br />
+		자신있는 분야를 선택하세요 <br/>
+		<select id="skill">
+			<option value="0">---선택하세요---</option>
+			<option value="java">Java</option>
+			<option value="Database">Database</option>
+			<option value="Mybatis">Mybatis</option>
+			<option value="HTML/CSS">HTML/CSS</option>
+			<option value="JavaScript">JavaScript</option>
+		</select>
+		<br />
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

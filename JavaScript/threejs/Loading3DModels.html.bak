@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  // global script
+<script src="GLTFLoader.js"></script>
+
+// commonjs
+var THREE = window.THREE = require('three');
+require('three/examples/js/loaders/GLTFLoader');
+
+// ES modules
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+
+var loader = new THREE.GLTFLoader();
+
+loader.load( 'path/to/model.glb', function ( gltf ) {
+
+	scene.add( gltf.scene );
+
+}, undefined, function ( error ) {
+
+	console.error( error );
+
+} );
+
+ </head>
+ <body>
+  
+ </body>
+</html>

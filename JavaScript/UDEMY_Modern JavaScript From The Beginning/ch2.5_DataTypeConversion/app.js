@@ -50,6 +50,7 @@ val8 = Number(true);
 val9 = Number(false);
 val10 = Number(null);
 val11 = Number('hello');
+val12 = Number([1,2,3]);
 //output
 console.log(val7);
 console.log(typeof val7);
@@ -61,5 +62,8 @@ console.log(val10);
 console.log(typeof val10);
 console.log(val11);
 console.log(typeof val11);
+console.log(val12);
+console.log(typeof val12);
 
-
+val13 = parseInt('100.30');
+//output
