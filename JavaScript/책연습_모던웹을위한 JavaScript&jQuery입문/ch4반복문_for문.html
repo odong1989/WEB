@@ -1,0 +1,30 @@
+<!doctype HTml>
+<html>
+    <head>
+        <script>
+            //code4-10 106page
+            for(var value=0; value<5;value++){
+                alert(value +'번째 반복문');
+            }
+
+            //code4-11 106page
+            var array=['포도','사과','바나나','망고'];
+            for(var i=0;i<array.length;i++){
+                alert(array[i]);
+            }
+
+            //code4-12 107page
+            var array2=['포도','사과','바나나','망고'];
+            for(var i=array.length-1; i>=0; i--){
+                alert(array[i]);
+            }
+
+            //code4-13 107page
+            var startTime2 = new Date().getTime();
+
+            for(var cps = 0; new Date().getTime() < startTime2+1000; cps++){}
+            alert('초당 연산 횟수:' +cps);
+        </script>
+    </head>
+    <body></body>
+</html>

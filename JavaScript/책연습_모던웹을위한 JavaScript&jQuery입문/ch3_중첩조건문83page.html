@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD> 
+        <TITle>ch3-code3.4</TITle>
+        <script>
+            var date = new Date();
+            var hour = date.getHours();
+            alert('hour : '+hour);
+            if(hour < 11){
+                //hour 오전11시이전시 실시.
+                alert('아침먹을 시간입니다.')
+            }
+            else{
+                //hour<11이 거짓일때 작동.
+                if(hour<15){
+                    alert('점심먹을 시간입니다.');
+                }
+            }
+            else{
+                alert('저녁 먹을 시간입니다.');
+            }
+
+        </script>
+          
+    </HEAD>
+    <body>
+
+    </body>
+</HTML>
