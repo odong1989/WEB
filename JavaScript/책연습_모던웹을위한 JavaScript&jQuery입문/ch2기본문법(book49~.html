@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>
+기본문법-복합대입연산자
+</title>
+<script>
+//49page code2-25
+var value = 10;
+value +=10;
+alert(value);
+
+//50page code2-26
+window.onload =function(){
+    //변수 선언
+    var list='';
+
+    //연산자 사용
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JavaScript</li>';    
+    list += '</ul>';    
+    
+    //문서에 출력합니다.
+    //    document.body.innerHTML = list;가 증감연산자 파트보다 앞에 잇으면 출력물없음.
+    document.body.innerHTML += list;// +=아닌 '='으로 하면 기존의 body내용은 지워짐.      
+    };
+</script>
+</head>
+
+<body>
+<p>"window.onload =function()는 HTML의 태그들이 로딩된 후에 작동합니다. "</p>
+</body>
+</html>
