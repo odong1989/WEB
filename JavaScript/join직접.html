@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/JavaScript">
+        function formcheck(){
+            var id = document.getElementById("id").value;
+            var password = document.getElementById("password").value;
+            var pwcheck = document.getElementById("pwcheck").value;
+            var age =  document.getElementById("age").value;
+            var hobbys = document.getElementsByName("hobby");    
+            var hobbysCount=0;
+            var skill = document.getElementById("skill").value;
+            /*
+            console.log('id :  ' + id);
+            console.log("password : " + password);
+            console.log("pwcheck : " + pwcheck);
+            console.log("age : " + age);
+            console.log("hobbys : " + hobbys);
+            console.log("skill : " + skill);*/
+
+            if(id.length >8 || id.length <3){
+                alert("3~8글자 내로!");
+                return false;
+            }
+            if(password.length <4 || password.length >8){
+                alert("비번이4~8글자 밑이네요");
+                return false;
+            }
+
+            if(password!=pwcheck){
+                alert("비번을 동일하게 입력하세요");
+                return false;
+            }
+
+            if(isNaN(age)){
+                alert("나이는 숫자값을 입력해주세요");
+                return false;
+            }
+            for(var i=0; i < hobbys.length; i++){
+            if(hobbys[i].checked == true){
+                hobbysCount++;
+            }
+
+            if(hobbysCount > 3 || hobbysCount < 1){
+	    	alert("취미는 1~3개를 선택해 주세요.");
+		    return false;
+        	}
+
+            if(skill == 0){
+		    alert("특기를 선택해 주세요.");
+	    	return false;
+	}
+	
+	return true;
+
+        }
+
+        }
+        </script>
+    </head>
+    <body>
+        <form action="", method="POST" onsubmit="return formcheck();">
+            아이디 :   <input type="text" id="id" placeholder="아이디는 3~8자"><br />        
+            비밀번호 : <input type="password" id="password" placeholder="4~8"><br />
+            비밀번호 체크 : <input type="password" id="pwcheck" placeholder="동일비번"><br />
+            나이 :  <input type="text" id="age" placeholder="나이는 숫자만!"><br /> 
+            취미(최대3개선택)<br />
+            <input type="checkbox" name="hobby" value="축구">축구
+            <input type="checkbox" name="hobby" value="농구">농구
+            <input type="checkbox" name="hobby" value="야구">야구
+            <input type="checkbox" name="hobby" value="배구">배구
+            <br/>       
+            자신있는 분야를 선택하세요<br />
+            <select id="skill">
+                <option value="0">선택하세요</option>
+                <option value="java">java</option>
+                <option value="DataBase">DataBase</option>
+                <option value="Mybatis">Mybatis</option>
+                <option value="JavaScript">JavaScript</option>
+            </select><br />
+            <input type="submit" value="전송">
+        </form> 
+    </body>
+</html>
