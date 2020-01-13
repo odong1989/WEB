@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //code5-4 선언적 함수
+            function 함수() {alert('함수A');}
+            function 함수() {alert('함수B');}//함수A는 덮어씌워 삭제됨
+            함수();
+
+            //code5-5 익명함수
+            var 함수2 = function() {alert('함수2A');}
+            var 함수2 = function() {alert('함수2B');}
+            함수2();
+
+            //code5-7 선언적 함수2
+            함수4();//에러가 안나는 이유는 선언적 함수부터 읽기 때문.
+            function 함수4() {alert('함수4A');}
+            function 함수4() {alert('함수4B');}//함수A는 덮어씌워 삭제됨
+
+            //code5-6 익명함수2
+            //함수3(); //실행불가. 일반적인 방식이기 때문에 선언안됨과 같다.
+            var 함수3 = function() {alert('함수3A');}
+            var 함수3 = function() {alert('함수3B');}
+
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -23,9 +23,20 @@
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />	<!-- prefix : 앞에붙는 것. 즉, /WEB-INF/views/가 앞에붙는다.-->
+		<beans:property name="suffix" value=".jsp" />				<!-- suffix : 뒤에 붙는 것. 즉, .jsp가 뒤에 붙는다. -->
+	</beans:bean>
+	<!-- bean이란? : 한마디로 스프링에서 사용할 수 있는 객체라고 생각하면 됩니다.(단순번역하면 '콩'인데  자바가 커피이듯 재미없는 스토리)
+					빈의 등록이되면 스프링이 마음껏 사용할 수 있습니다.
+					빈은 자바에서도, xml에서도 등록할 수 있습니다.(#여기는 xml에서 등록하는 방식입니다.)
+		<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+						   |~~~~~~~~~~~~~~`패키지명~~~~~~~~~~~~~~~| 소스코드 파일명
+		
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
+		위의 2라인은 자바의 생성자처럼 생성했다고 생각하면 됩니다.
+						   					
+	 -->
 	
 	
 	<context:component-scan base-package="com.spring.ex1" />

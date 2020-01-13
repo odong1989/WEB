@@ -61,11 +61,6 @@
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
     <Connector connectionTimeout="20000" port="8888" protocol="HTTP/1.1" redirectPort="8443"/>
-<!--  오라클이 포트를 8080를 선점한 탓에 port="8888"으로 변경합니다.
-	  [주의] 회사에서는 8080이 맞아요. 8080이 정상인데 
-	        
- -->
-
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"

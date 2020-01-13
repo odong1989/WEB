@@ -26,6 +26,7 @@ public class HomeController {//파일명 뒤에다가 Controller를 붙였다는
 	//@RequestMapping : 클라이언트가 요청을 하면 요청을 처리해주는 코드를 찾아서 자바코드를 연결해주는 역할.
 	//"/"와 동일한 것을 찾아서 GET 방식이냐, POST 방식이냐를 구별한 다음 리턴을 준비합니다.
 	//GET방식으로  "/"로 요청를 뜻합니다.
+	//실행하자마자 루트("/")로 호출합니다.
 	
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -49,4 +50,17 @@ public class HomeController {//파일명 뒤에다가 Controller를 붙였다는
 	public String index() {
 		return "index";//index.jsp가 사용자에게 리턴됩니다 사용자는 index.jsp페이지를 보게됩니다ㅏ
 	}
+	
+	 @RequestMapping(value="formData1", method=RequestMethod.GET)
+	 public String formData1() {
+			return "formData1";//index.jsp가 사용자에게 리턴됩니다 사용자는 index.jsp페이지를 보게됩니다ㅏ
+		} 
+	 
+	 /*
+	 @RequestMapping(value="formData", method=RequestMethod.POST)//POST방식으로 보낸다 했으니까.
+	 public String formData(String str) {
+		 System.out.println(str);
+		 return "formData1";//기존화면으로 리턴됩니다.
+	 }
+	 */
 }

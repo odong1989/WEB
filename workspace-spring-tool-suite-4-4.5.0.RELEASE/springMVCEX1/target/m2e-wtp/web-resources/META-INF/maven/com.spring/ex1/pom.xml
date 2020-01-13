@@ -129,6 +129,15 @@
 		</dependency>
 	<!-- 10초 정도 기다리면 인터넷을 통해 자동다운받아서 Maven Dependency에 추가되네요. -->
 	
+	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+	<dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>1.18.10</version>
+	    <scope>provided</scope>
+	</dependency>
+
+	
 	
 	
 		<!-- Test -->
