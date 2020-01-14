@@ -51,13 +51,21 @@
             if(skill == 0){
 		    alert("특기를 선택해 주세요.");
 	    	return false;
-	}
-	
-	return true;
-
+	        }
+            return true;
+            }
         }
 
-        }
+        function InnerTest() {
+           var innerDIV = document.getElementById("innerDIV");
+           var id = document.getElementById("id").value;
+           var password = document.getElementById("password").value;
+           var str ="";
+
+           str +="<p>id : "+ id +"</p>";
+           str +="<p>password : "+ password +"</p>";     
+           innerDIV.innerHTML = str;
+        }  
         </script>
     </head>
     <body>
@@ -81,6 +89,11 @@
                 <option value="JavaScript">JavaScript</option>
             </select><br />
             <input type="submit" value="전송">
-        </form> 
+            <input type="button" value="InnerHTML" onclick="InnerTest()">
+            <div id="innerDIV">
+
+            </div>
+        </form>
+
     </body>
 </html>
