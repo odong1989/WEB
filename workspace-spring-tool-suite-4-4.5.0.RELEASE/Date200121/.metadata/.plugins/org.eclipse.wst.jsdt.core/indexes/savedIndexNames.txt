@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Spring_code_teacher\Date200121_teacher_code\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2754114218.index
+2480838965.index
+1924546061.index
+2423312378.index
+1666686854.index
+433397666.index

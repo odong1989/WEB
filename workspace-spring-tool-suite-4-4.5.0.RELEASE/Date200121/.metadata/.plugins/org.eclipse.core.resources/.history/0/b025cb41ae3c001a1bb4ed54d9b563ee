@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>[ 회원 목록 ]</title>
+<script type="text/javascript">
+function deleteCustomer(pk){
+	//컨트롤러의 삭제기능 요청주소로 연결
+	//쿼리 스트링
+	//요청을 보낼때 요청주소에 데이터를 연결하여 보내는 방식
+	location.href = "deleteCustomer?custid="+pk;
+}
+
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>이메일</th>
+			<th>구분</th>
+			<th>주소</th>
+			<th>버튼</th>
+		</tr>
+		<c:forEach items="${list }" var="cust">
+			<tr>
+				<td>
+					<a href="updateCustomerForm?custid=${cust.custid }">${cust.custid }</a>
+					<!--     |요청을 하러 가는 주소       | 데이터변수명 = 전송할 데이터     |   
+						(1) 물음표(?)이후는 내가 전송하고자 하는 데이터 변수명과 전송값입니다.
+						(2) 자바스크립트를 통해서도 가능해요. 방법들은 다양하지만 결론적으로 원리(primaryKey를 보낸다)는
+						         같다는 것입니다.
+						
+						데이터가 들어가 있다 = 내가 수정하고자 하는 데이터를 DB로부터 셀렉트하여 가져온 것입니다.
+						
+						[주의]선생님의 답지 경우 PK인 유저ID만 보내버린 거지 본HTML페이지에 나오는 모든 값을 몽땅 싸서 보낸게 아니에요.
+						
+					-->
+				</td>
+				<td>${cust.name }</td>
+				<td>${cust.email }</td>
+				<td>
+					<c:if test="${cust.division eq 'personal' }">
+						개인
+					</c:if>
+					<c:if test="${cust.division == 'company' }">
+						법인
+					</c:if>
+				</td>
+				<td>${cust.address }</td>
+				<td>
+					<input type="button" value="삭제" onclick="deleteCustomer('${cust.custid }')">
+				</td>
+			</tr>
+		</c:forEach>
+	</table>
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>

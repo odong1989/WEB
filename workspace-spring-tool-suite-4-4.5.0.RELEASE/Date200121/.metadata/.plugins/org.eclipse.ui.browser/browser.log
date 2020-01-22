@@ -1,0 +1,8 @@
+
+1월 22, 2020 12:30:02.28 NEW SESSION
+1월 22, 2020 12:30:02.28 [11032:11992:0122/123002.257:ERROR:socket_stream.cc(218)] Closing stream with result -2
+1월 22, 2020 18:37:15.50 [11032:6776:0122/183707.519:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+1월 22, 2020 18:37:15.81 [11032:11992:0122/183707.595:ERROR:socket_stream.cc(218)] Closing stream with result -2
+1월 22, 2020 18:37:15.83 [11032:11992:0122/183707.979:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+1월 22, 2020 18:37:15.84 [11032:11992:0122/183714.320:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+1월 22, 2020 18:37:15.85 [11032:9696:0122/183714.847:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
