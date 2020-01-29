@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 1. -->
+	<properties resource ="db.properties"></properties>
+<!-- 2. -->
+	<typeAliases>
+		<typeAlias type="com.sesoc.testTraining200123.vo.MemoVO" alias="memo"/>
+	</typeAliases>
+
+<!-- 3.  -->
+	<mappers>
+		<mapper resource="Mapper.xml" />
+	</mappers>
+<!-- 4. -->
+</configuration>

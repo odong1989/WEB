@@ -1,0 +1,36 @@
+package com.sesoc.testTraining200123.Controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.sesoc.testTraining200123.HomeController;
+
+//잘못 16 DAO 임폴트 하쇼!(어차피 본문 코딩중에 권고 떠서 하면 되지만
+import com.sesoc.testTraining200123.dao.MemoDAO;
+import com.sesoc.testTraining200123.vo.MemoVO;
+
+//잘못14 @컨틀로럴 선언!하시오!
+@Controller
+public class MemoController {
+
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+
+	//잘못15 아래의 코딩들 누락--------------------------------------------
+	@Autowired
+	private MemoDAO dao;
+	
+	@RequestMapping(value="insertMemo", method=RequestMethod.POST)
+	public String insertMemo(MemoVO memo)
+	{
+		int cnt = dao.insertMemo(memo);
+		
+		logger.info("회원커밋값 : {}", cnt);
+		return "redirect:/";
+	}
+	//----------------------------------------------------------------
+	
+}

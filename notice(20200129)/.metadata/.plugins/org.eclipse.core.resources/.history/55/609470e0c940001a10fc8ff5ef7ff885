@@ -1,0 +1,30 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html>
+<head>
+	<title>Home</title>
+<script type="text/javascript">
+	function testInsert(){
+		var memo = document.getElementById("memo");
+		var pw_memo = document.getElementById("pw_memo");
+		return true;
+	}
+
+</script>
+</head>
+<body>
+<h1>
+	나만의 메모장
+</h1>
+
+
+<!-- 잘못12 액션 미설정 action="insert"이면 컨트롤러 설정도 가야지 얌마 -->
+<
+<form action="insertMemo" method="post" onsubmit="return testInsert();">
+<input type="submit" value="메모확인">
+</form>
+
+</body>
+</html>

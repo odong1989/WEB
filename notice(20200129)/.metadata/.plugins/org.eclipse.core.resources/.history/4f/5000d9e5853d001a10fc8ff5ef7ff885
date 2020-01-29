@@ -1,0 +1,8 @@
+package com.sesoc.testTraining200123.dao;
+
+
+import com.sesoc.testTraining200123.vo.MemoVO;//깜빡1
+ 
+public interface Mapper {
+	public int insertMemo (MemoVO memo);
+}

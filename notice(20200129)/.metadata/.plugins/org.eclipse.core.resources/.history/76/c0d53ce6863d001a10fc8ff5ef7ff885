@@ -1,0 +1,9 @@
+package com.sesoc.testTraining200123.dao;
+
+import org.springframework.stereotype.Repository;
+
+//틀림6 @Repository 미작성
+@Repository
+public class MemoDAO {
+	//틀림 7
+}

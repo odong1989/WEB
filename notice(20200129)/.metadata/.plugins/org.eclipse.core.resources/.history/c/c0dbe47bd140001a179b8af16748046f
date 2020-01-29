@@ -1,0 +1,11 @@
+package com.sesoc.testTraining200123.dao;
+
+
+import java.util.ArrayList;
+
+import com.sesoc.testTraining200123.vo.MemoVO;//내 틀림1
+ 
+public interface MemoMapper {
+	public int insertMemo (MemoVO memo);
+	public ArrayList<MemoVO memo>()	listView();
+}

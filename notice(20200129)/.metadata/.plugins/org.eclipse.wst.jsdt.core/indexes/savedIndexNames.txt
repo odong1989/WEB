@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1858658858.index
+2384723742.index
+4103820532.index
+1544630743.index
