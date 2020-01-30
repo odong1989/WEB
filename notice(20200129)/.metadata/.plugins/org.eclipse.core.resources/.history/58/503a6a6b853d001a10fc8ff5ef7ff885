@@ -1,5 +1,0 @@
-package com.sesoc.testTraining200123.dao;
-
-public interface Mapper {
-	public int insertMemo (String memo);
-}
