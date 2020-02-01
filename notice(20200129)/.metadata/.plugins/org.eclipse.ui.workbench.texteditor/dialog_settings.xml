@@ -6,13 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="noticeSelectList"/>
+		<item key="selection" value="Read"/>
 		<list key="findhistory">
+			<item value="read"/>
+			<item value="insert"/>
+			<item value="down"/>
 			<item value="noticeSelectList"/>
 			<item value="noticeSelectList()"/>
 			<item value="list"/>
 			<item value="noticeSelectOne"/>
-			<item value="read"/>
 			<item value="insertMemo"/>
 			<item value="build"/>
 			<item value="memo"/>
@@ -23,8 +25,8 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="1104"/>
 		<item key="DIALOG_Y_ORIGIN" value="285"/>
-		<item key="DIALOG_WIDTH" value="393"/>
-		<item key="DIALOG_HEIGHT" value="523"/>
-		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|맑은 고딕"/>
+		<item key="DIALOG_WIDTH" value="340"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|맑은 고딕"/>
 	</section>
 </section>
