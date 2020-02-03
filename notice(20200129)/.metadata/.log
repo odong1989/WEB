@@ -10244,3 +10244,1827 @@ java.lang.IllegalArgumentException: Argument cannot be null
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-02-03 08:57:57.581 -----------------------------------------------
+eclipse.buildId=4.5.0.201912171052-RELEASE
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-02-03 08:58:48.964
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-02-03 08:58:48.964
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@289cf7db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c523bdd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-02-03 08:58:53.382
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-02-03 08:58:53.383
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 08:59:47.359
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 08:59:47.389
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@12ff0e4f[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 08:59:47.432
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 08:59:48.109
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.015
+!MESSAGE Boot LS startup time from start to initialized: 28515ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.206
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tctNOVLYisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.240
+!MESSAGE subscribing to classpath changes: sts4.classpath.tctNOVLY isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.256
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.272
+!MESSAGE subsribers = {sts4.classpath.tctNOVLY=Send Classpath Notifications(114)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.285
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.297
+!MESSAGE project notice_board ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.312
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.325
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.338
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.356
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.401
+!MESSAGE project SpringLegacyHomeWork ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.414
+!MESSAGE project testTraining ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.430
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.452
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tctNOVLY => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.488
+!MESSAGE classpath=50 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.617
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:16.750
+!MESSAGE Preparing classpath changed notification SpringLegacyHomeWork
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.119
+!MESSAGE classpath=48 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.156
+!MESSAGE buffering callback sts4.classpath.tctNOVLY SpringLegacyHomeWork false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.181
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.237
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.259
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.281
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.307
+!MESSAGE executing callback sts4.classpath.tctNOVLY 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.824
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.844
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:17.996
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:18.023
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:18.080
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:18.221
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:19.606
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.573
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.601
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.630
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.641
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.653
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:27.681
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.352
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.374
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.412
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.434
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.480
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:00:36.506
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.068
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.275
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.297
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.329
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.341
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:07:49.362
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:51.844
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:51.931
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:51.950
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:51.974
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:51.992
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:08:52.018
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.554
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.565
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.581
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.595
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.607
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:44:11.628
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.244
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.368
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.384
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.396
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.409
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 09:54:21.474
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.644
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.693
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.711
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.731
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.751
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:09:29.776
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.386
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.476
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.507
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.576
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.608
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:10:12.663
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.318
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.375
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.392
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.406
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.416
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:04.446
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:29.790
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:29.982
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:30.146
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:30.172
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:30.188
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:30.206
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.250
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.419
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.444
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.467
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.490
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:13:44.521
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.264
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.898
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.915
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.961
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.973
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:15:41.991
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.381
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.637
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.672
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.779
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.796
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:19:53.822
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.568
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.628
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.649
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.667
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.679
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:09.707
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:18.988
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:19.069
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:19.095
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:19.133
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:19.152
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:19.194
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:57.796
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:57.861
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:57.924
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:58.011
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:58.034
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:20:58.074
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.615
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.889
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.919
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.934
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.949
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:14.966
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:41.825
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:41.942
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:41.998
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:42.086
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:42.125
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:21:42.146
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.257
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.300
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.323
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.351
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.362
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.382
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.541
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.641
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:17.660
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:18.021
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:18.168
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:18.206
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.505
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.584
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.680
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.801
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.853
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:19.884
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.109
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.135
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.154
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.228
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.257
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:23:51.281
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.643
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.661
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.689
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.713
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.785
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:26:04.832
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.412
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.535
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.562
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.591
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.624
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:43.650
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.595
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.696
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.755
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.779
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.804
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:28:55.843
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:12.815
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:12.861
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:12.920
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:12.947
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:12.964
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:30:13.050
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.507
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.667
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.759
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.806
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.836
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:26.903
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.403
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.525
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.568
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.597
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.615
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:31:37.641
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.124
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.216
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.234
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.255
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.279
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:32:17.307
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:41.456
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:41.627
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:41.652
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:41.679
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:41.791
+!MESSAGE executing callback sts4.classpath.tctNOVLY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:42.277
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:42.313
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:42.454
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:42.534
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:42.662
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:43.149
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:43.770
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:44.166
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:44.239
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:44.462
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:44.688
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:46.957
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.050
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.098
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.135
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.190
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.231
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.261
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.329
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.368
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:47.506
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.019
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.033
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.050
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.063
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.074
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.086
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.100
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.113
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.124
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:38:48.151
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.318
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.378
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.445
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.487
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.510
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.537
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.558
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.599
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.622
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:39:14.651
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.035
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.127
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.319
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.374
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.400
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.420
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.448
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.476
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.495
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:42:28.539
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.567
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.618
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.668
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.691
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.711
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.721
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.734
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.744
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.753
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:39.771
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:44.859
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:44.948
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:44.979
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.000
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.015
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.033
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.055
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.098
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.131
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:45.182
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.363
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.385
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.523
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.636
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.763
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.814
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.844
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.877
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.908
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:48:58.941
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.290
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.344
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.383
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.416
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.432
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.484
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.504
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.519
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.533
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:50:24.560
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.523
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.720
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.886
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.934
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.949
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.966
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:24.987
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:25.005
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:25.023
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:51:25.095
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.075
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.145
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.169
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.190
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.227
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.252
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.266
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.285
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.297
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:29.314
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.140
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.159
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.188
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.206
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.252
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.266
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.290
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.309
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.331
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:53:39.385
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:24.749
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:24.852
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:24.906
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:24.945
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:24.962
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:25.004
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:25.025
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:25.039
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:25.052
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:25.084
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.224
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.313
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.332
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.414
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.434
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.457
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.476
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.497
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.512
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:54:52.539
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.023
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.205
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.287
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.312
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.323
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.336
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.353
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.415
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.468
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 10:59:43.504
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.718
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.777
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.853
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.873
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.905
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.927
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.947
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.965
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:45.991
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:03:46.027
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.623
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.700
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.728
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.767
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.819
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.848
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.867
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.882
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.894
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:05:15.920
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:09.778
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:09.904
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:09.980
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:09.994
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.005
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.018
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.033
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.050
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.064
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.088
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.785
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.796
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.817
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.842
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.881
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:10.893
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:11.054
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:11.083
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:11.140
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:11.185
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.535
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.646
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.683
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.712
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.741
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.764
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.804
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.824
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.844
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:46.894
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.541
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.556
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.578
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.592
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.603
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.620
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.631
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.673
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.684
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:07:47.707
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.482
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.567
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.636
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.670
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.687
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.706
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.732
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.756
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.770
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:12.799
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.330
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.392
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.414
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.441
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.479
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.497
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.527
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.552
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.564
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:08:28.611
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:10.967
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.056
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.079
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.101
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.124
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.145
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.167
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.192
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.218
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:10:11.264
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.770
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.843
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.888
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.953
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.966
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:01.980
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:02.000
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:02.025
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:02.050
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:14:02.082
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:45.814
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:45.900
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:45.931
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:45.951
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:45.993
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:46.009
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:46.037
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:46.063
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:46.075
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:19:46.095
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.667
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.754
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.777
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.799
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.866
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.879
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.900
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.924
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.936
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:21:01.963
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:36.709
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:36.885
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:36.990
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.014
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.043
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.074
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.127
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.153
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.170
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:37.205
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:59.915
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:22:59.988
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.072
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.117
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.139
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.155
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.178
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.207
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.258
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:00.307
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:28.867
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:28.988
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.013
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.038
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.105
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.132
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.162
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.214
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.286
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:29.331
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.564
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.583
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.603
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.619
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.629
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.641
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.660
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.673
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.683
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:23:52.700
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:17.256
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:17.348
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:17.587
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:17.698
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:17.832
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:18.036
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:18.060
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:18.120
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:18.136
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:18.161
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.730
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.787
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.820
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.843
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.857
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.870
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.891
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.905
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.917
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:24.938
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:46.939
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:46.997
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.021
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.046
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.114
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.135
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.162
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.175
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.186
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:24:47.202
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.055
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.113
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.158
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.194
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.224
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.245
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.275
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.292
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.305
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:25:12.331
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.433
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.470
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.503
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.558
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.587
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.609
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.642
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.669
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.724
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:32:29.770
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.665
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.701
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.727
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.751
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.765
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.801
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.821
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.837
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:34:39.867
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:06.804
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:06.835
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:06.874
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:06.895
+!MESSAGE buffering callback sts4.classpath.tctNOVLY notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.026
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.071
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.096
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.122
+!MESSAGE buffering callback sts4.classpath.tctNOVLY testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.138
+!MESSAGE executing callback sts4.classpath.tctNOVLY 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-03 11:38:07.166
+!MESSAGE executing callback sts4.classpath.tctNOVLY SUCCESS [done]

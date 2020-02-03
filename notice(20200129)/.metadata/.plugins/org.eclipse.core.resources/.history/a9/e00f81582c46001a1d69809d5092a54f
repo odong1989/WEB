@@ -1,0 +1,287 @@
+package global.sesoc.sample.controller;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+import global.sesoc.sample.dao.NoticeDAO;
+import global.sesoc.sample.util.FileService;
+import global.sesoc.sample.util.PageNavigator;
+import global.sesoc.sample.vo.Notice;
+
+/**
+ * 사용자 입력을 받아 처리
+ */
+@Controller
+@RequestMapping(value="/notice")
+public class NoticeController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(NoticeController.class);
+
+	private final String uploadPath = "/uploadFile";
+	//uploadPath는 첨부파일이 서버에 저장된 다음에야 생성되기 때문에 가제 성격으로 임시명을 지정한것 
+	//C드라이브에 uploadFile이라는 이름의 폴더를 만들고 임시 저장한다는 식으로 생각하면 되겠습니다.
+	
+	/* PageNavigator.java의 
+	 * public PageNavigator(int countPerPage, int pagePerGroup, int currentPage, int totalRecordsCount) {...}가
+	 * 						|<어떻게 쓸지 정한애들>|<--상황에 따라 입력받아야 하는 애->\DB에게 받아야 하는 애			
+	 * NoticeController.java에서도 실행되도록  설정하고 있다. 
+	 * */
+	private final int countPerPage=3;		//페이지당 글목록 수(#몇페이지씩 보여줄거냐?) 글 숫자가 적어서 3개씩 보여주고
+	private final int pagePerGroup=5;		//그룹당 페이지 수 (#몇 페이지씪 넘길거냐?)	5개씩 끊어서
+
+	
+	@Autowired
+	private NoticeDAO dao;
+
+	@RequestMapping(value="/noticeUpdate", method=RequestMethod.POST)
+	public String noticeUpdate(Notice notice, MultipartFile upload) {
+	/* MultipartFile upload는 기존의 첨부여부, 수정시 첨부/삭제 여부에 따라 달라지게 된다.
+	 */
+		//우선 pk를 활용하여 DB조회실시.
+		Notice oldNotice = dao.noticeSelectOne(notice.getNotice_no());
+
+		//첨부파일에 대한 경우의 수
+		if(!upload.isEmpty()) {
+			//기존파일이 있고 새롭게 파일을 수정했을 때[시작]-------------------------------------------------
+			if(oldNotice.getNotice_savedfile() != null){
+				//step1. 기존파일을 삭제한다. 삭제위해서는 fullfath 필요.
+				String fullPath = uploadPath + "/" +oldNotice.getNotice_savedfile();
+				boolean flag = FileService.deleteFile(fullPath);
+				if(flag) {
+					logger.info("삭제성공");
+				}
+				else {
+					logger.info("삭제실패");					
+				}
+			}
+			//step2. 새로운파일을 등록합니다.
+			//if를 하든 말든 새로운 파일 등록은 무조건 실행
+			String savedfile = FileService.saveFile(upload, uploadPath);//savedfile변수에 업뎃할 파일정보 저장시킴.
+			notice.setNotice_savedfile(savedfile);						//파일을 HDD에 저장한다.
+			notice.setNotice_originfile(upload.getOriginalFilename());	//파일이름을 업뎃합니다.
+		}
+		
+		//수정한다.(#쿼리 만들러 가자)
+		int count = dao.noticeUpdate(notice);
+		
+		if(count > 0) {
+			logger.info("수정성공");
+		}else {
+			logger.info("수정실패");		
+		}
+		
+		return "redirect:noticeReadForm?notice_no="+notice.getNotice_no();//리드폼으로 가서 내가 변경한 내역이 잘 적용되었는지 확인한다.
+		//쿼리스트링 방식으로 작성되었다.int notice_no에서  notice_no가 필요하다.
+		/*
+			@RequestMapping(value="/noticeReadForm", method=RequestMethod.GET)
+		  	public String noticeReadForm(int notice_no, Model model) {
+		*/
+	}
+	
+	
+	/* '/noticeList' 라는 요청은 여러 곳에서 부를 수 있는 녀석이다.
+	 * [20.02.03] 페이징 처리를 담당도 한다. 
+	 * 페이징 처리도 할 수 있또록 파라미터로 현재페이지(Current Page) 값을 받도록 한다 (default=1)
+	   @RequestParam : 호출되는 함수의 요청(	@RequestMapping(value = "/noticeList",method = RequestMethod.GET) ) 이 있다면
+					     값의 전달을 위해서 무조건 선언해야 하는 단어 였습니다.
+					     버전4부터는 스프링이 알아서 자동으로 붙이도록 설정이 된 덕분에 우리 실습시 붙이지 않은 것이지요.
+	       화면에서 등록을 할 때 등록정보를 submit을 위한 정보들이 왔을 때는 
+	   @RequestParam 
+	*/
+	@RequestMapping(value = "/noticeList", method = RequestMethod.GET)
+	public String noticeList(Model model, @RequestParam(value ="page", defaultValue="1") int page) {
+		//								  |파라미터를 설정할 |전달받을 변수명칭 |기본설정값(입력X시 기본값)|    		
+			logger.info("게시글 목록 페이지 이동");
+
+			//전체글 수
+			int total= dao.noticeSelectCount();
+
+			//페이징 담당자, navi!!!
+			PageNavigator navi = new PageNavigator(countPerPage, pagePerGroup, page, total);
+			
+			//[페이징 않을경우] // ArrayList<Notice> list = dao.noticeSelectList();
+			ArrayList<Notice> list = dao.noticeSelectList(navi.getStartRecord(), navi.getCountPerPage());
+														//
+			model.addAttribute("list", list);
+			model.addAttribute("navi", navi);			
+
+			logger.info("noticeList(Model model) model :{}",model);
+
+			return "notice/noticeList";
+	}	
+	
+	@RequestMapping(value = "/noticeInsertForm", method=RequestMethod.GET)
+	public String noticeInsertForm() {
+		logger.info("noticeInsertForm(게시글 등록 폼)으로 이동");
+		return "notice/noticeInsertForm";
+	}	
+	
+	@RequestMapping(value="/noticeInsert", method=RequestMethod.POST)
+	public String noticeInsert(Notice notice, MultipartFile upload) {
+		logger.info("noticeInsert 시작");
+//public static String saveFile(MultipartFile mfile, String uploadPath)
+	/*파일을 추가하기 위해서는 아래와 같이 3스텝을 밟습니다.
+	 * 1.파일을 업로드
+	 * 2. 업로드된 파일의 경로(파일명)을 VO에게 설정(set)
+	 * 3.VO를 DB에 INSERT
+	 * */ 
+		
+		//1.파일업로드(물리적)(#글만 올렸을수도 있으니까)
+		if(!upload.isEmpty()) { //.isEmpty() : 객체가 비었냐(=파일없냐?)
+			String savedfile = FileService.saveFile(upload, uploadPath);
+			
+			//2.업로드된 파일의 경로(파일명)을 VO에게 설정(set)
+			//저장된 파일명(#DB측에서 사용자들이 정의한 이름들이 충돌하지 않도록 임의로 정해서 정리하는것)
+			notice.setNotice_savedfile(savedfile);
+			//원본 파일명(#사용자가 업로드시 정의한 파일명)
+			notice.setNotice_originfile(upload.getOriginalFilename());
+			
+			// 3.VO를 DB에 INSERT
+			int count = dao.noticeInsert(notice);
+			
+			if(count ==0) {
+				logger.info("등록실패");
+			}
+		}
+		
+		return "redirect:noticeList";
+		/* root(/)붙이면 안되는 이유는 이미 @RequestMapping(value="/notice")
+		   으로 경로를 설정해주었기 때문.
+		   정 쓰고 싶다면 절대경로로
+		 return "redirect:/notice/noticeList";하거나. */
+	}
+	/*
+	/**
+	 * 입력 폼으로 이동
+	 * @return
+	 */
+	/*
+	@RequestMapping(value = "/inputForm", method = RequestMethod.GET)
+	public String goInputForm() {
+		logger.info("입력 폼으로 이동");
+		return "inputForm";
+	}
+	
+	@RequestMapping(value="input", method = RequestMethod.POST)
+	public String input(Notice person) {
+		logger.debug("폼으로부터 전달된 정보 : {}", person.toString());
+		dao.insertPerson(person);
+		return "redirect:/";
+	}
+	*/
+	
+	@RequestMapping(value="/noticeReadForm", method=RequestMethod.GET)
+	public String noticeReadForm(int notice_no,Model model) {
+		//읽기 폼으로 가기 위해서 정보를 조회 (#셀렉트 위해 쿼리 만들러 갑시다
+		/* 조회수 관련 실시할 사항
+		 * [1] 조회수를 1증가 시켜주는 코드를 추가합니다
+		 * [2] update쿼리를 통해 조회수 증가를 커밋시켜줍니다.
+		 *    - 다만 이것은 사이트마다 조회수 증가의 기준이 다릅니다. 
+		 *      새로고침할 때마다 +1로 치는 회사도 있찌만
+		 *      동일 IP로는 증가 않도록 하려는 제어를 하는 경우도 있습니다. 
+		 * */
+		
+		Notice notice = dao.noticeSelectOne(notice_no);
+		model.addAttribute("notice", notice);
+		return "notice/noticeReadForm";
+	}
+	
+	//읽기/수정폼은 보여주는 정보가 똑같기 때문에 해야하는 동작도 똑같습니다.(#아이 좋아?)
+	@RequestMapping(value="/noticeUpdateForm", method=RequestMethod.GET)
+	public String noticeUpdateForm(int notice_no,Model model) {
+		//읽기 폼으로 가기 위해서 정보를 조회 (#셀렉트 위해 쿼리 만들러 갑시다
+		Notice notice = dao.noticeSelectOne(notice_no);
+		model.addAttribute("notice", notice);
+		return "notice/noticeUpdateForm";
+	}
+	
+	
+	
+	
+	@RequestMapping(value="/download", method=RequestMethod.GET)
+	public void download(int notice_no, HttpServletResponse response ) {
+		//정보 조회하여 다운로드 대상을 를 찾읍시다.
+		//HttpServletResponse객체 response는 헤더와 바디를 갖는데 헤더에 해야할일이 기재되어 있습니다.
+		//response는 원래 하는 다른 일이 있다는 의미이고, 여기서는 다운로드의 기능을 할당하려는 것이죠.
+		Notice notice = dao.noticeSelectOne(notice_no);//걍 DBㅈ회
+	
+
+		String originFile = notice.getNotice_originfile();//원본파일명을 갖고 옵니다. #걍 DB에서 값 갖고 옴.
+		
+		//브라우저에게 파일을 전달하고 이를 브라우저가 기미상궁처럼 먼저 읽습니다.
+		//그를 위해 스텝1. 파일이 전달되는 형태로 헤더를 바꾸려고 합니다.
+		//다운로드에서 유심히 봐야 하는 부분이죠!!
+		try {
+			response.setHeader("Content-Disposition", "attatchment;filename="+URLEncoder.encode(originFile, "UTF-8"));
+							 //|response의 헤더--------|<-------response의 헤더값---------------------------------------->|
+			/*response(응답)는 리턴시 리다이렉트 등의 기능을 기본적으로 갖고 있습니다.
+			    지금페이지에 멈춰 있으면서도 다운로드를 물어볼 수 있는 팝업창을 띄우는 역할을 합니다.
+			*/
+		}catch(UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		
+		/*프로토콜도 head영역, body영역이 있습니다. HTML처럼 말이지요.
+		 	
+		 head영역 : 전달하는 이름
+		"Content-Dispsition" : "저장하시겠습니까?" 하고 묻는 역할의 기능.
+		 body영역 : 전달하는 데이터 
+		URLEncoder : 파일명이 인코딩 안되었다면 인코딩을 해줍니다(#모든 사람들이 영어로만 작성할리 없잖아?)
+		 
+		 URLEncoder.encode(originalFile, "UTF-8")  = "파일명을 UTF-8형식으로 인코딩한다"
+		 
+		 setheader httpservletresponse
+		  국내 블로그들은 아쉽게도 잘 정리된 사이트가 없어서 나중에 알려주시는 걸로..*/
+		
+		 //저장된 파일 경로(=전체경로 라는 애기입니다.)
+		 String fullPath = uploadPath + "/" + notice.getNotice_savedfile();
+		 
+		 //---------↑여기까지가 다운로드를 위한 스탠바이(준비)동작이었습니다-----------------
+		 
+		 
+		 
+		 //서버의 파일을 읽을 입력 스트림과 클라이언트에게 전달할 출력스트림 
+		 //도로로 치면 고속도로를 까는 것.
+		 //인풋스트림 = 저장된드라이브->자바서버쪽으로 읽어오기(#읽기 용도)
+		 //아웃풋스트림 = 자바서버->사용자의 웹브라우저로 보내기(#보내기 용도)
+		 // 인풋/아우풋 스트림을 구별시 자바서버를 기준으로 하는게 편합니다
+		 FileInputStream filein = null; //io인셉션 터지니까 null값을 주어서 문제없도록 하려고 널값설정.
+		 ServletOutputStream fileout = null; //웹브라우저에게 주기위해서는 response를 활용합니다.
+		 
+		 try {
+			 
+			 //고속도로를 구축합니다.
+			 filein = new FileInputStream(fullPath);
+			 fileout = response.getOutputStream();	//응답쪽에서 아웃풋스트림을 갖고온다.
+			 //고속도로 구축완료!
+			 
+			 //차(데이터)가 이동하기 시작합니다
+			 FileCopyUtils.copy(filein, fileout);
+			 
+			 
+			 filein.close();
+			 fileout.close();
+		 }catch(IOException e) {
+			 e.printStackTrace();
+		 }
+		 
+	}
+	
+}

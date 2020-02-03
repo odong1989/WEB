@@ -73,5 +73,24 @@
 			</if>
 		where notice_no = #{notice_no}<!-- where조건을 않으면 데이터전부들을 덮어씌워버리게 된다. 그러니 조거문where을 반드시 쓰자!! -->
 		</update> 
+		<!-- 2020.02.03조회수 갱신 -->
+		<update id="updateHits" parameterType="int">
+		update
+			notice
+		set
+			notice_hits=notice_hits+1
+		where
+			notice_no = #{notice_no}
+		</update>
+		<!-- 수정 삭제할 때는 Pk를 대조하는 것을 잊지맙시다!!! -->
+	
+	<!-- 2020.02.03 페이징 -->
+	<select id="noticeSelectCount" resultType="int">
+		 select
+		 	count(*)
+		 from
+		    notice
+		 </select>
+	
 		 
 </mapper>
