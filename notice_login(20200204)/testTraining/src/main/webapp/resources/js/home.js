@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+/*
+	function testInsert(){
+		var memo = document.getElementById("memo");
+		var pw_memo = document.getElementById("pw_memo");
+		return true;
+	}
+
+	function ListView(){
+		return true;
+	}
+*/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringLegacyHomeWork"/>
+<aop-project name="testTraining"/>
+<aop-project name="notice_board"/>
+</aop-reference-model>
