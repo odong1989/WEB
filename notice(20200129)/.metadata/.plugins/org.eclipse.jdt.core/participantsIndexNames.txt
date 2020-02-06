@@ -23,6 +23,8 @@ D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\j
 \testTraining\src\main\java
 D:\SpringTestTraining200123\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1373613887.index
 \notice_board\src\main\java
+D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\930729749.index
+\sampleSpringMybatis_login\src\main\java
 D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2183665532.index
 \notice_board_loginSample\src\main\java
 D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\428080264.index
