@@ -29,7 +29,7 @@ ${errMsg}
 		<form action="memberlogin" method="post" onsubmit="">
 	 숙제
 	onsubmit=""를 활용하여 유효성검사를 하세요!(#시간이 없어서 생략한 것일 뿐이에요! -->
-		ID : <input type="text" name="member_id"><br/>
+		ID : <input type="text" name="member_id" value="${rememberId}"><br/>
 		PW : <input type="password" name="member_pw"><br/>
 		<label for="fuck" style="cursor:pointer">
 			<input type="checkbox" id="fuck" <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>name="remember" value="1">아이디 기억하기 <br/>

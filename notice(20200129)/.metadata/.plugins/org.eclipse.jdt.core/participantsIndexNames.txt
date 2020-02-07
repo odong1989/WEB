@@ -31,5 +31,7 @@ D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\j
 \notice_board_loginSample\src\main\java
 D:\SpringTestTraining200123\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2167292584.index
 \SpringLegacyHomeWork\src\main\java
+D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2007775657.index
+\sampleSpringMybatis_login\src\main\java
 D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2167292584.index
 \SpringLegacyHomeWork\src\main\java

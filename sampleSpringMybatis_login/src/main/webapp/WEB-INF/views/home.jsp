@@ -19,7 +19,7 @@
 			<li><a href="/member/memberLoginForm">로그인 폼으로 이동</a></li>
 		</c:when>
 		<c:otherwise> 
-			<li><a href="">게시판 이동</a></li>
+			<li><a href="/board/boardList">게시판 이동</a></li>
 			<li><a href="/member/memberLogout">로그아웃</a></li>
 		</c:otherwise>
 	</c:choose>
