@@ -11,14 +11,15 @@ function formCheck(){//id체크만 하는 함수.
 	var member_id = document.getElementById("member_id");
 	
 	if(member_id.value == "" || member.id.value.length ){
-		}
+		alert("ID 중복체크를 해야 회원가입이 가능합니다.");
+	}
 
 	
 }
 
 function idCheck(){
  	window.open("memberidCheckForm","newWin","left=300, top=300, width=500, height=300, resizeable=no");
-				//"열릴경로", "열릴창의 이름", "속성"
+				//"열릴경로",          "열릴창의 이름", "속성"
 	
 //테스트 코드------------------------------------------------------
 //	alert(1); //중복확인위한 팝업창 뜨는지 체크용

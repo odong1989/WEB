@@ -107,6 +107,7 @@ public class MemberController {
 		 */
 		
 		 /* 우리가 해야할 일[2020.02.06기준]
+		 * [스텝0] SQL 통해 회원정보 가져오기
 		 * [스텝1] 전달받은 ID,PW를 갖고 DB까지 가서 실제 정보와 일치하는가를 확인합니다.(#Select쿼리로 결과가 있으면 로그인처리 /결과가 null이면 로그인 불허)
 		 * [스텝2] 동일하다고 판단하면 로그인 처리
 		 * [스텝3] 체크박스가 체크되어 있다면 아이디를 기억
@@ -183,8 +184,8 @@ public class MemberController {
 	@RequestMapping(value="/memberLogout", method=RequestMethod.GET)
 	public String memberLogout(HttpSession session) {
 	//세션에 로그읺 할 때 저장했던 값을 지우는 일.	
-		session.removeAttribute("loginId"); //뭘 지울거냐?
 		logger.info("로그아웃 프로세스 시작");
+		session.removeAttribute("loginId"); //뭘 지울거냐?
 		logger.info("로그아웃 프로세스 - session의 loginId : {}",session.getAttribute("loginId"));
 		
 		/*				//[스텝2] 동일하다고 판단하면 로그인 처리

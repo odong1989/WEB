@@ -18,9 +18,10 @@ function useId(checkId){
 </head>
 <body>
 <h1>[ID중복체크(팝업창)]</h1>
+<!-- 체크를 해주는 SQL문관련은 MemberController.java - memberIdCheck 메소드 부분 참고. -->
 <form action="memberIdCheck" method="post">
 	ID : <input type="text" name="checkId" id="checkId"> <br/>
-	<input type="submit" value="ID중복체크" onclick="">
+	<input type="submit" value="ID중복체크">
 </form>
 
 <!-- 컨틀로러의 checkflag를 통해 출력할거냐 말거냐를 설정할 수 있씁니다. -->

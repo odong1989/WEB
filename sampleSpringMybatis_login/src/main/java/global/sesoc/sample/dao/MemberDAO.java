@@ -23,11 +23,8 @@ public class MemberDAO {
 	@Autowired
 	private SqlSession session;
 
-	/**
-	 * 전달된 Person객체의 값을 DB로 저장
-	 * @param person
-	 */
 	public Member memberSelectOne (String member_id) {
+		logger.info("BoardDAO.java - memberSelectOne 메소드 시작");
 		Member member = null;
 		
 		try {
@@ -36,6 +33,8 @@ public class MemberDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		logger.info("BoardDAO.java - memberSelectOne 리턴 member값 : {}", member);
+
 		return member;
 	}
 
@@ -48,9 +47,7 @@ public class MemberDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		
 		return result;
 	}	
-	
 	
 }

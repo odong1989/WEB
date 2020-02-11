@@ -7,6 +7,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+.trhover:hover{background-color:#EEEEEE;}
+a:link{text-decoration:none; color:black;}
+a:visited{text-decoration:none; color:black;}
+a:hover{text-decoration:none; color:blue;}
+</style>
 <Script type="text/javascript">
 	function boardWriteForm(){
 		location.href = "boardWriteForm"; //가야할 링크를 설정합니다.
@@ -47,7 +53,7 @@
 
 	<tr>
 		<c:forEach items="${list }" var="item" varStatus="status">
-			<tr>
+			<tr class="trhover">
 				<td>${(totalCount - status.index) - (navi.currentPage - 1) * navi.countPerPage}</td> <!-- 정수환반장의 글번호 카운트노하우2 -->
 				<td>
 				<a href="javascript:boardReadForm('${item.BOARD_NO}')">
