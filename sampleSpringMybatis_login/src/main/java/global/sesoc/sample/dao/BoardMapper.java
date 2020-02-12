@@ -22,4 +22,13 @@ public interface BoardMapper {
 //	public ArrayList<Board> 				  selectBoardList();
 //	public ArrayList<HashMap<String, Object>> selectBoardList();
 	public ArrayList<HashMap<String, Object>> selectBoardList(RowBounds rb ,String searchText); //페이징까지 처리
+	
+	
+	//20.02.11
+	public int boardDelete(Board board);
+	
+	//20.02.11
+	public void boardUpdate(Board board);
+	
+	
 }

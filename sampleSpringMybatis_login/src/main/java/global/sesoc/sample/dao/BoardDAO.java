@@ -106,4 +106,31 @@ public class BoardDAO {
 		return totalCount;
 	}
 	
+	public int boardDelete(Board board) {
+		int result_delete=0;
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			result_delete = mapper.boardDelete(board);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	//	logger.info("(DAO)result ({})",result);
+	
+		return result_delete;
+	}
+	
+	public void boardUpdate(Board board) {
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.boardUpdate(board);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	//	logger.info("(DAO)result ({})",result);
+			
+		
+		
+	}
 }

@@ -114,4 +114,36 @@
 			b.board_no = #{board_no}
 	</select>
 	
+	<delete id="boardDelete" parameterType="board">
+		delete from 
+			board
+		where
+			board_no = #{board_no}
+		and
+			member_id = #{member_id}<!-- 글쓴사람의 ID(member_id)와 로그인한 사람의 ID(#{member_id})가 같은지 최종확인. 
+										  자바스크립트 확인은 해커등이 손댈 우려가 있어서  SQL에서 한번더 체크 한다.-->	
+	</delete>
+	
+	<update id="boardUpdate" parameterType="board">
+	update
+		board
+	set
+		board_title = #{board_title}
+		,board_content = #{board_content}
+		<if test="board_savedfile != null and board_originfile != null">
+				,board_savedfile = #{board_savedfile}
+				,board_originfile = #{board_originfile}
+		</if>
+	where
+		board_no = #{board_no}
+	and
+		member_id = #{member_id}	
+	</update>
+	
+	<!-- 수정이나 삭제의
+		and
+			member_id = #{member_id};
+		코드는 있거나 없거나 작동은 동일합니다.
+		하지만 본 SQL문에서 한번더 검증을 하는 효과가 있으며 이를 통해 최종적으로 보안을 더 신경쓰는 효과를 얻습니다.		 -->
+	
 </mapper>
