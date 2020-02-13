@@ -17,6 +17,7 @@ import org.springframework.stereotype.Repository;
 import global.sesoc.sample.controller.MemberController;
 import global.sesoc.sample.vo.Board;
 import global.sesoc.sample.vo.Member;
+import global.sesoc.sample.vo.Reply;
 
 
 //@Repository를 붙여줘야 bean이 생성되어 보드다오가 전역으로 쓸수 있습니다.
@@ -128,9 +129,63 @@ public class BoardDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	//	logger.info("(DAO)result ({})",result);
-			
-		
-		
+	//	logger.info("(DAO)result ({})",result);	
 	}
+	
+	
+	
+	//20.02.12
+	public void replyInsert(Reply reply) {
+		logger.info("BoardDAO - replyInsert 시작 ");
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.replyInsert(reply);
+			
+		}catch(Exception e) {
+			logger.info("BoardDAO - replyInsert - 예외처리 발생 ");
+			e.printStackTrace();
+		}
+	}
+	public ArrayList<Reply> selectReply(int board_no){
+		ArrayList<Reply> replyList = null;
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			replyList=mapper.selectReply(board_no);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return replyList;
+	}
+	
+	public void replyDelete(Reply reply) {
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.replyDelete(reply);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}		
+	}
+	
+	public void replyUpdate(Reply reply) {
+
+		try {
+			BoardMapper mapper = session.getMapper(BoardMapper.class);
+			mapper.replyUpdate(reply);
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+		}			
+	}
+	
+	public void updateHits(int board_no) {
+		try {
+		BoardMapper mapper = session.getMapper(BoardMapper.class);
+		mapper.updateHits(board_no);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

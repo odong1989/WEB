@@ -29,7 +29,7 @@ create table reply(
 	,reply_content		varchar2(200)		not null
 	,member_id			varchar2(50)		not null	--리플작성자의 ID--
 	,reply_indate		date				default sysdate
-	
-	constraint reply_fk foreign key(board_no)
+	,constraint reply_fk foreign key(board_no)
 	references board(board_no) on delete cascade
 );
+

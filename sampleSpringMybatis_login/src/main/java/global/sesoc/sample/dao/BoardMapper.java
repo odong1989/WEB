@@ -6,6 +6,7 @@ import java.util.HashMap;
 import org.apache.ibatis.session.RowBounds;
 
 import global.sesoc.sample.vo.Board;
+import global.sesoc.sample.vo.Reply;
 
 public interface BoardMapper {
 	
@@ -29,6 +30,17 @@ public interface BoardMapper {
 	
 	//20.02.11
 	public void boardUpdate(Board board);
+	
+	//20.02.12
+	public void 			replyInsert(Reply reply);
+	public ArrayList<Reply> selectReply(int board_no);
+	public void 				replyDelete(Reply reply);
+
+	//20.02.13
+	//	<update id="replyUpdate" parameterType="reply">
+	public void replyUpdate(Reply reply);
+	
+	public void updateHits(int board_no);
 	
 	
 }

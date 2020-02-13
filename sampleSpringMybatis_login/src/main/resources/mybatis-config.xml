@@ -6,9 +6,10 @@
 	<typeAliases>
 		<typeAlias type="global.sesoc.sample.vo.Member" alias="member"/>
 		<typeAlias type="global.sesoc.sample.vo.Board" alias="board"/>
+		<typeAlias type="global.sesoc.sample.vo.Reply" alias="reply"/>		
 	</typeAliases>
 	<mappers>
 		<mapper resource="mapper/memberMapper.xml" />
-		<mapper resource="mapper/boardMapper.xml" />
+		<mapper resource="mapper/boardMapper.xml" />		
 	</mappers>
 </configuration>

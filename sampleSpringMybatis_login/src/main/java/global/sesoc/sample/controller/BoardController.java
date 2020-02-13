@@ -31,6 +31,7 @@ import global.sesoc.sample.util.FileService;
 import global.sesoc.sample.util.PageNavigator;
 import global.sesoc.sample.vo.Board;
 import global.sesoc.sample.vo.Member;
+import global.sesoc.sample.vo.Reply;
 
 /**
  * 사용자 입력을 받아 처리
@@ -126,12 +127,17 @@ public class BoardController {
 	@RequestMapping(value="boardReadForm", method=RequestMethod.GET)	
 	public String boardReadForm(int board_no, Model model) {
 		//board번호를 FK로 활용하여 웹페지기 가기
-		
-		logger.info("board_no {}",board_no);
 		HashMap<String, Object> board = dao.selectBoardOne(board_no);
-
+		ArrayList<Reply> replyList = dao.selectReply(board_no);
+		logger.info("board_no {}",board_no);
+		
+		
 		model.addAttribute("board", board);
+		model.addAttribute("replyList", replyList);
 		logger.info("board ({})",board);
+		
+		
+		dao.updateHits(board_no);
 		return "board/boardReadForm";
 	}
 	
@@ -300,5 +306,65 @@ public class BoardController {
 		return "redirect:boardReadForm?board_no="+board.getBoard_no();
 	}
 	
-
+	@RequestMapping(value="/replyInsert", method=RequestMethod.POST)
+	public String replyInsert(Reply reply, HttpSession session) {
+/*	
+	//사용자 화면에서 제공받음.
+	private int 	board_no;		//보드의 번호를 가져옴. 사람이 입력할 필요가 없지.(#글이 존재하고 있으니 리플이 있지)
+	private String  reply_content;	//리플 내용. 사용자의 입력을 가져온다.
+	//세션에게 받음
+	private String	member_id;		//세션에서 받아온다. 로그인한 사람의 id는 세션에서 갖고 있으니까
+ 
+	//자동 입력되므로 신경안써도 되는 것.
+    private int  	reply_no;		//시퀀스 통해 입력됨. 사람이 일일이 입력할 필요 없어
+	private String  reply_indate;	//자동으로 입력된다.
+ */
+		logger.info("BoardController - replyInsert 시작 ");
+		
+		String loginId = (String)session.getAttribute("loginId");
+		logger.info("BoardController - replyInsert -loginId :{} ",loginId);
+		
+		reply.setMember_id(loginId);
+		logger.info("BoardController - replyInsert -reply의 멤버아이디 :{} ",reply.getMember_id());
+		logger.info("BoardController - replyInsert -reply의 정보 : {} ",reply);
+		dao.replyInsert(reply);
+		
+		return "redirect:boardReadForm?board_no="+reply.getBoard_no();
+	}
+	
+	
+	
+	@RequestMapping(value="/replyDelete", method=RequestMethod.GET)
+	public String replyDelete(Reply reply, HttpSession session) {
+	//	public String replyDelete(int reply_no, int board_no) {으로 선언하는 것보다 효율적이다
+		String loginId = (String)session.getAttribute("loginId");
+		reply.setMember_id(loginId);
+		dao.replyDelete(reply);
+		return "redirect:boardReadForm?board_no="+reply.getBoard_no();
+		//해당 번호의 글로 바로 가기 위해 ?board_no="+reply.getBoard_no(); 를 추가합니다.
+	}
+	
+	@RequestMapping(value="/replyUpdate", method=RequestMethod.POST)
+	public String replyUpdate(Reply reply, HttpSession session){
+	/*Reply 클래스는 
+ 		private int  	reply_no;		//시퀀스 통해 입력됨. 사람이 일일이 입력할 필요 없어
+		private int 	board_no;		//보드의 번호를 가져옴. 사람이 입력할 필요가 없지.(#글이 존재하고 있으니 리플이 있지)
+		private String  reply_content;	//리플 내용. 사용자의 입력을 가져온다.
+		들을 갖고 있으므로 
+			function replyUpdateForm(reply_no, board_no, reply_content){
+		에서 3개의 값들을 보내줘도 reply이라는 1개의 파라미터로 처리가능하다 
+	 * */	
+		logger.info("BoardController - replyUpdate 시작 ");
+		logger.info("BoardController - replyUpdate 파라미터 reply값 : {} ",reply);
+		String loginId = (String)session.getAttribute("loginId");		
+		reply.setMember_id(loginId);
+		logger.info("BoardController - replyUpdate 파라미터 loginId값 : {} ",loginId);
+		logger.info("BoardController - replyUpdate 파라미터 reply값 : {} ",reply);
+		dao.replyUpdate(reply);
+		
+		
+		return "redirect:boardReadForm?board_no="+reply.getBoard_no();
+		
+	}
+	
 }
