@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="security.co.kr.dao.SecurityMapper">
+
+	<select id="selectUser" parameterType="User" resultType="User">
+		select
+			userId
+			,userPw
+			,userNm
+			,userAuth
+		from
+			security_user
+		where
+			userId = #{userId}
+	</select>
+</mapper>

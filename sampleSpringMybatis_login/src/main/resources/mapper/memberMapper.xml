@@ -24,7 +24,7 @@
 		member_id
 		,member_pw	
 		,member_nm	
-		,member_addr
+		,member_addr 
     	)values
     	(
     #{member_id}

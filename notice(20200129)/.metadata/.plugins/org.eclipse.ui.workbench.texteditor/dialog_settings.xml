@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="첨부파일 체크"/>
+		<item key="selection" value="List"/>
 		<list key="findhistory">
-			<item value="첨부파일 체크"/>
-			<item value="BoardController - 첨부파일 체크"/>
-			<item value="insert"/>
-			<item value="boardDelete"/>
-			<item value="boardUpdateForm"/>
-			<item value="dele"/>
-			<item value="deke"/>
-			<item value="글 목록 시작"/>
-			<item value="BoardController"/>
-			<item value="BoardController - board_no"/>
-			<item value="controller.BoardController - board_no"/>
-			<item value="redi"/>
-			<item value="loginID"/>
-			<item value="memberSelectOne"/>
-			<item value="memberSelectOne "/>
+			<item value="list"/>
+			<item value="read"/>
+			<item value="updateHits"/>
+			<item value="hit"/>
+			<item value="ㅗㅑㅅ"/>
+			<item value="HandlerInterceptorAdapter"/>
+			<item value="nput type=&quot;button&quot;, value=&quot;수정"/>
+			<item value="updateForm"/>
+			<item value="cancleUpdateForm"/>
+			<item value="ㅕㅕ"/>
+			<item value="UpdateForm"/>
+			<item value="replyUpdateForm"/>
+			<item value="replyUpdateForm("/>
+			<item value="reply_no"/>
+			<item value="replyUpdate"/>
 		</list>
 		<list key="replacehistory">
 		</list>
