@@ -1,0 +1,56 @@
+package com.sesoc.testTraining200123.dao;
+
+import java.util.ArrayList;
+
+//틀림 8 sqlsession 임포트 않았음 <-롬복 임포트하듯이 마이바티스도 임포트 합시다!!!
+import org.apache.ibatis.session.SqlSession;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.sesoc.testTraining200123.HomeController;
+//틀림11 vo패키지 임포트!!!
+import com.sesoc.testTraining200123.vo.MemoVO;
+
+//import com.sun.media.jfxmedia.logging.Logger;
+
+//틀림6 @Repository 미작성
+@Repository
+public class MemoDAO {
+	private static final Logger logger = LoggerFactory.getLogger(MemoDAO.class);
+
+	//틀림 7 전체 미작성--------------------------------------------------
+	@Autowired
+	private SqlSession session;
+	
+	public int insertMemo (MemoVO memo){
+		int resultCommit=0;
+		try {
+			MemoMapper mapper = session.getMapper(MemoMapper.class);
+			resultCommit = mapper.insertMemo(memo);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return resultCommit;
+	}
+	//틀림 7 전체 미작성--------------------------------------------------	
+	
+	public ArrayList<MemoVO> ListView(){
+	//day27-2 list 출력 부분 재작성 연습 다시할것	----
+		ArrayList<MemoVO> list = null;
+		
+		try {
+			MemoMapper mapper = session.getMapper(MemoMapper.class);
+			list  = mapper.ListView();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		logger.info("ArrayList<MemoVO> list 리턴전 값 : {}",list);
+		
+		return list;
+	}
+	
+}

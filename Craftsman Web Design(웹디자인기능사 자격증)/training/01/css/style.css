@@ -1,0 +1,43 @@
+/*여백 초기화(reset)*/
+* {margin :0; padding : 0;}
+.clearfix::before,
+.clearfix::after{display:block; content:''; clear:both;}
+
+/* :: 는 가상요소라는 뜻입니다.*/
+
+/*레이아웃*/
+#wrap{width: 1200px; margin:0 auto;}
+
+/*header*/
+#header{width: 100%;}
+/*자식인 .logo와 .nav가 높이값을 가지므로 header은 높이값을 안 갖는다.*/
+/*배경색도 필요없다. 확인용으로 끝났거니와 자식들 때문에 가려져서 안보임.*/
+#header .logo{float:left; width:250px; height:100px; background:#888;}
+#header .nav{float:left; width:950px; height:100px; background:#666;}
+
+
+/*banner*/
+#banner{width: 100%; height: 300px; background: #333;}
+
+/*contents */
+#contents{width: 1200px; height: 200px; background: #555;}
+#contents > div{float:left; width: 400px; height: 200px;}
+/*div를 사용하면 cont1,2,3 모두 적용된다.
+   >를 사용하면 첫번째 div들만 적용된다. 
+*/
+#contents > div.cont1{background: #ccc;}
+#contents > div.cont2{background: #aaa;}
+#contents > div.cont3{background: #fff;}
+
+<div class=""> <h3>공지사항</h3> </div>
+<div class="cont2"> <h3>갤러리 </h3></div>
+<div class="cont3"> <h3>팝업</h3>   </div>
+
+/*footer*/
+#footer{width: 1200px; height: 100px; background: #222;}
+
+#footer .foot1{float: left; width:200px; height:100px; background: #666;}
+#footer .foot2{float: left; width:800px; height:100px; background: #888;}
+#footer .foot3{float: left; width:200px; height:100px; background: #444;}
+/* //footer */
+

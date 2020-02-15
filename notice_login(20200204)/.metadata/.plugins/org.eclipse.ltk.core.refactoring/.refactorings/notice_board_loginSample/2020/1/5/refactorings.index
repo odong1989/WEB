@@ -1,0 +1,11 @@
+1580260552508	Rename type 'Person'
+1580260741647	Rename resource 'personMapper.xml'
+1580260793775	Rename type 'PersonMapper'
+1580260805448	Rename type 'noticeMapper'
+1580260811600	Rename type 'PersonDAO'
+1580260818832	Rename type 'notice'
+1580260830889	Rename resource 'noticeMapper.xml'
+1580261190365	Rename type 'InputController'
+1580350451863	Delete element
+1580350454909	Move file
+1580350613024	Move file

@@ -1,0 +1,1317 @@
+!SESSION 2020-01-21 12:03:35.416 -----------------------------------------------
+eclipse.buildId=4.5.0.201912171052-RELEASE
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-01-22 08:27:53.916
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-01-22 08:27:53.916
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.jface 2 0 2020-01-22 08:27:54.668
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-01-22 08:27:54.668
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b663112,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24a1858a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2020-01-22 08:37:02.058
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2020-01-22 08:37:02.069
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:20.508
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:20.514
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@915c47b[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:20.532
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:20.808
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.272
+!MESSAGE Boot LS startup time from start to initialized: 9708ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.335
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HfzqdxswisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.345
+!MESSAGE subscribing to classpath changes: sts4.classpath.Hfzqdxsw isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.354
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.366
+!MESSAGE subsribers = {sts4.classpath.Hfzqdxsw=Send Classpath Notifications(693)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.375
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.381
+!MESSAGE project SpringLegacyEx3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.390
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.396
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.402
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.408
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.414
+!MESSAGE project Spring200121result ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.422
+!MESSAGE project Spring200121result SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.428
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.437
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.445
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.451
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.Hfzqdxsw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.457
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:12:30.564
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-01-22 09:14:20.500
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.482
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.530
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.608
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.649
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.661
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.685
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.703
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.736
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.746
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.754
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:14:50.766
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.103
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.140
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.158
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.172
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.185
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:15:52.205
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.409
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.452
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.472
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.484
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.494
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:08.508
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.131
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.207
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.222
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.234
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.245
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:23:22.255
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.132
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.153
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.167
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.179
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.185
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:25:54.196
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.448
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.465
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.480
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.492
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.501
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:27:17.511
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.126
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.139
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.153
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.161
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.172
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.185
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.462
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.584
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.612
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.626
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.635
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:29:36.647
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.291
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.318
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.341
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.349
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.359
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:34:09.369
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.061
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.090
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.100
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.108
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.115
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:44:31.125
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.694
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.734
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.742
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.748
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 09:46:51.757
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.578
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.592
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.605
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.617
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.624
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:22:11.643
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.049
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.062
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.071
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.080
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.089
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:24:53.103
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.538
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.550
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.564
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.574
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.581
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:25:12.594
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.017
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.032
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.048
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.058
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.064
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:26:55.075
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:07.985
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:08.006
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:08.019
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:08.028
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:08.034
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:08.044
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.735
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.750
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.767
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.779
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.786
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:11.795
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.198
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.207
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.219
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.228
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.235
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:28:41.246
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.942
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.953
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.966
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.976
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.982
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:30:14.991
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.726
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.745
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.754
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.763
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.769
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:23.779
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.083
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.127
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.136
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.143
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.151
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:32:58.160
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.302
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.379
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.393
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.403
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.413
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:36:47.427
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.124
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.219
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.236
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.303
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.336
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:11.353
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.596
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.639
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.653
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.666
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.675
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:37:52.689
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.750
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.765
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.800
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.815
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.823
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:11.834
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.811
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.825
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.839
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.852
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.860
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:38:13.869
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.170
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.202
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.215
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.223
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.229
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:40:31.238
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:07.941
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:07.962
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:07.979
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:07.994
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:08.002
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:43:08.013
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.488
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.511
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.525
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.538
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.545
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:04.555
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.345
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.363
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.377
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.387
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.393
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:44:15.402
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.329
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.348
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.363
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.374
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.381
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:12.392
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.016
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.066
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.081
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.095
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.105
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:17.117
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.134
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.161
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.169
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.181
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.188
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:46:31.199
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.940
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.959
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.967
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.975
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.981
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:47:56.991
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.318
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.334
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.343
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.352
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.359
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:49:50.368
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.611
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.628
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.645
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.655
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.661
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:50:38.674
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.847
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.859
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.869
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.879
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.886
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 10:51:40.894
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.078
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.104
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.123
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.132
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.142
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:30.155
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.383
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.395
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.406
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.415
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.421
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:06:34.429
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.150
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.182
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.201
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.214
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.226
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:07:57.245
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.604
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.702
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.720
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.732
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.752
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:08:10.772
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.338
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.411
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.426
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.440
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.450
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:10:46.461
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.599
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.621
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.632
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.641
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.649
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:08.660
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.306
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.331
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.343
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.351
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.357
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:31.366
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.697
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.708
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.719
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.727
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.733
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:11:36.740
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.241
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.274
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.287
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.295
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.302
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:14:52.311
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.843
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.892
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.906
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.916
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.924
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:34.936
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.715
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.742
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.756
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.769
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.779
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:15:38.793
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.846
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.862
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.876
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.888
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.901
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:54.918
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:57.975
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:57.984
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:57.995
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:58.004
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:58.012
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:16:58.022
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.508
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.591
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.613
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.626
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.635
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:02.645
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:12.917
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:13.075
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:13.097
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:13.116
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:13.137
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:13.152
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.218
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.244
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.258
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.266
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.275
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:18.292
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.832
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.862
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.878
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.893
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.917
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:19:22.934
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.329
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.344
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.359
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.375
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.380
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:20:15.391
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.605
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.617
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.630
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.653
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.667
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:23:11.684
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:21.934
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:21.953
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:21.966
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:21.981
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:21.992
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:22.013
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.288
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.341
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.358
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.372
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.382
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:27:47.395
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.525
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.532
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.545
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.555
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.561
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:28:43.571
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.555
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.588
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.600
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.608
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.615
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:29:39.664
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.009
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.031
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.048
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.059
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.071
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:31:12.080
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.119
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.130
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.141
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.150
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.158
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:32:00.171
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.166
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.182
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.192
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.201
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.207
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 11:39:36.217
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-01-22 18:37:15.719
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.416
+!MESSAGE Preparing classpath changed notification SpringLegacyEx3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.453
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.497
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.531
+!MESSAGE buffering callback sts4.classpath.Hfzqdxsw SpringLegacyEx3 false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.559
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-01-22 18:37:18.591
+!MESSAGE executing callback sts4.classpath.Hfzqdxsw SUCCESS [done]
