@@ -87,4 +87,8 @@
 			<item value="D:\SourceTree\WEB\SpringSecurity"/>
 		</list>
 	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
 </section>
