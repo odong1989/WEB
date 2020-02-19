@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.swdo.memo.dao.MemoMapper">
+
+	<insert id="insertMemo" parameterType="memo">
+		insert into
+			memo(
+				memo_no
+				,memo_content
+				,memo_pw		
+			)values(
+				memo_seq.nextval
+				,#{memo_content}
+				,#{memo_pw}
+			)
+	</insert>
+
+	<select id="selectMemoList" resultType="memo">
+		select
+			memo_no
+			,memo_content
+			,memo_pw
+			,to_char(memo_indate, 'yyyy-MM-dd') as 	memo_indate
+		from
+			memo
+		order by
+			memo_no desc
+	</select>
+
+
+
+
+
+
+
+
+
+</mapper>

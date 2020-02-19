@@ -42,5 +42,33 @@ public class HomeController {
 	public String sel3Quiz() {
 		return "sel3Quiz";
 	}	
+
+	
+	@RequestMapping(value = "hw1", method = RequestMethod.GET)
+	public String hw1() {
+		return "hw1";
+	}	
+	
+	
+	@RequestMapping(value = "each", method = RequestMethod.GET)
+	public String each() {
+		return "each";
+	}	
+
+	@RequestMapping(value = "css", method = RequestMethod.GET)
+	public String css() {
+		return "css";
+	}	
+	
+	@RequestMapping(value = "Class", method = RequestMethod.GET)
+	public String Class() {
+		return "Class";
+	}	
+	
+	@RequestMapping(value = "hw2_myStyle", method = RequestMethod.GET)
+	public String hw2_myStyle() {
+		return "hw2_myStyle";
+	}	
+	
 	
 }
