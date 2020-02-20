@@ -17,13 +17,24 @@ $(function() {
 		var usernameVal = $("#username").val();
 		var usertypeVal = $(":radio:checked").val();				
 	
-		var infotableDoc = document.getElementById("infoTable");
+//		var infotableDoc = document.getElementById("infoTable");
 
-		//테이블 안에 넣어야 하므로 html-table 태그도 같이 작성하여 넣는다
-		infotableDoc.innerHTML += "<tr><td>"+ useridVal +"</td><td>"
-								  +"</td><td>"+usernameVal+"</td><td>"
-								  +"</td><td>"+usertypeVal+"</td><tr>";
+		var infotableDoc = $("#infoTable"); //infoTable : <table>의 id
+		var temp = "<tr><td>"+ useridVal +"</td><td>"
+				    +"</td><td>"+usernameVal+"</td><td>"
+			 	    +"</td><td>"+usertypeVal+"</td><tr>";
 
+		//20.02.20 선생님 - .html() 함수 설명하기 위해    		
+	    //$("#result2").html(result);처럼
+		//						   (번호  ,기존테이블의 구성)	
+		infotableDoc.html(function(index,node){
+			alert("index : "+ index);
+			alert("node : "+ node);
+			alert("temp : "+ temp);
+			// 기존테이블구성node, 신규추가내용 temp이 합체되어 새로 재로딩 되는셈 
+			return node+temp;
+		});
+			 	    
 	});
 
     /*이외의 방법

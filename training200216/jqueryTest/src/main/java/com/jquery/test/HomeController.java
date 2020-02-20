@@ -69,6 +69,36 @@ public class HomeController {
 	public String hw2_myStyle() {
 		return "hw2_myStyle";
 	}	
+
+	@RequestMapping(value = "hw2", method = RequestMethod.GET)
+	public String hw2() {
+		return "hw2";
+	}	
+
+	@RequestMapping(value = "val", method = RequestMethod.GET)
+	public String val() {
+		return "val";
+	}	
+
+	@RequestMapping(value = "attr", method = RequestMethod.GET)
+	public String attr() {
+		return "attr";
+	}	
+	
+	@RequestMapping(value = "hometext", method = RequestMethod.GET)
+	public String hometext() {
+		return "hometext";
+	}	
+
+	@RequestMapping(value = "node", method = RequestMethod.GET)
+	public String node() {
+		return "node";
+	}	
+	
+	@RequestMapping(value = "hw3_template", method = RequestMethod.GET)
+	public String hw3_template() {
+		return "hw3_template";
+	}		
 	
 	
 }

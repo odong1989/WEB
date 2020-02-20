@@ -11,29 +11,13 @@
 <title></title>
 <!-- .bgcolor, bgcolor0 : 클래스(.)가 bgcolor이거나 bgcolor0인 것 -->
 <style>
-	.bgColor0{  
-		background-color: orange;
-	}
-
-	.bgColor1{
-		background-color: aqua;
-	}
-	
-	.bgColor2{
-		background-color: green;
-	}
-	
-	.bgColor3{
-		background-color: olive;
-	}
-	
-	.bgColor4{
-		background-color: lime;
-	}
-
-	.bgColor5{
-		background-color: black;
-	}
+	.select{ background-color: pink; }
+	.bgColor0{ background-color: orange; }
+	.bgColor1{ background-color: aqua; }
+	.bgColor2{ background-color: green; }
+	.bgColor3{ background-color: olive; }
+	.bgColor4{ background-color: lime; }
+	.bgColor5{ background-color: black; }
 </style>
 
 <script src="<c:url value='/resources/jquery-3.4.1.js' /> "> </script>
@@ -41,7 +25,7 @@
 $(function(){
 
 	$("img").mouseenter(function(){ //mouseenter : 마우스가 위에 올라가있음을 의미함.
-		$(this).css("height",500) // this=클릭된 img태그의 문서개게를 			
+		$(this).css("height",700) // this=클릭된 img태그의 문서개게를 			
 	})
 		
 		
@@ -51,42 +35,34 @@ $(function(){
 
 	
 	$("p").mouseenter(function(){ //mouseenter : 마우스가 위에 올라가있음을 의미함.
-//		$(this).addClass("bgColor0");
-		$(this).addClass("bgColor"+index);	
+		//방법1. css 코드를  직접 입력합니다.
+		//$(this).css('background-color','pink');
+		//방법2. addClass명령을 사용하여  select라는 속성을 추가한다.
+		$(this).addClass('select');	
 	})
 		
 		
 	$("p").mouseleave(function(){ //mouseenter : 마우스가 위에 올라가있음을 의미함.
-		$(this).removeClass();
-	})		
-	
-		$("#btn4").click(function(){
-		
+		//방법1. css 코드를  직접 입력합니다.
+		//$(this).css('background-color','');
+		//방법2. addClass명령을 사용하여  select라는 속성을 추가한다.
+		$(this).removeClass('select');	
 	});
 
-	$("#btn3").click(function(){
-		$(":checked").each(function(index,item){//배열 생성과 동시에 각 배열을 each를 통해 생성
-		alert(item.value);
-		alert($(item).val()); //alert(item.value);와 같은 명령입니다.
-		});						
-	});
 
+//	setTimeout(함수, 시간); 
+//	setTimeout(함수, 5초);
+//setTimeout(함수,index*500);//0.5초 간격으로 index가 함수를 실시합니다.
 	
-	$("#btAutoRun").click(function(){
-		$("div>*").each(function(index,item){
-			//나의실수1)  $(item)으로 하면 되는데 temp=this;으로 두번 일하는 셈.
+	$("button").click(function(){
+		$("p").each(function(index,item){
 			setTimeout(function() {
 				$(item).addClass("bgColor"+index);			
-			}, index*1000);//나의실수☆: index*1000인데 시간인 1000만 설정.
+			}, index*500);
 		});
-	});
+	});				
 })
 </script>
-
-</head>
-
-
-
 </head>
 <body>
 
@@ -110,7 +86,6 @@ $(function(){
 
 <hr>
 <h3>[each+setTimeOut] 버튼 누르면 순차적자동으로 배경색 들어오게</h2>
-	<input type="button" id="btAutoRun" value="자동배경색on"><!--똑딱이 스위치처럼 on/off가 가능한것 -->	
-	
+	<button>누르세요</button>
 </body>
 </html>
