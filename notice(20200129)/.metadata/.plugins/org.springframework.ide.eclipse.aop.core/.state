@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="SpringLegacyHomeWork"/>
 <aop-project name="sampleSpringMybatis_login"/>
+<aop-project name="ajaxTest"/>
 <aop-project name="notice_board"/>
 <aop-project name="springLegacyMemo"/>
 </aop-reference-model>

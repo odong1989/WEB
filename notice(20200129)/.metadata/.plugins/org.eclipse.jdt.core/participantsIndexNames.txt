@@ -37,6 +37,8 @@ D:\SpringTestTraining200123\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearc
 \notice_board\src\main\java
 D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1733863839.index
 \notice_login(20200204)\src\main\java
+D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\338977069.index
+\ajaxTest\src\main\java
 D:\SpringTestTraining200123\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\202224730.index
 \testTraining\src\main\java
 D:\SourceTree\WEB\notice(20200129)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3842172048.index
