@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/resources/css/style.css">
 </head>
 <body>
-<img alt="이미지 준비중 입니다." src="/resources/images/photo.jpg">
+<img alt="이미지 준비중 입니다." src="resources/images/photo.jpg">
 
 <a href="/">메인으로</a>
 

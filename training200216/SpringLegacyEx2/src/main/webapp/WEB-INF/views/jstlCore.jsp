@@ -45,11 +45,13 @@ n = ${n }<br/>
 <c:forEach var="cnt" begin="1" end="5">
 	반복${cnt }
 </c:forEach>
+<br><br>
 
 <!-- end 값은 컬렉션의 사이즈의 -1 까지  -->
 <c:forEach var="i" begin="0" end="${list.size() -1 }">
 	${list.get(i) }
 </c:forEach>
+<br><br>
 
 <!-- java의 foreach문과 비슷한 유형 -->
 <c:forEach var="value" items="${list }">

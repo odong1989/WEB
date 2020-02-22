@@ -1,0 +1,102 @@
+<!--<%@ page language="java" contentType="text/html";
+    charsert="UTF-8" pageEncoding="UTF-8" %>-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        *:not(input){
+            border-style : solid;
+            border-color : gray;
+            padding : 5px;
+            margin : 15px;    
+        }
+        </style>
+
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            function resetFunc(){
+                $("*").css("border-color", "gray");
+            }
+
+            function selectFunc1(){
+                resetFunc();
+                $("*").css("border-color","red");
+            }
+
+            function selectFunc2(){
+                resetFunc();
+                $("#idtest1").css("border-color","red");
+            }
+
+            function selectFunc3(){
+                resetFunc();
+                $("#idtest1>ul").css("border-color","red");
+            }
+            function selectFunc4(){
+                resetFunc();
+                $("#idtest1>ul>li").css("border-color","red");
+            }
+
+            function selectFunc5(){
+                resetFunc();
+                $("div li").css("border-color","red");
+            }
+
+            function selectFunc6(){
+                resetFunc();
+                $("div>ul>li.clstest").css("border-color","red");
+            }
+
+            function selectFunc7(){
+                resetFunc();
+                $("div *").css("border-color","red");
+            }
+
+            function selectFunc8(){
+                resetFunc();
+                $("div").css("border-color","red");
+            }
+        </script>
+    </head>
+
+    <body>
+    <div><!-- div1 -->
+        <input type="button" value="*" onclick="selectFunc1()"><br>
+        <input type="button" value="div#idtest1" onclick="selectFunc2()"><br>
+        <input type="button" value="div>ul" onclick="selectFunc3()"><br>
+        <input type="button" value="div>ul>li" onclick="selectFunc4()"><br>
+        <input type="button" value="div li" onclick="selectFunc5()"><br>    
+        <input type="button" value="div>ul>li.clstest" onclick="selectFunc6()"><br>
+        <input type="button" value="div *" onclick="selectFunc7()"><br>
+        <input type="button" value="reset" onclick="resetFunc()"><br>
+        <input type="button" value="only div all" onclick="selectFunc8()"><br>
+        body
+
+        <div id="idtest1"> <!--div2-->
+            div#idtest1 
+                <ul>
+                    div#idtest1>ul
+                    <li>div#idtest1>ul>li</li>
+                    <li>div#idtest1>ul>li</li>
+                    <li>div#idtest1>ul>li</li>
+                    <li>div#idtest1>ul>li</li>
+                </ul>
+        </div>
+
+        <div> <!--div3 -->
+        div
+            <ul>
+                div > ul
+                    <li>div > ul > li </li>
+                    <li class="clstest"> div>ul>li.clstest </li>
+                    <li>div>ul>li</li>
+                    <li class="clstest"> div>ul>li.clstest </li>
+            </ul> 
+        
+        </div>    
+    </body>
+</html>
