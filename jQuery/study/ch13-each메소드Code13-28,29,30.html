@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script>
+            //배열 선언
+            $(document).ready(function(){
+                //변수를 선언.
+                var array = [
+                    {name : 'hanbit Media', link:'http://www.hanbit.co.kr/'},
+                    {name : 'Naver',        link:'https://www.naver.com/'},
+                    {name : 'Daum',         link:'https://www.daum.net/'}
+                ];
+
+
+            //$.each()매서드 사용 코드13-29
+            $.each(array,function(index, item){
+            //$.each()메서드의 콜백함수 코드 13-30
+                var output='';
+
+                //문자열 생성
+                output +='<a href='+item.link+'">';
+                output +='     <h1>'+item.name+'</h1>';
+                output +='</a>';
+
+                //body에 삽입.
+                document.body.innerHTML +=output;
+            });
+        });
+        </script>
+    </head>
+<body>
+
+</body>
+</html>
