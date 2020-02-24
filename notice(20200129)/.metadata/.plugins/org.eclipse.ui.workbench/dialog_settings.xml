@@ -9,8 +9,8 @@
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="1993"/>
-		<item key="DIALOG_Y_ORIGIN" value="222"/>
+		<item key="DIALOG_X_ORIGIN" value="468"/>
+		<item key="DIALOG_Y_ORIGIN" value="97"/>
 	</section>
 	<section name="ImportExportAction">
 		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>

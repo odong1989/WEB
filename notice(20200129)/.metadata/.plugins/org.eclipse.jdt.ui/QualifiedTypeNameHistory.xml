@@ -32,4 +32,5 @@
 <fullyQualifiedTypeName name="com.sesoc.ajaxtest.TestVO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

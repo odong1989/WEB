@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sesoc.moneybook.dao.MemberMapper">
+
+<insert id="insertMoneybookMember" parameterType="member" >
+insert into moneybook_member(
+    userid
+    ,userpwd
+        )values(
+     #{userid}
+    ,#{userpwd}
+    )
+</insert>
+
+
+<select id="selectOne" parameterType="string" resultType="member">
+		select 
+		    userid
+		   ,userpwd
+		from 
+		    moneybook_member
+		where
+		    userid=
+		    #{userid}
+</select>   
+</mapper>

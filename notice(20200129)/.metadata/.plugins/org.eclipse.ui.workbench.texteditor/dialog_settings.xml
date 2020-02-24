@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="test4"/>
+		<item key="selection" value="memberidCheck"/>
 		<list key="findhistory">
+			<item value="memberIdCheck"/>
+			<item value="useId"/>
+			<item value="memberidCheckForm"/>
+			<item value="formCheck"/>
 			<item value="test4"/>
 			<item value="btn4"/>
 			<item value="BoardMapper"/>
@@ -19,10 +23,6 @@
 			<item value="어떻게 되든"/>
 			<item value="notice"/>
 			<item value="noticeSelectList"/>
-			<item value="count"/>
-			<item value="movePage"/>
-			<item value="select"/>
-			<item value="noticeSelectCount"/>
 		</list>
 		<list key="replacehistory">
 		</list>
