@@ -16,6 +16,7 @@ public class MemberDAO {
 	@Autowired
 	private SqlSession session;
 	
+	
 	public int insertMoneybookMember(Member member){
 		int cnt=0;
 		try {
@@ -27,6 +28,7 @@ public class MemberDAO {
 		}
 	return cnt;
 	}
+	
 	public Member selectOne(String userid){
 		Member member=null;
 		

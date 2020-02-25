@@ -1,0 +1,20 @@
+
+<html>
+<head>
+<title></title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax('D:\SourceTree\WEB\jQuery\study\data.html',{
+            success:function (data){
+                $('body').append(data);
+            }
+        });
+    });
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
