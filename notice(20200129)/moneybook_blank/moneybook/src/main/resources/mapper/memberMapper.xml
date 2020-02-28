@@ -15,7 +15,23 @@ insert into moneybook_member(
     )
 </insert>
 
+<!--나의 경우 :<select id="selectOne" parameterType="string" resultType="member">
+<select id="selectOne" parameterType="string" resultType="member">
+		select 
+		    userid
+		   ,userpwd
+		from 
+		    moneybook_member
+		where
+		    userid=
+		    #{userid}
+</select>   
 
+
+선생님의 경우 : <select id="selectOne" parameterType="member" resultType="int">
+내가한 방식처럼해도 되지만 선생님의 경우에는 간단하게 확인이 가능하도록 할력고
+(회원가입시 0=가입실패, 1=가입성공)처럼 바로바로 확인 편하게 할려고.
+ -->
 <select id="selectOne" parameterType="string" resultType="member">
 		select 
 		    userid

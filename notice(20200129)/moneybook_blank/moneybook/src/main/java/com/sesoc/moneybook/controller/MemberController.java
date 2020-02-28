@@ -21,17 +21,22 @@ public class MemberController {
 
 	@Autowired	
 	MemberDAO dao = new MemberDAO();
-	
-	@RequestMapping(value="sign", method=RequestMethod.POST)
-	public String sign(Member member) {
-		dao.insertMoneybookMember(member);
-		return "redirect:/";
-	}
-	
+
+	//1.회원 가입화면 이동 / main.jsp의 "회원가입에게 a태그 href 속성으로 할당.
 	@RequestMapping(value="signupForm", method=RequestMethod.GET)
 	public String signupForm() {
 		return "signupForm";
 	}
+	
+	//2.회원가입 메서드
+	@RequestMapping(value="sign", method=RequestMethod.POST)
+	public String sign(Member member) {
+		int result = dao.insertMoneybookMember(member);
+		if(result ==1 ) return "redirect:loginForm"; //회원가입완료시 로그인폼으로 이동.
+		return "redirect:signupForm";//회원가입실패시 다시 ㅏ입페이지로 
+	}
+	
+
 	
 	@RequestMapping(value="loginForm", method=RequestMethod.GET)
 	public String loginForm() {

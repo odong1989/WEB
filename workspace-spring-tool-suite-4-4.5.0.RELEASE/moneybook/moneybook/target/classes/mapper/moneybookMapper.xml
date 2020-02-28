@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sesoc.moneybook.dao.MoneyBookMapper">
+	<insert id="write" parameterType="MoneybookVO"><!-- MoneybookVO는 화면으로 부터 전달받은 데이터이다. -->
+		insert into
+			moneybook_info
+		values(
+			moneybook_seq.nextval
+			,#{userid}
+			,#{memo}
+			,#{type}
+			,#{amount}			
+			,#{inputdate}
+		)
+	</insert>
+				 <!-- vo객체는 
+			Data
+			public class MoneybookVO {
+				private String infonum;
+				private String userid;
+				private String memo;
+				private String type;	//수입?지출? 양자 택일을 저장함.
+				private int amount;
+				private String inputdate;	//날짜정보를 저장
+			}
+			 -->
+	<select id="list" parameterType="MoneybookVO" resultType="MoneybookVO">
+		select 
+			*
+		from
+			moneybook_info
+		where
+			userid = #{userid}
+			AND type = #{type}
+			AND inputdate = #{inputdate}
+		order by
+			infonum DESC
+	</select>
+	
+	<delete id="remove" parameterType="MoneybookVO">
+		delete
+			moneybook_info
+		where
+			userid = #{userid}
+			AND infonum = #{infonum} <!-- 가계부 일련번호 -->
+	</delete>
+	
+</mapper>
+

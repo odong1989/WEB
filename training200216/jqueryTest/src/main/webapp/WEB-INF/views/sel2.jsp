@@ -15,7 +15,7 @@
 		$("#sel1").click(function(){
 			resetBGC();
 			$("a[href]").css("background-color","pink");
-			$("#this").css("background-color","pink"); //[수환씨 팁] 뭘 클릭했는지 알수 있어요!
+		//	$("#this").css("background-color","pink"); //[수환씨 팁] 뭘 클릭했는지 알수 있어요!
 			//id가 this = sel1 이라고 생각하면 됩니다.
 		});    
 

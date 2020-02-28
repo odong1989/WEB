@@ -12,6 +12,7 @@ public class MoneybookController {
 	
 	MoneybookDAO DAO = new MoneybookDAO();
 	
+	//가계부 화면 이동
 	@RequestMapping(value="moneybookList", method=RequestMethod.GET)
 	public String moneybookList() {
 		return "moneybookList";
