@@ -24,14 +24,18 @@
 	<context:component-scan base-package="com.sesoc.moneybook" />
 	
 	<!-- interceptor 등록 -->
-	<beans:bean id="loginInterceptor" class="com.sesoc.moneybook.interceptor.LoginInterceptor" />
+	<!-- id는 유일해야 합니다.(겹치면 안됩니다) -->	
+	<beans:bean id="loginInterceptor" class="com.sesoc.moneybook.interceptor.LoginInterceptor" /> 
 	
-	<!-- 아래 주석을 제거하여 interceptor 적용 -->
-<!-- 	<interceptors> -->
-<!-- 		<interceptor> -->
-<!-- 			<mapping path=""/> -->
-<!-- 			<beans:ref bean=""/> -->
-<!-- 		</interceptor> -->
-<!-- 	</interceptors> -->
+     <!-- 스텝3.2 interceptor 적용 -->
+ 	<interceptors>
+ 		<interceptor>
+ 			<mapping path="/moneybook"/> <!-- 장부목록(moneybook)을 보여달라 할때  -->
+ 			<mapping path="/wirte"/> <!-- 글을 쓰려  할때  -->
+ 			<mapping path="/remove"/> <!-- 글을 삭제 할때  -->
+ 			<mapping path="/list"/> <!-- 목록(list) 할때  -->
+ 			<beans:ref bean="loginInterceptor"/> <!--내가 적용하고픈 인터셉터 파일의 id명을 적습니다.  -->
+ 		</interceptor>
+ 	</interceptors>
 	
 </beans:beans>

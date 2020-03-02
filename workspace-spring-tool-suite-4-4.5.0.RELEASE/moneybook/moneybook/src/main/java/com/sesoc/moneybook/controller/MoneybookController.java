@@ -51,7 +51,7 @@ public class MoneybookController {
 	}
 
 	
-	
+
 	// 가계부 삭제
 	@RequestMapping(value = "remove", method = RequestMethod.GET)
 	@ResponseBody

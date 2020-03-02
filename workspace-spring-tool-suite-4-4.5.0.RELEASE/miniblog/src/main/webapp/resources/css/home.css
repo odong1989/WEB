@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+h1{color:red;}
+div#wrap {
+	width: 100%;
+	margin-top: 10%;
+	margin: auto;
+}
+
+h1.title {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+div table {
+	width: 100%;
+	border-style: none;
+	font-size: 1.3em;
+}
+
+#printTable {
+	border-style: solid;
+}
+
+input[type="text"] {
+	width: 90%;
+}

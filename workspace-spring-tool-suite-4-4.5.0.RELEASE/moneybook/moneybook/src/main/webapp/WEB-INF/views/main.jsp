@@ -39,6 +39,11 @@
 					<a href="<c:url value="logout" />">로그아웃</a>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<a href="<c:url value="testAjax" />">test</a>
+				</td>
+			</tr>
 		</table>
 	</div>
 </div>
