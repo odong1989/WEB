@@ -3,14 +3,16 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<typeAliases>
-		<typeAlias type="com.swdo.boseong.vo.miniblogboard"  alias="board"/>
-		<typeAlias type="com.swdo.boseong.vo.miniblogmember" alias="member"/>
-		<typeAlias type="com.swdo.boseong.vo.miniblogreply"  alias="reply" />
-	</typeAliases>
+	<typeAliases>										
+		<typeAlias type="com.swdo.boseong.vo.MiniblogMember" alias="member"/>
+<!--		<typeAlias type="com.swdo.boseong.vo.MiniblogBoard" alias="board"/>
+		<typeAlias type="com.swdo.boseong.vo.MiniblogReply" alias="reply"/>
+ -->
+ 	</typeAliases>
 	<mappers>
-<!-- 		<mapper resource="mapper/memberMapper.xml" />
-		<mapper resource="mapper/boardMapper.xml" />
-		<mapper resource="mapper/replyMapper.xml" /> -->
+		<mapper resource="mapper/memberMapper.xml" />
+<!--		<mapper resource="mapper/boardMapper.xml" />
+		<mapper resource="mapper/replyMapper.xml" /> 
+  -->
 	</mappers>
 </configuration>

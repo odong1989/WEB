@@ -1,3 +1,5 @@
+--1.회원테이블(miniblogmember)
+--1.1 회원테이블 생성
 drop table miniblogmember;
 create table miniblogmember(
 miniblogmember_id         varchar2(100)       primary key     
@@ -6,6 +8,30 @@ miniblogmember_id         varchar2(100)       primary key
 ,email            varchar2(100)       not null
 ,phone            varchar2(100)       not null
 );
+--추가할 것 : 가입일(date형으로 자동 삽입
+
+--1.2회원추가문
+insert into MINIBLOGMEMBER(
+MINIBLOGMEMBER_ID,
+PASSWORD,
+MEMBERNAME,
+EMAIL,
+PHONE)
+values(
+'test'
+,'test'
+,'testMan'
+,'test@test.com'
+,'010-1234-1234'
+);
+commit;
+--1.3회원정보출력(전체)
+select * from MINIBLOGMEMBER;
+
+--1.4회워정보확인(계정중복체크)
+select * from MINIBLOGMEMBER
+where MINIBLOGMEMBER_ID = 'test';
+
 
 drop table miniblogboard;
 create table miniblogboard(

@@ -28,24 +28,26 @@ public class MemberController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 
+	//1.회원가입(1)가입폼으로 이동
 	@RequestMapping(value="/memberJoinForm", method=RequestMethod.GET)
 	public String memberJoinForm() {
 		logger.info("회원 가입폼 이동");
 		return "member/memberJoinForm";
 	}	
 	
+	
+	//1.회원가입(2)ID중복체크 폼으로 이동
 	@RequestMapping(value="/memberidCheckForm", method=RequestMethod.GET)
 	public String memberidCheckForm(Model model) {
 		logger.info("아이디 중복 체크 폼 이동 ");
-		
 		//ID중복 팝업창에서 중복채크버튼 클릭하기 전에는
 		//아직 DB조회가 안되어있으니 중복여부 결과를 출력않도록 하는 설정입니다. 
 		boolean checkFlag = false;
 		model.addAttribute("checkFlag", checkFlag);
-
 		return "member/memberidCheckForm";
 	}
 	
+	//1.회원가입(3)ID중복확인 실시
 	@RequestMapping(value="/memberIdCheck", method=RequestMethod.POST)
 	public String memberIdCheck(String checkId, Model model) {
 		Member member = dao.memberSelectOne(checkId);

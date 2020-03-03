@@ -25,7 +25,16 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.swdo.boseong" />
-	
-	
-	
+	<!--
+	<beans:bean id="LoginInterceptor" class="com.swdo.boseong.interceptor.LoginInterceptor"></beans:bean>
+	<interceptors>
+		<interceptor>
+			<mapping path="/admin/adminManager" />
+			<mapping path="/board/boardInsertForm" />
+			<mapping path="/board/BoardUpdateForm" />
+			<mapping path="/member/memberMypage" />	
+			<beans:ref bean="loginInterceptor"/>
+		</interceptor>
+	</interceptors>
+	  -->
 </beans:beans>

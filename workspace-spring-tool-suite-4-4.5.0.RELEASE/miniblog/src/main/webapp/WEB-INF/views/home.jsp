@@ -14,18 +14,21 @@
 <div id="wrap" >
 	<c:choose>
 		<c:when test="${sessionScope.loginId == null }">
-			<form action="Login" >
-			<table id="loginBefore">
+			<form action="LoginExe" method="post">
+			<table id="loginBefore" border=1>
 				<tr>
 					<td>아이디</td>
-					<td><input type="text" id="" name=""></td>
+					<td><input type="text" id="miniblogmember_id" name="miniblogmember_id"></td>
 				</tr>
 				<tr>
 					<td>패스워드</td>
-					<td><input type="password" id="" name=""></td>
+					<td><input type="password" id="password" name="password"></td>
 				</tr>		
 				<tr>
-					<td><a href="member/moveMemberJoinForm">회원가입</a></td>
+					<td>
+						<input type="submit" value="로그인하기">
+						<a href="member/moveMemberJoinForm">회원가입</a>
+					</td>
 				</tr>		
 			</table>
 			</form>
@@ -39,8 +42,8 @@
 		
 		<c:otherwise>
 			<table id="loginAfter">
-				<tr rowspan="2">
-					<td colspan="2">${id}{님! 환영합니다!}</td>
+				<tr>
+					<td>${id}{님! 환영합니다!}</td>
 				</tr>
 			</table>
 			<table id="myboardBefore"></table>
