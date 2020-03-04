@@ -1330,3 +1330,468 @@ java.net.UnknownHostException: dist.springsource.com
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-04 07:57:06.600
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-04 07:57:06.671
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.833
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.847
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.886
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.901
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.913
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.925
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.948
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.965
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.979
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:31.995
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:32.017
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:32.036
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:32.054
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:32.650
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.eclipse.wst.server.core 4 0 2020-03-04 08:00:33.784
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.627
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.638
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.652
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.667
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.680
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.696
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.716
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.737
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.760
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.795
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.817
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.911
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:47.968
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:49.032
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.010
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.215
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.234
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.254
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.268
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.298
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.320
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.334
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.347
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.364
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.382
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.459
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.474
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:50.567
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:51.043
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:51.075
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:51.089
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:51.103
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:51.112
+!MESSAGE executing callback sts4.classpath.mFEglGXk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:00:53.126
+!MESSAGE executing callback sts4.classpath.mFEglGXk FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-03-04 08:00:53.138
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.690
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.726
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.744
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.763
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.777
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.788
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.799
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.808
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.818
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.826
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.839
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.850
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.860
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:01:30.911
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.139
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.148
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.158
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.172
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.180
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.187
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.201
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.211
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.220
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.229
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.239
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.251
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.262
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:42.288
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.346
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.369
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.383
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.392
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.401
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.412
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.433
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.452
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.461
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.468
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.480
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.489
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.501
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:44.522
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.724
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.740
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.751
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.762
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.772
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.795
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.806
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.813
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.820
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.832
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.843
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.863
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:45.885
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.175
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.184
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.197
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.207
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.218
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.226
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.237
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.248
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.255
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.262
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.274
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.293
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.306
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:02:48.348
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.756
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.764
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.778
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.789
+!MESSAGE buffering callback sts4.classpath.mFEglGXk moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.801
+!MESSAGE Preparing classpath changed notification notice_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.809
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.821
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.833
+!MESSAGE buffering callback sts4.classpath.mFEglGXk notice_board false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.842
+!MESSAGE Preparing classpath changed notification sampleSpringMybatis_login
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.848
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.858
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.868
+!MESSAGE buffering callback sts4.classpath.mFEglGXk sampleSpringMybatis_login false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.874
+!MESSAGE executing callback sts4.classpath.mFEglGXk 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-04 08:03:29.896
+!MESSAGE executing callback sts4.classpath.mFEglGXk SUCCESS [done]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-03-04 09:51:30.873
+!MESSAGE Several ports (8005, 8888, 8009) required by Tomcat v9.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

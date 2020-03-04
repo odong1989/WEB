@@ -1,0 +1,16 @@
+
+/* 공통(모든페이지) css설정 */
+body{
+	margin: 20px;
+}
+
+/* memberJoinForm.jsp css설정 */
+tr#buttonAlign input{
+	text-align : center;
+	margin : 10px;
+}
+
+
+/* index.jsp css설정 */
+
+#main

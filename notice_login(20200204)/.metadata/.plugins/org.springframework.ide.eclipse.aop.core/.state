@@ -2,5 +2,5 @@
 <aop-reference-model>
 <aop-project name="SpringLegacyHomeWork"/>
 <aop-project name="testTraining"/>
-<aop-project name="notice_board"/>
+<aop-project name="notice_board_loginSample"/>
 </aop-reference-model>

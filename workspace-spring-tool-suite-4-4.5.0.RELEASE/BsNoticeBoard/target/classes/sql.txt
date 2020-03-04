@@ -1,0 +1,31 @@
+--회원정보 저장테이블(member)--
+create table member (
+      member_id         varchar2(30)                  primary key
+      ,member_pw        varchar2(30)                  not null
+      ,member_nm        varchar2(30)                  not null
+      ,member_addr      varchar2(100)                
+      ,member_indate    date                          default sysdate
+);
+create table board(
+      board_no                number                              primary key
+      ,member_id              varchar2(30)                  not null --글을 쓴 사람이 누구인지 알기위해서 왜래키로 적용하고자 한다.(외래키 설정은 아래서 설정)--
+      ,board_title            varchar2(100)                 not null
+      ,board_content          carchar2(500)                not null
+      ,board_hits             number                              default 0
+      ,board_savedfile  varchar2(100)
+      ,board_originfile varchar2(100)
+      ,board_indate           date                          default sysdate
+      
+      --외래키 설정--
+      ,constraint board_fk foreign key(member_id)       
+      references member(member_id) on delete  cascade 
+);
+create table reply(
+      reply_no                number                  primary key
+      ,board_no               number                  not null   
+      ,reply_content          varchar2(100)           not null
+      ,member_id              varchar2(30)            not null      
+      ,reply_indate           date                    default sysdate
+      ,constraint reply_fk foreign key(board_no)
+      references board(board_no) on delete cascade
+);
