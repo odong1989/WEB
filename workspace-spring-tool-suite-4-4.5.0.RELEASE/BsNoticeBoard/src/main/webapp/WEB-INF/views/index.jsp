@@ -27,6 +27,9 @@
 			<tr>	
 				<td><a href="/member/memberLoginForm">로그인 폼으로 이동</a></td>
 			</tr>
+			<tr>	
+				<td><a href="/board/boardList">게시판 이동[인터셉션 확인용]]</a></td>
+			</tr>
 		</c:when>
 			
 		<c:otherwise> 
@@ -34,7 +37,7 @@
 				<td>${sessionScope.loginId}님 환영합니다!</td>		
 			</tr>
 			<tr>
-				<td>My페이지</td>		
+				<td><a href= "/member/memberMypage">MyPage</a></td>		
 			</tr>
 			<tr>	
 				<td><a href="/board/boardList">게시판 이동</a></td>

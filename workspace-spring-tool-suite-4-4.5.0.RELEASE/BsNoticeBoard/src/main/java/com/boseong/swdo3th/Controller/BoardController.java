@@ -70,7 +70,7 @@ public class BoardController {
 	//2.1게시판 글 등록폼 이동
 	@RequestMapping(value="boardWriteForm", method=RequestMethod.GET)
 	public String boardWriteForm() {
-		logger.info("글 등록폼 시작");
+		logger.info("글 등록폼으로 이동");
 		return "/board/boardWriteForm";
 	}
 	
@@ -97,7 +97,7 @@ public class BoardController {
 		return "redirect:boardList";
 	}
 	
-	//
+	//3.게시판 글 읽기(1개의 글만 자세히 읽기)========================================================================
 	@RequestMapping(value="boardReadForm", method=RequestMethod.GET)	
 	public String boardReadForm(int board_no, Model model) {
 		//board번호를 FK로 활용하여 웹페지기 가기
@@ -232,17 +232,7 @@ public class BoardController {
 	//3.1[실행]리플 추가
 	@RequestMapping(value="/replyInsert", method=RequestMethod.POST)
 	public String replyInsert(Reply reply, HttpSession session) {
-/*	
-	//사용자 화면에서 제공받음.
-	private int 	board_no;		//보드의 번호를 가져옴. 사람이 입력할 필요가 없지.(#글이 존재하고 있으니 리플이 있지)
-	private String  reply_content;	//리플 내용. 사용자의 입력을 가져온다.
-	//세션에게 받음
-	private String	member_id;		//세션에서 받아온다. 로그인한 사람의 id는 세션에서 갖고 있으니까
- 
-	//자동 입력되므로 신경안써도 되는 것.
-    private int  	reply_no;		//시퀀스 통해 입력됨. 사람이 일일이 입력할 필요 없어
-	private String  reply_indate;	//자동으로 입력된다.
- */
+
 		logger.info("BoardController - replyInsert 시작 ");
 		
 		String loginId = (String)session.getAttribute("loginId");

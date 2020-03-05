@@ -21,10 +21,10 @@ ${errMsg}
 
 <!-- 로그인폼--->
 <form action="memberLoginExe" method="post">
-ID : <input type="text" name="member_id" >
-PW : <input type="password" name="member_pw">
-<input type="checkbox" name="remember" value="1">아이디 기억하기<br/>
-<input type="submit" value="로그인 하기"><br/>
+	ID : <input type="text" name="member_id" >
+	PW : <input type="password" name="member_pw">
+	<input type="checkbox" name="remember" value="1">아이디 기억하기<br/>
+	<input type="submit" value="로그인 하기"><br/>
 </form>
 
 </body>

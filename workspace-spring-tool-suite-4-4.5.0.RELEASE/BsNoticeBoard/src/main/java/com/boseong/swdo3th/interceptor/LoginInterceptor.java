@@ -12,16 +12,19 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 	private static final Logger logger = LoggerFactory.getLogger(LoginInterceptor.class);
 
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) 
+			throws Exception {
+		logger.info("LoginInterceptor 시작");
+
 		HttpSession session = request.getSession();
-		System.out.println("session:"+ session.toString() );
+		logger.info("session: {}", session.toString());
+	
+		String loginId = (String)session.getAttribute("loginId"); 
+		logger.info("loginId : {}",loginId);
 		
-		String userid = (String)session.getAttribute("userid"); 
-		System.out.println("userid:"+userid);
-		//if(userid == null) {//왜 형변환하는데 널값이 되버리나
-		if(session == null) {
-		//	response.sendRedirect(request.getContextPath() + "/member/memberLoginForm");//기존 바로 로그인화면이동
-			response.sendRedirect(request.getContextPath() + "/member/memberLoginAlertPopup");//팝업알림 후 로그인이동하도록
+
+		if(loginId == null) {
+			response.sendRedirect(request.getContextPath() + "/member/memberLoginForm");
 			return false;
 		}
 		

@@ -2,6 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.boseong.swdo3th.DAO.BoardMapper">	 
+<!-- 
+	<select id="selectBoardList" parameterType="string" resultType="hashmap">
+
+ -->
+	 <!-- 1 -->
 	<select id="selectBoardList" parameterType="string" resultType="hashmap">
 		select
 			b.board_no as board_no
@@ -25,7 +30,8 @@
 			b.board_no desc	
 	</select>
 
-		<select id="selectTotalCount" parameterType="string"  resultType="int">
+	<!-- 2 -->
+	<select id="selectTotalCount" parameterType="string"  resultType="int">
 		select
 			count(*)
 		from
@@ -34,10 +40,10 @@
 		<if test="_parameter != '' ">
 		where
 			board_title like '%' || #{searchText}|| '%' 
-		</if>
-		
+		</if>	
 	</select>
 	 
+	<!-- 3 -->
 	<!-- 첨부파일은 있을수도 없을수도 있으니 동적쿼리. -->
 	<insert id ="insertBoard" parameterType="board">
 		insert into

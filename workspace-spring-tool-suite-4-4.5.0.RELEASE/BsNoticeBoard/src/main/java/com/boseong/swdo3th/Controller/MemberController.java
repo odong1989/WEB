@@ -139,26 +139,31 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
-	
+	/*
 	//2.3 인터셉션(로그인X상태서 로그인창으로 자동이동)
 	@RequestMapping(value="memberLoginAlertPopup", method=RequestMethod.GET)
 	public String memberLoginAlertPopup(HttpSession session) {
 		logger.info("로거 memberLoginAlertPopup");
 		return "member/interceptPopup";
 	}
-	
+	*/
 	
 	//3.로그아웃===========================================================================================================
 	@RequestMapping(value="/memberLogout", method=RequestMethod.GET)
 	public String memberLogout(HttpSession session) {
 	//세션에 로그읺 할 때 저장했던 값을 지우는 일.	
 		logger.info("로그아웃 프로세스 시작");
-		session.removeAttribute("loginId"); //뭘 지울거냐?
+		session.removeAttribute("loginId");
 		logger.info("로그아웃 프로세스 - session의 loginId : {}",session.getAttribute("loginId"));
-		/*				//[스텝2] 동일하다고 판단하면 로그인 처리
-				session.setAttribute("loginId", member.getMember_id());//세션에게 로근했다고 판단할 수 있는 정보를 입력해주는 것이 로그인 처리입니다.
-	     */
-		//리턴으로 돌아가면 메인의 "게시판" "로그아웃"이 뜨지 않아야 하죠.
 		return "redirect:/";
 	}	
+	
+	
+	//4.MyPage============================================================================================================
+	@RequestMapping(value="memberMypage", method=RequestMethod.GET)
+	public String memberMypage() {
+		logger.info("move mypage");
+		return "/member/memberMypage";
+	}		
+	
 }

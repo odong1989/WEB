@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 function idCheck(){
- 	window.open("memberidCheckForm","newWin","left=300, top=300, width=500, height=300, resizeable=no");
-				//"열릴경로",          "열릴창의 이름", "속성"
+ window.open("memberidCheckForm","newWin","left=300, top=300, width=500, height=300, resizeable=no");
 	
 function formCheck(){//id체크만 하는 함수.
 	var member_id = document.getElementById("member_id");
@@ -19,20 +18,12 @@ function formCheck(){//id체크만 하는 함수.
 	
 }
 
-//테스트 코드------------------------------------------------------
-//	alert(1); //중복확인위한 팝업창 뜨는지 체크용
-// window.open("http://www.naver.com"); //window.open : 새창열기
-//--------------------------------------------------------------
-}
 </script>
 </head>
 
 
 <body>
 <h1>회원가입 제작</h1>
-<!-- [?]onsubmit="return formCheck(); 는 뭔가요?
-	 [!] 유효성 검사 위한 자바스크립트다 어리석은 나 자신아 -_- -->
-<!-- name이 자바,SQL과 같아야 입력정보가 잘 전달됨!!! -->
 <form action="memberJoin" method="post" onsubmit="return formCheck();">
 	ID : <input type="text" name="member_id" id="member_id" readonly="readonly">
 		<!-- id중복체크 팝업창을 띄워서 id의 중복여부를 확인하고 ㅇㅋ해야 원하는 계쩡입력되도록할거야 
