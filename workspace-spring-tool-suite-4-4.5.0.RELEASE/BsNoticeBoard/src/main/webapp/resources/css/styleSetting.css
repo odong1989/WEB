@@ -1,7 +1,30 @@
 
 /* 공통(모든페이지) css설정 */
-body{
-	margin: 20px;
+/*윗부분- 로고, 메뉴(로그인,회원가입,마이페이지,관리자로그인) */
+.logo{
+	position:absolute;
+  	width:100px;
+ 	height: 100px;
+	background-color : red;
+}
+div.Menubar{
+	position:relative;
+  	width:70%;
+  	left:200px;
+  	height:250px;
+  	border: 1px solid gold;
+	background-color : blue;
+}
+div.noticeAll{	
+	position:absolute;
+	width:200px;
+	height:600px;
+}
+
+div.maker{
+	width:1000px;
+	height:50px;
+	background-color : yellow;
 }
 
 /* memberJoinForm.jsp css설정 */
@@ -12,5 +35,31 @@ tr#buttonAlign input{
 
 
 /* index.jsp css설정 */
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 6px;
+}
+.TalkBox {
+  width: 200px;
+  margin: 10px auto;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 90;
+  color: #fff;
+  font-family: arial;
+/*position:relative;*/  
+}
+
+
+
 
 #main

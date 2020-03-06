@@ -9,6 +9,26 @@
 	</script>
 	</head>
 <body>
+<div class="Logo">
+<a href="/"><img src="/resources/img/img1.daumcdn.png"></a>
+
+</div>
+<div class="Menubar">
+</div>
+
+<div="noticeTalkBox">
+<div class="TalkBox sb1">I'm speech bubble</div>
+<div class="TalkBox sb2">I'm speech bubble</div>
+<div class="TalkBox sb3">I'm speech bubble</div>
+<div class="TalkBox sb4">I'm speech bubble</div>	
+
+</div>
+<div="gallery">
+
+</div>
+
+
+
 <c:choose>
 	<c:when test="${sessionScope.loginId == null}">
 		sessionScope : NULL<br>
@@ -17,7 +37,6 @@
 		sessionScope : ${sessionScope.loginId}<br>
 	</c:otherwise>
 </c:choose>
-
 <table>
 	<c:choose>
 		<c:when test="${sessionScope.loginId == null}">
@@ -48,7 +67,10 @@
 		</c:otherwise>
 	</c:choose>
 </table>
-	
+<div class="maker">
+
+</div>
+
 
 </body>
 </html>
