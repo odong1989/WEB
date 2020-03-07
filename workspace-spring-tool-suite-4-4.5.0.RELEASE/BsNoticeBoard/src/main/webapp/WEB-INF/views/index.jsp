@@ -9,66 +9,80 @@
 	</script>
 	</head>
 <body>
-<div class="Logo">
-<a href="/"><img src="/resources/img/img1.daumcdn.png"></a>
+<div class="header">
+	<div class="Logo">
+	<a href="/"><img src="/resources/img/logo.jpg" width="100" ></a>
+	</div>
+	<div class="Menubar">
+	<table>
+		<c:choose>
+			<c:when test="${sessionScope.loginId == null}">
+				<tr>
+					<td><a href="/member/memberLoginForm">로그인하기</a></td>
+					<td><a href="/member/memberJoinForm">회원가입하기</a></td>
+				</tr>
+			</c:when>
+			<c:otherwise> 
+				<tr>
+					<td>${sessionScope.loginId}님 환영합니다!</td>		
+					<td><a href= "/member/memberMypage">MyPage</a></td>		
+					<td><a href="/board/boardList">게시판 이동</a></td>
+					<td><a href="/member/memberLogout">로그아웃</a></td>
+				</tr>
+			</c:otherwise>
+		</c:choose>
+	</table>
+	</div>
+</div>
+
+
+<div class="noticeByAdmin">
+[관리자 알림]
+ 		<div class="TalkBox talk">
+</div>	
 
 </div>
-<div class="Menubar">
-</div>
 
-<div="noticeTalkBox">
-<div class="TalkBox sb1">I'm speech bubble</div>
-<div class="TalkBox sb2">I'm speech bubble</div>
-<div class="TalkBox sb3">I'm speech bubble</div>
-<div class="TalkBox sb4">I'm speech bubble</div>	
-
-</div>
-<div="gallery">
-
-</div>
-
-
-
-<c:choose>
-	<c:when test="${sessionScope.loginId == null}">
-		sessionScope : NULL<br>
-	</c:when>
-	<c:otherwise>
-		sessionScope : ${sessionScope.loginId}<br>
-	</c:otherwise>
-</c:choose>
+<div class="noticeBoard">
+	[게시판]
+<!-- 	
+<h1>[글 목록]</h1>
 <table>
-	<c:choose>
-		<c:when test="${sessionScope.loginId == null}">
-			<tr>
-				<td><a href="/member/memberJoinForm">회원가입 폼으로 이동</a></td>
-			</tr>
-			<tr>	
-				<td><a href="/member/memberLoginForm">로그인 폼으로 이동</a></td>
-			</tr>
-			<tr>	
-				<td><a href="/board/boardList">게시판 이동[인터셉션 확인용]]</a></td>
-			</tr>
-		</c:when>
-			
-		<c:otherwise> 
-			<tr>
-				<td>${sessionScope.loginId}님 환영합니다!</td>		
-			</tr>
-			<tr>
-				<td><a href= "/member/memberMypage">MyPage</a></td>		
-			</tr>
-			<tr>	
-				<td><a href="/board/boardList">게시판 이동</a></td>
-			</tr>
-			<tr>	
-				<td><a href="/member/memberLogout">로그아웃</a></td>
-			</tr>
-		</c:otherwise>
-	</c:choose>
-</table>
-<div class="maker">
+	<tr>
+		<th>글번호	</th>
+		<th>제목	</th>
+		<th>글쓴이	</th>
+		<th>조회수	</th>		
+		<th>등록일	</th>
+	</tr>
+	
 
+	<tr>
+		<c:forEach items="${list }" var="item" varStatus="status">
+			<tr class="trhover">
+				<td>${(totalCount - status.index) - (navi.currentPage - 1) * navi.countPerPage}</td>
+				<td>
+				<a href="javascript:boardReadForm('${item.BOARD_NO}')">
+						${item.BOARD_TITLE }</a></td>
+				<td>${item.MEMBER_NM }</td>
+				<td>${item.BOARD_HITS }</td>
+				<td>${item.BOARD_INDATE }</td>
+			</tr>
+		</c:forEach>
+	</tr>
+</table>
+ -->	
+<!-- 	
+	<div class="box sb1">I'm speech bubble</div>
+	<div class="box sb2">I'm speech bubble</div>
+	<div class="box sb3">I'm speech bubble</div>
+	<div class="box sb4">I'm speech bubble</div>
+ -->
+</div>
+
+
+<div class="maker">
+제작자 : 김보성
 </div>
 
 

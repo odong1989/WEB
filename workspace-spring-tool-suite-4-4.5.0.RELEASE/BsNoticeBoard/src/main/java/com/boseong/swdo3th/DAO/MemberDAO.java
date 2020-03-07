@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 //import com.sun.media.jfxmedia.logging.Logger;
 
 import com.boseong.swdo3th.Controller.MemberController;
+import com.boseong.swdo3th.VO.Board;
 import com.boseong.swdo3th.VO.Member;
 
 /**
@@ -50,4 +51,27 @@ public class MemberDAO {
 		return result;
 	}	
 	
+	public String memberUpdateName(Member member){
+		String changedName=null;
+		try {
+			MemberMapper mapper = session.getMapper(MemberMapper.class);
+			mapper.memberUpdateName(member);
+			changedName = member.getMember_nm();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return changedName;
+	}
+
+	public String memberUpdateAddress(Member member){
+		String changedAddress=null;
+		try {
+			MemberMapper mapper = session.getMapper(MemberMapper.class);
+			mapper.memberUpdateAddress(member);
+			changedAddress = member.getMember_addr();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return changedAddress;
+	}
 }

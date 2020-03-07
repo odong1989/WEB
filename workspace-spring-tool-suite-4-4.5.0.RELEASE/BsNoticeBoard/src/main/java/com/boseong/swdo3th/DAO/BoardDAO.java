@@ -22,37 +22,18 @@ import com.boseong.swdo3th.VO.Reply;
 @Repository
 public class BoardDAO {
 
-	//@Autowired를 선언하여 받아서 쓰겠다고 알림.
 	@Autowired
 	private SqlSession session;
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardDAO.class);
 
-	/* 페이징 추가전 사항
-	public ArrayList<HashMap<String, Object>> selectBoardList(){
-		ArrayList<HashMap<String, Object>> list = null;
-		try {
-			BoardMapper mapper = session.getMapper(BoardMapper.class);
-			list = mapper.selectBoardList();
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-		return list;
-	}
-	 * */
 	
 	public ArrayList<HashMap<String, Object>> selectBoardList(int startRecord, int countPerPage, String searchText){
 		ArrayList<HashMap<String, Object>> list = null;
 		try {
-			//20.02.10 추가
 			RowBounds rb =new RowBounds(startRecord, countPerPage);//DAO쪽으로 컨트롤러가 전달해줘야 한다는 것입니다.
-			//마이바티스에서 제공하는 라운드로빈이라느 기능이며 사용자가 작성한 sellect 쿼리를 그대로 하면서 활용을 할 수 있다는 장점이 있기에 활용합니다.
-			//20.02.10 추가 종료
 			BoardMapper mapper = session.getMapper(BoardMapper.class);
-			//20.02.10 수정
 			list = mapper.selectBoardList(rb, searchText);
-			//20.02.10 수정 종료
 		}
 		catch(Exception e){
 			e.printStackTrace();

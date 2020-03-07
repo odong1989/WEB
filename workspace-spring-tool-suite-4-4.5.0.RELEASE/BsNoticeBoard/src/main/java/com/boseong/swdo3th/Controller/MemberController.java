@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.boseong.swdo3th.DAO.MemberDAO;
 import com.boseong.swdo3th.VO.Member;
@@ -24,7 +25,6 @@ public class MemberController {
 	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 	//0.dao선언
-	
 	@Autowired
 	MemberDAO dao;
 	
@@ -139,14 +139,13 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
-	/*
+	
 	//2.3 인터셉션(로그인X상태서 로그인창으로 자동이동)
 	@RequestMapping(value="memberLoginAlertPopup", method=RequestMethod.GET)
 	public String memberLoginAlertPopup(HttpSession session) {
 		logger.info("로거 memberLoginAlertPopup");
 		return "member/interceptPopup";
 	}
-	*/
 	
 	//3.로그아웃===========================================================================================================
 	@RequestMapping(value="/memberLogout", method=RequestMethod.GET)
@@ -160,10 +159,37 @@ public class MemberController {
 	
 	
 	//4.MyPage============================================================================================================
+	//4.1 마이페이지 이동&계정정보 수신
 	@RequestMapping(value="memberMypage", method=RequestMethod.GET)
-	public String memberMypage() {
-		logger.info("move mypage");
+	public String memberMypage(Member member, String remember,HttpSession session,Model model) {
+		logger.info("마이페이지 프로세스 시작");
+		Member MemberData = dao.memberSelectOne((String)session.getAttribute("loginId"));
+		model.addAttribute("MemberData", MemberData);
 		return "/member/memberMypage";
 	}		
+	
+	//4.2 마이페이지-이름변경(#aJax활용할것!)
+	@RequestMapping(value="MypageChangeName", method=RequestMethod.GET)
+	@ResponseBody
+	public String MypageChangeName(Member member,HttpSession session, Model model) {
+		logger.info("마이페이지-이름변경 ajax실시");
+		member.setMember_id((String)session.getAttribute("loginId"));
+		logger.info("member : {}", member);
+		String changedName = dao.memberUpdateName(member);
+		return changedName ;
+	}			
+	
+	
+	//4.2 마이페이지-이름변경(#aJax활용할것!)
+	@RequestMapping(value="MypageChangeAddress", method=RequestMethod.GET)
+	@ResponseBody
+	public String MypageChangeAddress(Member member,HttpSession session, Model model) {
+		logger.info("마이페이지-주소변경 ajax실시");
+		member.setMember_id((String)session.getAttribute("loginId"));
+		logger.info("member : {}", member);
+		String changedAddress = dao.memberUpdateAddress(member);
+		return changedAddress ;
+	}			
+	
 	
 }

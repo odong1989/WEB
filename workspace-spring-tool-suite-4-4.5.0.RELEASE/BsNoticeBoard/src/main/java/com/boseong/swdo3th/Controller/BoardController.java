@@ -250,12 +250,10 @@ public class BoardController {
 	//3.2[실헹] 리플 삭제
 	@RequestMapping(value="/replyDelete", method=RequestMethod.GET)
 	public String replyDelete(Reply reply, HttpSession session) {
-	//	public String replyDelete(int reply_no, int board_no) {으로 선언하는 것보다 효율적이다
 		String loginId = (String)session.getAttribute("loginId");
 		reply.setMember_id(loginId);
 		dao.replyDelete(reply);
 		return "redirect:boardReadForm?board_no="+reply.getBoard_no();
-		//해당 번호의 글로 바로 가기 위해 ?board_no="+reply.getBoard_no(); 를 추가합니다.
 	}
 	
 	//3.3 리플 업데이트

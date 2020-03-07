@@ -31,8 +31,15 @@
 	<beans:bean id="loginInterceptor" class="com.boseong.swdo3th.interceptor.LoginInterceptor"></beans:bean>	
 	<interceptors>
 		<interceptor>
-			<mapping path="/board/boardList"/>
+			<!--<mapping path="/board/boardList"/> --><!-- 비회원도 글을 읽을 수 있도록 변경 -->
+			<!-- 보드쪽 인터셉터 -->
+			<mapping path="/board/boardWriteForm"/>
+			<mapping path="/board/boardWrite"/>
+			<mapping path="/board/boardDelete"/>			
+			<mapping path="/board/boardUpdateForm"/>				
+			
 			<mapping path="/member/memberMypage"/>
+			
 			<beans:ref bean="loginInterceptor"/><!--내가 적용하고픈 인터셉터 파일의 id명  -->
 		</interceptor>
 	</interceptors>

@@ -2,10 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.boseong.swdo3th.DAO.BoardMapper">	 
-<!-- 
-	<select id="selectBoardList" parameterType="string" resultType="hashmap">
 
- -->
 	 <!-- 1 -->
 	<select id="selectBoardList" parameterType="string" resultType="hashmap">
 		select
@@ -68,7 +65,6 @@
 			)
 	</insert>
 	
-	<!-- as=앨리어스.  -->
 	<select id="selectBoardOne" parameterType="int" resultType="hashmap">
 		select
 			b.board_no as board_no
@@ -113,13 +109,7 @@
 	and
 		member_id = #{member_id}	
 	</update>
-	
-	<!-- 수정이나 삭제의
-		and
-			member_id = #{member_id};
-		코드는 있거나 없거나 작동은 동일합니다.
-		하지만 본 SQL문에서 한번더 검증을 하는 효과가 있으며 이를 통해 최종적으로 보안을 더 신경쓰는 효과를 얻습니다.		 -->
-	
+		
 	<insert id="replyInsert" parameterType="reply">
 		insert into
 			reply(
@@ -160,7 +150,6 @@
 		member_id =#{member_id}	
 	</delete>
 	
-	<!-- 20.02.13 -->
 	<update id="replyUpdate" parameterType="reply">
 		update
 			reply
@@ -171,11 +160,7 @@
 		and
 			member_id = #{member_id} 
 	</update>
-		<!-- 아래의 and조건을 통해 작성시의 계정(member_id)과  세션에 로그인한 사람의 계정 #{member_id} 이 같음을 확인 후 지우-->	
-		
-		
-	<!-- 20.02.13 혼자학습중 
-		public void updateHits(int board_no);-->	
+
 	<update id="updateHits" parameterType="int">
 		update
 			board

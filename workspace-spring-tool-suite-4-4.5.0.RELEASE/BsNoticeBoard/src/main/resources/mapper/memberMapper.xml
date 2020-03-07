@@ -4,7 +4,6 @@
 <mapper namespace="com.boseong.swdo3th.DAO.MemberMapper">
 
 	<select id="memberSelectOne" parameterType="string" resultType="member">
-	<!-- ID중복뿐만 아니라 검색등으로도 쓸수 있는 쿼리니까 selectOne으로 합니다. -->
 	select
 		member_id
 		,member_pw
@@ -33,4 +32,25 @@
     ,#{member_addr}
     )
     </insert>
+   
+   	<update id="memberUpdateName" parameterType="member">
+	update
+		member
+	set
+		member_nm = #{member_nm}
+    where
+		member_id = #{member_id}	
+	</update>
+    
+   	<update id="memberUpdateAddress" parameterType="member">
+	update
+		member
+	set
+		member_addr = #{member_addr}
+    where
+		member_id = #{member_id}	
+	</update>
+
+
+
 </mapper>
