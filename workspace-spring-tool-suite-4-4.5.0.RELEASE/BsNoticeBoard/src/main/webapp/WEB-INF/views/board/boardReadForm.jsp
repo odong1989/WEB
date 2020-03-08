@@ -7,9 +7,12 @@
 <head>
 <meta charset="UTF-8">
 <title>글읽기(boardReadForm)</title>
-	<link rel="stylesheet" href="/resources/css/styleSetting.css">	
-	<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
+	<link rel="stylesheet" href="/resources/css/style_ver3.css">	
+<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
 	<script>
+	function writeReply(){
+	 window.open("boardReplyForm","newWin","left=300, top=300, width=500, height=300, resizeable=no");
+	 }
 	function fileDownLoad(board_no){
 		location.href = "download?board_no="+board_no;
 	}
@@ -59,45 +62,86 @@
 		updateForm.innerHTML = '';	
 		}
 
-	}
-	
+	}	
 </script>
 </head>
 
 <body>
-<div class="boardOneRead">
-	글 제목 : ${board.BOARD_TITLE } <br/>
-	글 내용 : ${board.BOARD_CONTENT } <br/>
-	글쓴이  : ${board.MEMBER_NM }<br/>
-	조회수  : ${board.BOARD_HITS }<br/>
-	작성일  : ${board.BOARD_INDATE } <br/>
-	
-	첨부파일 : <c:if test="${board.BOARD_SAVEDFILE !=null}">
-				<a href="javascript:fileDownLoad(${board.BOARD_NO})">
-				${board.BOARD_ORIGINFILE } </a>
-			</c:if>			
+	<div class="header">
+		<div class="Logo">
+		<a href="/"><img src="/resources/img/logo.jpg" width="100" ></a>
+		</div>
+		<div class="Menubar">
+		<table>
+			<c:choose>
+			<c:when test="${sessionScope.loginId == null}">
+				<tr>
+					<td><a href="/member/memberLoginForm">로그인하기</a></td>
+					<td><a href="/member/memberJoinForm">회원가입하기</a></td>
+				</tr>
+			</c:when>
+			<c:otherwise> 
+				<tr>
+					<td>${sessionScope.loginId}님 환영합니다!</td>		
+					<td><a href= "/member/memberMypage">MyPage</a></td>		
+					<td><a href="/board/boardList">게시판 이동</a></td>
+					<td><a href="/member/memberLogout">로그아웃</a></td>
+				</tr>
+				</c:otherwise>
+			</c:choose>
+		</table>
+		</div>
+	</div>
+<br><br><br>
+<hr>
+<h1>글 읽기</h1>
+<hr>
+	<table>		
+		<tr>
+			<td>글 제목 : </td>
+			<td>${board.BOARD_TITLE } </td>
+		</tr>
+		<tr>
+			<td>글 내용 : </td>
+			<td> ${board.BOARD_CONTENT }</td>
+		</tr>
+		<tr>
+			<td>글쓴이  : </td>
+			<td>${board.MEMBER_NM }</td>
+		</tr>
+		<tr>
+			<td>조회수  : </td>
+			<td>${board.BOARD_HITS }</td>
+		</tr>
+		<tr>
+			<td>작성일  : </td>
+			<td>${board.BOARD_INDATE } </td>		
+		</tr>
+		<tr>
+			<td>첨부파일 : </td>
+			<td><c:if test="${board.BOARD_SAVEDFILE !=null}">
+					<a href="javascript:fileDownLoad(${board.BOARD_NO})">
+					${board.BOARD_ORIGINFILE } </a>
+				</c:if>			
+			</td>
+		</tr>
+		<c:if test="${board.MEMBER_ID==sessionScope.loginId}">
+		<tr>
+			<td><input type="button" value="글 수정하기" onclick="boardUpdateForm('${board.BOARD_NO}')"> </td>
+			<td><input type="button" value="글 삭제하기" onclick="boardDelete('${board.BOARD_NO}')"></td>		
+		</tr>
+		</c:if>		
+	</table>
 
-	
-	<c:if test="${board.MEMBER_ID==sessionScope.loginId}">
-		<input type="button" value="수정" onclick="boardUpdateForm('${board.BOARD_NO}')"> <br/>
-		<input type="button" value="삭제" onclick="boardDelete('${board.BOARD_NO}')"> <br/>		
-	</c:if>
-	<br/>		
-</div>
-
-<div class="boardReplyTable">			
-	<form action="replyInsert" method="post" >
-		<input type="hidden" name="board_no" value="${board.BOARD_NO }">
-		<input type="text" name="reply_content" placeholder="댓글을 달아 주세요!!">
-		<input type="submit" value="저장">
-	</form>		
-	<div class="boardReplyTable">
+	<br>
 	<table>
 			<tr>
-				<td>리플번호</td>
-				<td>작성자</td>
-				<td>리플내용</td>
-				<td>작성일</td>
+				<th>리플번호</th>
+				<th>작성자</th>
+				<th>리플내용</th>
+				<th>작성일</th>
+				<th>댓글수정</th>				
+				<th>댓글삭제</th>
 			</tr>
 		<c:forEach items="${replyList}" var="reply">
 			<tr>
@@ -105,26 +149,30 @@
 				<td>${reply.member_id }</td>
 				<td>${reply.reply_content }</td>
 				<td>${reply.reply_indate }</td>
-					<!-- 아래의 JSTL 조건문은 리플도 자신이 작성한 것만 삭제버튼이 가능토록 숨김설정 함. -->
 				<td>
-					<c:if test="${reply.member_id == sessionScope.loginId }">
-					
-						<input type="button", value="수정", onclick="replyUpdateForm('${reply.reply_no}','${reply.board_no}','${reply.reply_content}')">
-					</c:if>
-				</td>
-				<td>
-					<c:if test="${reply.member_id == sessionScope.loginId }">
-						<input type="button", value="삭제", onclick="replyDelete('${reply.reply_no}','${reply.board_no}')">
-					</c:if>	
-				</td>
-			</tr>	
-			<tr>
-				<td id="updateForm${reply.reply_no}" colspan="6">
-				</td>
-			</tr>	
-		</c:forEach>
-	</table>		
-	</div>
-</div>
+						<c:if test="${reply.member_id == sessionScope.loginId }">
+						
+							<input type="button", value="수정", onclick="replyUpdateForm('${reply.reply_no}','${reply.board_no}','${reply.reply_content}')">
+						</c:if>
+					</td>
+					<td>
+						<c:if test="${reply.member_id == sessionScope.loginId }">
+							<input type="button", value="삭제", onclick="replyDelete('${reply.reply_no}','${reply.board_no}')">
+						</c:if>	
+					</td>
+				</tr>	
+				<tr>
+					<td id="updateForm${reply.reply_no}" colspan="6">
+					</td>
+				</tr>	
+			</c:forEach>
+			<tr>		
+			<form action="replyInsert" method="post" >
+				<td colspan="4"><input type="hidden" name="board_no" value="${board.BOARD_NO }">
+								<input type="text" name="reply_content" placeholder="댓글을 달아 주세요!!"></td>
+				<td colspan="2"><input type="submit" value="댓글등록" ></td>
+			</form>			
+			</tr>
+		</table>		
 </body>
 </html>

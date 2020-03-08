@@ -6,7 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
+	<link rel="stylesheet" href="/resources/css/style_ver3.css">	
+<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
+<script>
 	function fileDownLoad(board_no){
 		location.href = "download?board_no="+board_no;
 			//board_no값도 전달하기 위해 ?를 활용 쿼리스트링
@@ -16,24 +18,37 @@
 </head>
 <body>
 <h1>[ 글수정폼 ]</h1>
-<!-- 기존의 정보(model을 통해 갖고 온 값)를 보여줄 수 있도록  
-value="${board.BOARD_TITLE}"
-${board.BOARD_CONTENT }
-
-
--->
 <form action="boardUpdate" method="post" enctype="multipart/form-data">
-	글 제목    : <input type="text" name ="board_title" value="${board.BOARD_TITLE}"> <br/>
-	글 내용    : <textarea name = "board_content">${board.BOARD_CONTENT } </textarea> <br/>
-	조회수     : ${board.BOARD_HITS} <br/> 
-	등록일     : ${board.BOARD_INDATE} <br/> 
-	첨부파일  : <input type="file" name = "upload"> <br/>
-	 <!-- 클릭하면 다운로드 되도록 합니다. -->
-	첨부파일 : <c:if test="${board.BOARD_SAVEDFILE !=null}">
+<table>	
+	<tr>
+		<td>글 제목    : </td>
+		<td><input type="text" name ="board_title" value="${board.BOARD_TITLE}"></td>
+	</tr>
+	<tr>
+		<td>글 내용    : </td>
+		<td><textarea name = "board_content">${board.BOARD_CONTENT } </textarea> </td>
+	</tr>
+	<tr>
+		<td>조회수     :</td>
+		<td>${board.BOARD_HITS}</td>
+	</tr>
+	<tr>
+		<td>등록일     :</td>
+		<td>${board.BOARD_INDATE}</td>
+	</tr>
+	<tr>
+		<td>첨부파일  : </td>
+		<td><input type="file" name = "upload"></td>
+	</tr>
+	<tr>
+		<td>첨부파일  : </td>
+		<td> <c:if test="${board.BOARD_SAVEDFILE !=null}">
 				<a href="javascript:fileDownLoad(${board.BOARD_NO})">
 				${board.BOARD_ORIGINFILE } </a>
-			</c:if>		
-	
+			</c:if>		</td>
+	</tr>	
+</table>	
+
 	
 	<!-- 글번호  value="${board_no.BOARD_NO}"가 있어야 SQL은 어떤 글을삭제할지정할수 있다.-->
 	<input type="hidden" name="board_no" value="${board.BOARD_NO}">	

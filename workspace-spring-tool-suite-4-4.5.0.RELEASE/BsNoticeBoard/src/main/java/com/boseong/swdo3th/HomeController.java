@@ -31,10 +31,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
-
-	//		logger.info("글 목록 시작");
-
-		
+		logger.info("메인페이지 시작");
 		return "index";
 	}
 	

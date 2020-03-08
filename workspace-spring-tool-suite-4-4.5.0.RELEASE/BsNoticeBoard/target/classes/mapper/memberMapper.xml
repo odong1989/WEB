@@ -51,6 +51,13 @@
 		member_id = #{member_id}	
 	</update>
 
-
+   	<update id="memberUpdatePassword" parameterType="member">
+	update
+		member
+	set
+		member_pw = #{member_pw}
+    where
+		member_id = #{member_id}	
+	</update>
 
 </mapper>

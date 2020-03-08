@@ -165,7 +165,7 @@
 		update
 			board
 		set 
-			board_hits=board_hits+1;
+			board_hits=board_hits+1
 		where	
 			board_no = #{board_no}
 	</update>

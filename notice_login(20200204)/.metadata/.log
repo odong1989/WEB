@@ -14704,3 +14704,446 @@ java.net.UnknownHostException: dist.springsource.com
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-08 12:58:25.386
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-08 12:58:25.785
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.049
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.068
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.088
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.098
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.110
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.126
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.143
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.155
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.167
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.176
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.187
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.198
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.205
+!MESSAGE executing callback sts4.classpath.IYZKEeup 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:25:22.303
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 4 568 2020-03-08 13:30:22.154
+!MESSAGE Could not write metadata for '/Servers'.
+!STACK 0
+java.io.FileNotFoundException: D:\SourceTree\WEB\notice_login(20200204)\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.264
+!MESSAGE Preparing classpath changed notification board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.381
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.409
+!MESSAGE classpath=26 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.454
+!MESSAGE buffering callback sts4.classpath.IYZKEeup board false 26
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.491
+!MESSAGE executing callback sts4.classpath.IYZKEeup 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:00.570
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 4 568 2020-03-08 13:39:00.764
+!MESSAGE Could not write metadata for '/Servers'.
+!STACK 0
+java.io.FileNotFoundException: D:\SourceTree\WEB\notice_login(20200204)\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.286
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.307
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.334
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.356
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.365
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.405
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.422
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.443
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.482
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.501
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.521
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.529
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.535
+!MESSAGE Preparing classpath changed notification board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.541
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.550
+!MESSAGE classpath=56 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.558
+!MESSAGE buffering callback sts4.classpath.IYZKEeup board false 56
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.564
+!MESSAGE executing callback sts4.classpath.IYZKEeup 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:07.588
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.519
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.545
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.561
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.615
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.635
+!MESSAGE executing callback sts4.classpath.IYZKEeup 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.678
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.709
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.782
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.818
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.844
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.898
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:09.930
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:10.008
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:10.037
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:10.063
+!MESSAGE executing callback sts4.classpath.IYZKEeup 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:10.217
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.121
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.201
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.261
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.301
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.347
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.519
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.546
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.623
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.717
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.753
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.782
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.793
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.803
+!MESSAGE executing callback sts4.classpath.IYZKEeup 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.856
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.874
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.900
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.919
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.933
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.943
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.951
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.974
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.983
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:12.992
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:13.003
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:13.016
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:13.027
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:13.035
+!MESSAGE executing callback sts4.classpath.IYZKEeup 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:13.077
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.310
+!MESSAGE Preparing classpath changed notification moneybook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.322
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.331
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.340
+!MESSAGE buffering callback sts4.classpath.IYZKEeup moneybook false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.347
+!MESSAGE Preparing classpath changed notification notice_board_loginSample
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.355
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.363
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.371
+!MESSAGE buffering callback sts4.classpath.IYZKEeup notice_board_loginSample false 50
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.377
+!MESSAGE Preparing classpath changed notification testTraining
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.383
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.392
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.399
+!MESSAGE buffering callback sts4.classpath.IYZKEeup testTraining false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.405
+!MESSAGE executing callback sts4.classpath.IYZKEeup 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-08 13:39:23.422
+!MESSAGE executing callback sts4.classpath.IYZKEeup SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 4 568 2020-03-08 13:44:01.153
+!MESSAGE Could not write metadata for '/Servers'.
+!STACK 0
+java.io.FileNotFoundException: D:\SourceTree\WEB\notice_login(20200204)\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-08 22:20:35.253
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-03-08 22:20:35.325
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

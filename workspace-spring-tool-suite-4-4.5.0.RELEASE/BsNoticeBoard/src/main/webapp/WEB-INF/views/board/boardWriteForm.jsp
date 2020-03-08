@@ -6,7 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
+	<link rel="stylesheet" href="/resources/css/style_ver3.css">	
+<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
 <script>
 </script>
 </head>

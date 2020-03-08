@@ -2,8 +2,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="/resources/css/styleSetting.css">	
+	<title>index페이지입니다</title>
+	<link rel="stylesheet" href="/resources/css/style_ver3.css">		
 	<script src="<c:url value='/resources/js/jquery-3.4.1.js' /> "> </script>
 	<script>
 	</script>
@@ -36,55 +36,17 @@
 </div>
 
 
-<div class="noticeByAdmin">
-[관리자 알림]
- 		<div class="TalkBox talk">
-</div>	
-
-</div>
-
-<div class="noticeBoard">
-	[게시판]
-<!-- 	
-<h1>[글 목록]</h1>
-<table>
-	<tr>
-		<th>글번호	</th>
-		<th>제목	</th>
-		<th>글쓴이	</th>
-		<th>조회수	</th>		
-		<th>등록일	</th>
-	</tr>
+<div class="noticeTalkType">
+<h4>[채팅창형 게시판 안내(구현미완)]</h4>
+ 	<div class="TalkBox byBoard">게시판 최신글1</div>
 	
+ 	<div class="TalkBox byBoard">게시판 최신글2</div>
 
-	<tr>
-		<c:forEach items="${list }" var="item" varStatus="status">
-			<tr class="trhover">
-				<td>${(totalCount - status.index) - (navi.currentPage - 1) * navi.countPerPage}</td>
-				<td>
-				<a href="javascript:boardReadForm('${item.BOARD_NO}')">
-						${item.BOARD_TITLE }</a></td>
-				<td>${item.MEMBER_NM }</td>
-				<td>${item.BOARD_HITS }</td>
-				<td>${item.BOARD_INDATE }</td>
-			</tr>
-		</c:forEach>
-	</tr>
-</table>
- -->	
-<!-- 	
-	<div class="box sb1">I'm speech bubble</div>
-	<div class="box sb2">I'm speech bubble</div>
-	<div class="box sb3">I'm speech bubble</div>
-	<div class="box sb4">I'm speech bubble</div>
- -->
+ 	<div class="TalkBox byMe">최신글2에 대한 나의 댓글</div>
+
+	 <div class="TalkBox byBoard">게시판 최신글3</div>
+
 </div>
-
-
-<div class="maker">
-제작자 : 김보성
-</div>
-
 
 </body>
 </html>

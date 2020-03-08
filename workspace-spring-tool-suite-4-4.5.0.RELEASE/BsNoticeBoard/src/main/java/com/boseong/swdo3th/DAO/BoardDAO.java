@@ -17,8 +17,6 @@ import org.springframework.stereotype.Repository;
 import com.boseong.swdo3th.VO.Board;
 import com.boseong.swdo3th.VO.Reply;
 
-
-//@Repository를 붙여줘야 bean이 생성되어 보드다오가 전역으로 쓸수 있습니다.
 @Repository
 public class BoardDAO {
 
@@ -26,19 +24,17 @@ public class BoardDAO {
 	private SqlSession session;
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardDAO.class);
-
 	
 	public ArrayList<HashMap<String, Object>> selectBoardList(int startRecord, int countPerPage, String searchText){
 		ArrayList<HashMap<String, Object>> list = null;
 		try {
-			RowBounds rb =new RowBounds(startRecord, countPerPage);//DAO쪽으로 컨트롤러가 전달해줘야 한다는 것입니다.
+			RowBounds rb =new RowBounds(startRecord, countPerPage);
 			BoardMapper mapper = session.getMapper(BoardMapper.class);
 			list = mapper.selectBoardList(rb, searchText);
 		}
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		
 		return list;
 	}
 	
@@ -160,6 +156,8 @@ public class BoardDAO {
 	
 	public void updateHits(int board_no) {
 		try {
+			logger.info("updateHits 메소드 실시.");
+			logger.info("(DAO)board_no :  {} ",board_no);
 		BoardMapper mapper = session.getMapper(BoardMapper.class);
 		mapper.updateHits(board_no);
 		}catch(Exception e) {

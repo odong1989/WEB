@@ -39,8 +39,8 @@ import com.boseong.swdo3th.util.PageNavigator;
 public class BoardController {
 	
 	private final String uploadPath = "/uploadFile";//저장경로 설정
-	private int countPerPage=5;		//페이지당 글목록 수
-	private int pagePerGroup=5;		//그룹당 페이지 수 
+	private int countPerPage=5;						//페이지당 글목록 수
+	private int pagePerGroup=5;						//그룹당 페이지 수 
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 
 	@Autowired
@@ -58,9 +58,9 @@ public class BoardController {
 		
 		ArrayList<HashMap<String, Object>> list = dao.selectBoardList(navi.getStartRecord(), countPerPage, searchText);
 																		//시작위치				,가져와야 할 개수,		검색조건
-		model.addAttribute("list", list);			//출력할 목록 정보
+		model.addAttribute("list", list);				//출력할 목록 정보
 		model.addAttribute("navi", navi);				//페이지 정보
-		model.addAttribute("searchText", searchText);//검색어 정보
+		model.addAttribute("searchText", searchText);	//검색어 정보
 		model.addAttribute("totalCount", totalCount);
 		return "/board/boardList";
 	}
@@ -103,7 +103,8 @@ public class BoardController {
 		//board번호를 FK로 활용하여 웹페지기 가기
 		HashMap<String, Object> board = dao.selectBoardOne(board_no);
 		ArrayList<Reply> replyList = dao.selectReply(board_no);
-		logger.info("board_no {}",board_no);
+		logger.info("boardReadForm 실시 ");
+		logger.info("board_no : {}",board_no);
 		
 		
 		model.addAttribute("board", board);
@@ -161,8 +162,6 @@ public class BoardController {
 			logger.info("DB의 계정 정보 삭제 실패");			
 		}
 		
-		
-		//step2. 파일삭제 ------------------------------------------------------------
 		String savedfile = (String)map.get("BOARD_SAVEDFILE");
 		//DB의 정보를 삭제가 성공했고 첨부파일이 있다면 첨부파일도 삭제한다. 
 		if((count != 0) && (savedfile != null)){
@@ -193,22 +192,16 @@ public class BoardController {
 	@RequestMapping(value="boardUpdate", method=RequestMethod.POST)
 	public String boardUpdate(Board board, MultipartFile upload, HttpSession session){
 		logger.info("boardUpdate 시작");
-		//로그인 정보 수취
 		String loginId = (String)session.getAttribute("loginId");
 		board.setMember_id(loginId);
 		logger.info("boardUpdate -board의 Member_id : {}",board.getMember_id());	
-		//기존 정보를 갖고 옵니다.
 		HashMap<String, Object> oldBoard = dao.selectBoardOne(board.getBoard_no());
-		
-		//파일이 저장된 여부를 구분하기위해 파일명을 받습니다.(null이면 파일없음, null이외 이름이면 파일이 있다)
 		String oldSavedFile = (String)oldBoard.get("BOARD_SAVEDFILE");
 		logger.info("boardUpdate -board의 oldSavedFile : {}",oldSavedFile);
-		//검문1 : case 1,3인 아무것도 해주지 않아도 되는것인지 여부부터 분별.
 		if(!upload.isEmpty()){
-			//검문2 : 파일명이 비었느냐를 통해 2차 파일저장여부 체크
 			if(oldSavedFile != null) {
-				String fullPath = uploadPath + "/" + oldSavedFile;//기존의 저장된 파일을 삭제하기 위한 경로 정보 얻기
-				FileService.deleteFile(fullPath);				  //기존 파일삭제
+				String fullPath = uploadPath + "/" + oldSavedFile;
+				FileService.deleteFile(fullPath);			
 			}
 			//신규파일 저장을 위한 준비작업.
 			String savedFile = FileService.saveFile(upload, uploadPath);
@@ -217,19 +210,20 @@ public class BoardController {
 			board.setBoard_originfile(originFile);
 		}
 		
-		//수정하는 DAO함수를 호출한다.
 		dao.boardUpdate(board);
-		
-		//기존의 글이 잘 갱신되었나 확인을 위해  redirect:
-		//담당 문장은 boardReadForm
-		//해당 글의 번호까지 주어야 제대로 감board_no="+board.getBoard_no();
 		return "redirect:boardReadForm?board_no="+board.getBoard_no();
 	}
 	
 
 	//3.리플=====================================================================================================================
 	
-	//3.1[실행]리플 추가
+	//3.1리플작성 팝업창 생성
+	
+	@RequestMapping(value="boardReplyForm", method=RequestMethod.GET)
+	public String boardReplyForm() {
+	return "board/boardReplyForm";
+	}	  
+	//3.2[실행]리플 추가
 	@RequestMapping(value="/replyInsert", method=RequestMethod.POST)
 	public String replyInsert(Reply reply, HttpSession session) {
 

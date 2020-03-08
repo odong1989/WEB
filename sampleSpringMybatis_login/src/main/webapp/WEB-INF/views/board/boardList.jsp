@@ -36,7 +36,9 @@ a:hover{text-decoration:none; color:blue;}
 
 
 </head>
+
 <body>
+
 <h1>[글 목록]</h1>
 <!-- ${list } //우선 글이 정상적으로 나오는지 사전체크용.  prefix="c"를 사용하지 않아도 바로 출력이 가능합니다.-->	
 
@@ -87,18 +89,12 @@ a:hover{text-decoration:none; color:blue;}
 	 <a href="javascript:paging('${navi.currentPage + 1} ')"> ▶</a>
 	 <a href="javascript:paging('${navi.currentPage + navi.pagePerGroup} ')"> ▷▷</a> <!-- 1그룹만큼 뒤로 갑니다. -->
 	 
-	 
-
-	 <!-- 20.02.10 3교시 페이징 또는 검색 요청시 전달할 폼-->
-	 <!-- id가 있어야 자바스크립트에서 값을 넣을수 있습니다. -->	 
 	  <form action="boardList" method="get" id="pagingForm">
 			<input type="hidden" name="currentPage" id="currentPage">
-	 <!-- 20.02.10 3교시 검색 처리도 겸사넣음  -->
 			제목 : <input type="text" name="searchText" id="searchText" value="${searchText}">
 				  <input type="button" value="검색" onclick="paging(1)">
-	  </form>
-		
-	
+	  </form>	
 	<input type="button" value="글 등록" onclick="boardWriteForm()">
+
 </body>
 </html>
